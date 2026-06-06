@@ -8,6 +8,23 @@ Example noisy receipt image used in this benchmark:
 
 This sample is intentionally degraded with blur, fading, shadow, narrow layout, quantity/unit-price columns, discounts, point usage, and similar-looking numeric fields.
 
+## Quick start
+
+Download the latest release ZIP from the GitHub Releases page:
+
+`japan_ocr_mini_benchmark_release_sample_final.zip`
+
+After extracting the ZIP, run the evaluation script:
+
+```powershell
+python .\eval\compare_receipt_items.py receipt_005
+```
+
+The script compares the model output JSON against the ground-truth JSON and reports `[OK]` or `[NG]` for each field.
+
+`receipt_005_noisy.png` is the current hardest sample. It includes a narrow layout, quantity and unit price columns, coupon discount, point usage, tax target fields, final payment amount, cash received, and change.
+
+
 A small synthetic Japanese receipt OCR/VLM benchmark for testing document understanding models on noisy Japanese receipts.
 
 
