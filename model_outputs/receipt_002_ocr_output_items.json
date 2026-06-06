@@ -1,0 +1,47 @@
+{
+  "document_id": "receipt_002",
+  "store_name": "扇町ヘルスドラッグ架空店",
+  "date": "2026-06-07",
+  "time": "19:08:42",
+  "items": [
+    {
+      "name": "ミネラルウォーター 2L",
+      "amount": 108
+    },
+    {
+      "name": "のど飴 はちみつ味",
+      "amount": 198
+    },
+    {
+      "name": "栄養ドリンク 3本",
+      "amount": 498
+    },
+    {
+      "name": "ティッシュ 5箱",
+      "amount": 398
+    },
+    {
+      "name": "洗濯洗剤 詰替",
+      "amount": 438
+    },
+    {
+      "name": "ハンドソープ 泡タイプ",
+      "amount": 328
+    },
+    {
+      "name": "マスク 30枚入",
+      "amount": 598
+    },
+    {
+      "name": "単三電池 4本",
+      "amount": 498
+    }
+  ],
+  "subtotal": 3064,
+  "tax_8_target": 804,
+  "tax_10_target": 2260,
+  "total": 3064,
+  "payment_method": "現金",
+  "cash_received": 5000,
+  "change": 1936
+}

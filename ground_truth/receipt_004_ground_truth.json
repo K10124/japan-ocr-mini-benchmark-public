@@ -1,0 +1,97 @@
+{
+  "document_id": "receipt_004",
+  "image_file": "receipt_004_noisy.png",
+  "document_type": "receipt",
+  "store_name": "天満フレッシュマーケット架空店",
+  "store_address": "大阪府大阪市北区架空町10-11-12",
+  "date": "2026-06-09",
+  "time": "20:17:36",
+  "items": [
+    {
+      "name": "惣菜コロッケ 2個",
+      "amount": 214,
+      "tax_rate": 8
+    },
+    {
+      "name": "炭酸水レモン",
+      "amount": 98,
+      "tax_rate": 8
+    },
+    {
+      "name": "冷凍うどん 3食",
+      "amount": 238,
+      "tax_rate": 8
+    },
+    {
+      "name": "バナナ 1房",
+      "amount": 198,
+      "tax_rate": 8
+    },
+    {
+      "name": "ヨーグルト プレーン",
+      "amount": 168,
+      "tax_rate": 8
+    },
+    {
+      "name": "日替わり弁当",
+      "amount": 598,
+      "tax_rate": 8
+    },
+    {
+      "name": "彩りサラダ",
+      "amount": 321,
+      "tax_rate": 8
+    },
+    {
+      "name": "菓子パン",
+      "amount": 128,
+      "tax_rate": 8
+    },
+    {
+      "name": "キッチンペーパー",
+      "amount": 328,
+      "tax_rate": 10
+    },
+    {
+      "name": "食器用洗剤",
+      "amount": 218,
+      "tax_rate": 10
+    },
+    {
+      "name": "ごみ袋 45L",
+      "amount": 398,
+      "tax_rate": 10
+    },
+    {
+      "name": "乾電池 単4",
+      "amount": 548,
+      "tax_rate": 10
+    },
+    {
+      "name": "ラップ 30cm",
+      "amount": 198,
+      "tax_rate": 10
+    },
+    {
+      "name": "ペット用品シート",
+      "amount": 658,
+      "tax_rate": 10
+    },
+    {
+      "name": "保冷バッグ 小",
+      "amount": 110,
+      "tax_rate": 10
+    }
+  ],
+  "subtotal": 4421,
+  "coupon_discount": 100,
+  "tax_8_target": 1963,
+  "tax_10_target": 2358,
+  "total": 4321,
+  "payment_method": "現金",
+  "cash_received": 5000,
+  "change": 679,
+  "points_earned": 43,
+  "point_balance": 2957,
+  "invoice_registration_number": "T0000000000000"
+}

@@ -1,0 +1,59 @@
+{
+  "document_id": "receipt_002",
+  "image_file": "receipt_002_noisy.png",
+  "document_type": "receipt",
+  "store_name": "扇町ヘルスドラッグ架空店",
+  "store_address": "大阪府大阪市北区架空町4-5-6",
+  "date": "2026-06-07",
+  "time": "19:08:42",
+  "items": [
+    {
+      "name": "ミネラルウォーター 2L",
+      "amount": 108,
+      "tax_rate": 8
+    },
+    {
+      "name": "のど飴 はちみつ味",
+      "amount": 198,
+      "tax_rate": 8
+    },
+    {
+      "name": "栄養ドリンク 3本",
+      "amount": 498,
+      "tax_rate": 8
+    },
+    {
+      "name": "ティッシュ 5箱",
+      "amount": 398,
+      "tax_rate": 10
+    },
+    {
+      "name": "洗濯洗剤 詰替",
+      "amount": 438,
+      "tax_rate": 10
+    },
+    {
+      "name": "ハンドソープ 泡タイプ",
+      "amount": 328,
+      "tax_rate": 10
+    },
+    {
+      "name": "マスク 30枚入",
+      "amount": 598,
+      "tax_rate": 10
+    },
+    {
+      "name": "単三電池 4本",
+      "amount": 498,
+      "tax_rate": 10
+    }
+  ],
+  "subtotal": 3064,
+  "tax_8_target": 804,
+  "tax_10_target": 2260,
+  "total": 3064,
+  "payment_method": "現金",
+  "cash_received": 5000,
+  "change": 1936,
+  "invoice_registration_number": "T0000000000000"
+}

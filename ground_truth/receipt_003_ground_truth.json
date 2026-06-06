@@ -1,0 +1,79 @@
+{
+  "document_id": "receipt_003",
+  "image_file": "receipt_003_noisy.png",
+  "document_type": "receipt",
+  "store_name": "中崎町ベーカリー架空店",
+  "store_address": "大阪府大阪市北区架空町7-8-9",
+  "date": "2026-06-08",
+  "time": "08:09:58",
+  "items": [
+    {
+      "name": "クロワッサン プレーン",
+      "amount": 238,
+      "tax_rate": 8
+    },
+    {
+      "name": "塩バターパン",
+      "amount": 198,
+      "tax_rate": 8
+    },
+    {
+      "name": "明太フランス ハーフ",
+      "amount": 298,
+      "tax_rate": 8
+    },
+    {
+      "name": "アイスカフェラテ M",
+      "amount": 328,
+      "tax_rate": 8
+    },
+    {
+      "name": "オレンジジュース",
+      "amount": 198,
+      "tax_rate": 8
+    },
+    {
+      "name": "焼菓子セット A",
+      "amount": 598,
+      "tax_rate": 8
+    },
+    {
+      "name": "たまごサンド ハーフ",
+      "amount": 348,
+      "tax_rate": 8
+    },
+    {
+      "name": "チョコデニッシュ",
+      "amount": 278,
+      "tax_rate": 8
+    },
+    {
+      "name": "紙袋 小",
+      "amount": 11,
+      "tax_rate": 10
+    },
+    {
+      "name": "保冷剤",
+      "amount": 22,
+      "tax_rate": 10
+    },
+    {
+      "name": "ギフト箱",
+      "amount": 110,
+      "tax_rate": 10
+    },
+    {
+      "name": "キャンドル 小",
+      "amount": 330,
+      "tax_rate": 10
+    }
+  ],
+  "subtotal": 2957,
+  "tax_8_target": 2484,
+  "tax_10_target": 473,
+  "total": 2957,
+  "payment_method": "現金",
+  "cash_received": 3000,
+  "change": 43,
+  "invoice_registration_number": "T0000000000000"
+}

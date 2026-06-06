@@ -1,0 +1,78 @@
+{
+  "document_id": "receipt_004",
+  "store_name": "天満フレッシュマーケット架空店",
+  "date": "2026-06-09",
+  "time": "20:17:36",
+  "items": [
+    {
+      "name": "惣菜コロッケ 2個",
+      "amount": 214
+    },
+    {
+      "name": "炭酸水レモン",
+      "amount": 98
+    },
+    {
+      "name": "冷凍うどん 3食",
+      "amount": 238
+    },
+    {
+      "name": "バナナ 1房",
+      "amount": 198
+    },
+    {
+      "name": "ヨーグルト プレーン",
+      "amount": 168
+    },
+    {
+      "name": "日替わり弁当",
+      "amount": 598
+    },
+    {
+      "name": "彩りサラダ",
+      "amount": 321
+    },
+    {
+      "name": "菓子パン",
+      "amount": 128
+    },
+    {
+      "name": "キッチンペーパー",
+      "amount": 328
+    },
+    {
+      "name": "食器用洗剤",
+      "amount": 218
+    },
+    {
+      "name": "ごみ袋 45L",
+      "amount": 398
+    },
+    {
+      "name": "乾電池 単4",
+      "amount": 548
+    },
+    {
+      "name": "ラップ 30cm",
+      "amount": 198
+    },
+    {
+      "name": "ペット用品シート",
+      "amount": 658
+    },
+    {
+      "name": "保冷バッグ 小",
+      "amount": 110
+    }
+  ],
+  "subtotal": 4421,
+  "coupon_discount": 100,
+  "tax_8_target": 1963,
+  "tax_10_target": 2358,
+  "total": 4321,
+  "payment_method": "現金",
+  "cash_received": 5000,
+  "change": 679,
+  "points_earned": 43,
+  "point_balance": 2957
+}

@@ -1,0 +1,49 @@
+{
+  "document_id": "receipt_001",
+  "image_file": "receipt_001_noisy.png",
+  "document_type": "receipt",
+  "store_name": "天六ミニマート扇町通り店",
+  "store_address": "大阪府大阪市北区架空町1-2-3",
+  "date": "2026-06-06",
+  "time": "14:32:15",
+  "items": [
+    {
+      "name": "コーンポタージュスープ",
+      "amount": 110,
+      "tax_rate": 8
+    },
+    {
+      "name": "卵 6個入り",
+      "amount": 242,
+      "tax_rate": 8
+    },
+    {
+      "name": "牛乳 1L",
+      "amount": 165,
+      "tax_rate": 8
+    },
+    {
+      "name": "食パン",
+      "amount": 198,
+      "tax_rate": 8
+    },
+    {
+      "name": "シャンプー 詰替用",
+      "amount": 550,
+      "tax_rate": 10
+    },
+    {
+      "name": "歯磨き粉",
+      "amount": 330,
+      "tax_rate": 10
+    }
+  ],
+  "subtotal": 1595,
+  "tax_8_target": 715,
+  "tax_10_target": 880,
+  "total": 1595,
+  "payment_method": "現金",
+  "cash_received": 2000,
+  "change": 405,
+  "invoice_registration_number": "T0000000000000"
+}

@@ -1,0 +1,128 @@
+{
+  "document_id": "receipt_005",
+  "image_file": "receipt_005_noisy.png",
+  "document_type": "receipt",
+  "store_name": "梅田エキマエストア架空店",
+  "store_address": "大阪府大阪市北区架空町13-14-15",
+  "date": "2026-06-10",
+  "time": "21:43:09",
+  "items": [
+    {
+      "name": "おにぎり梅",
+      "quantity": 2,
+      "unit_price": 138,
+      "amount": 276,
+      "tax_rate": 8
+    },
+    {
+      "name": "カットサラダ",
+      "quantity": 1,
+      "unit_price": 321,
+      "amount": 321,
+      "tax_rate": 8
+    },
+    {
+      "name": "緑茶 600ml",
+      "quantity": 2,
+      "unit_price": 98,
+      "amount": 196,
+      "tax_rate": 8
+    },
+    {
+      "name": "からあげ 小",
+      "quantity": 1,
+      "unit_price": 298,
+      "amount": 298,
+      "tax_rate": 8
+    },
+    {
+      "name": "ヨーグルト低脂肪",
+      "quantity": 3,
+      "unit_price": 118,
+      "amount": 354,
+      "tax_rate": 8
+    },
+    {
+      "name": "冷凍チャーハン",
+      "quantity": 1,
+      "unit_price": 438,
+      "amount": 438,
+      "tax_rate": 8
+    },
+    {
+      "name": "バウムクーヘン",
+      "quantity": 2,
+      "unit_price": 158,
+      "amount": 316,
+      "tax_rate": 8
+    },
+    {
+      "name": "ミックスナッツ 小",
+      "quantity": 1,
+      "unit_price": 398,
+      "amount": 398,
+      "tax_rate": 8
+    },
+    {
+      "name": "ボックスティッシュ",
+      "quantity": 1,
+      "unit_price": 248,
+      "amount": 248,
+      "tax_rate": 10
+    },
+    {
+      "name": "除菌ウェット",
+      "quantity": 2,
+      "unit_price": 198,
+      "amount": 396,
+      "tax_rate": 10
+    },
+    {
+      "name": "ノート A5",
+      "quantity": 3,
+      "unit_price": 110,
+      "amount": 330,
+      "tax_rate": 10
+    },
+    {
+      "name": "ボールペン黒",
+      "quantity": 2,
+      "unit_price": 88,
+      "amount": 176,
+      "tax_rate": 10
+    },
+    {
+      "name": "レジ袋 M",
+      "quantity": 1,
+      "unit_price": 5,
+      "amount": 5,
+      "tax_rate": 10
+    },
+    {
+      "name": "充電ケーブル短",
+      "quantity": 1,
+      "unit_price": 780,
+      "amount": 780,
+      "tax_rate": 10
+    },
+    {
+      "name": "靴下 無地",
+      "quantity": 2,
+      "unit_price": 330,
+      "amount": 660,
+      "tax_rate": 10
+    }
+  ],
+  "subtotal": 5192,
+  "coupon_discount": 150,
+  "points_used": 321,
+  "tax_8_target": 2597,
+  "tax_10_target": 2595,
+  "total": 4721,
+  "payment_method": "現金",
+  "cash_received": 5000,
+  "change": 279,
+  "points_earned": 47,
+  "point_balance": 4321,
+  "invoice_registration_number": "T0000000000000"
+}
