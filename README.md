@@ -1,9 +1,14 @@
 \# Japan OCR Mini Benchmark
 
+## Sample image
 
+Example noisy receipt image used in this benchmark:
+
+![receipt_005_noisy](images/receipt_005_noisy.png)
+
+This sample is intentionally degraded with blur, fading, shadow, narrow layout, quantity/unit-price columns, discounts, point usage, and similar-looking numeric fields.
 
 A small synthetic Japanese receipt OCR/VLM benchmark for testing document understanding models on noisy Japanese receipts.
-
 
 
 This project contains synthetic Japanese receipt images, ground-truth JSON files, model output JSON files, comparison scripts, and failure case notes.
