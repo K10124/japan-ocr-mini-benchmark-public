@@ -326,7 +326,14 @@ The script compares model output JSON against ground-truth JSON and reports `\[O
 
 
 
-Initial tests were performed using Qwen3.6 35B A3B.
+Model outputs in this release were generated with:
+
+* Model: Qwen3.6 35B A3B
+* Quantization: Q4_K_M GGUF
+* Runtime: LM Studio
+* Task: Japanese receipt OCR/VLM structured extraction
+
+The results should be interpreted as local quantized-model evaluation results, not full-precision model benchmark results.
 
 
 
