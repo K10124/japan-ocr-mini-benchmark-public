@@ -403,4 +403,247 @@ Future receipts should include:
 \* stronger perspective distortion
 
 
+---
+
+## Failure Case 002: InternVL3.5-14B Q8_0 on receipt_005_noisy.png
+
+### Image
+
+`02_receipt_images/receipt_005_noisy.png`
+
+### Model
+
+InternVL3.5-14B Q8_0 GGUF
+
+### Runtime
+
+LM Studio
+
+### Task
+
+Item-level structured extraction from a degraded narrow Japanese receipt with:
+
+* quantity
+* unit price
+* item amount
+* coupon discount
+* point usage
+* tax target amounts
+* payment amount
+* cash received
+* change
+* points earned
+* point balance
+
+---
+
+## Summary
+
+InternVL3.5-14B Q8_0 correctly extracted many basic fields, but made several significant errors in structured receipt extraction.
+
+Compared with Qwen3.6 35B A3B Q4_K_M, InternVL3.5-14B Q8_0 produced more errors on the same `receipt_005_noisy.png` sample.
+
+---
+
+## Error 1: coupon_discount
+
+### Ground truth
+
+```json
+"coupon_discount": 150
+```
+
+### Model output
+
+```json
+"coupon_discount": 1050
+```
+
+### Notes
+
+The model misread the coupon discount amount.
+
+This is a significant structured extraction error because the coupon discount directly affects payment calculation.
+
+---
+
+## Error 2: tax_8_target
+
+### Ground truth
+
+```json
+"tax_8_target": 2597
+```
+
+### Model output
+
+```json
+"tax_8_target": 4671
+```
+
+### Notes
+
+The model incorrectly extracted the 8% tax target amount.
+
+This suggests confusion in the lower financial summary section of the degraded receipt image.
+
+---
+
+## Error 3: tax_10_target
+
+### Ground truth
+
+```json
+"tax_10_target": 2595
+```
+
+### Model output
+
+```json
+"tax_10_target": 2655
+```
+
+### Notes
+
+The model made a numerical extraction error in the 10% tax target amount.
+
+---
+
+## Error 4: item count
+
+### Ground truth
+
+```json
+"item_count": 15
+```
+
+### Model output
+
+```json
+"item_count": 13
+```
+
+### Notes
+
+The model omitted two items near the lower part of the item list.
+
+Missing items:
+
+```json
+[
+  {
+    "name": "充電ケーブル短",
+    "quantity": 1,
+    "unit_price": 780,
+    "amount": 780
+  },
+  {
+    "name": "靴下 無地",
+    "quantity": 2,
+    "unit_price": 330,
+    "amount": 660
+  }
+]
+```
+
+---
+
+## Error 5: item name - バウムクーヘン
+
+### Ground truth
+
+```json
+{
+  "name": "バウムクーヘン",
+  "quantity": 2,
+  "unit_price": 158,
+  "amount": 316
+}
+```
+
+### Model output
+
+```json
+{
+  "name": "パワムクーン",
+  "quantity": 2,
+  "unit_price": 158,
+  "amount": 316
+}
+```
+
+### Notes
+
+The model produced a more severe item-name recognition error than Qwen3.6 35B A3B.
+
+---
+
+## Error 6: item name - ボックスティッシュ
+
+### Ground truth
+
+```json
+{
+  "name": "ボックスティッシュ",
+  "quantity": 1,
+  "unit_price": 248,
+  "amount": 248
+}
+```
+
+### Model output
+
+```json
+{
+  "name": "ポックスティッシュ",
+  "quantity": 1,
+  "unit_price": 248,
+  "amount": 248
+}
+```
+
+### Notes
+
+The model confused `ボ` with `ポ`, similar to the Qwen failure case.
+
+---
+
+## Observations
+
+InternVL3.5-14B Q8_0 correctly extracted:
+
+* store name
+* date
+* time
+* subtotal
+* points used
+* total
+* payment method
+* cash received
+* change
+* points earned
+* point balance
+* many item quantities, unit prices, and amounts
+
+However, it struggled with:
+
+* coupon discount
+* tax target amounts
+* item count completeness
+* Japanese item names
+* lower-section receipt fields
+* degraded narrow receipt layout
+
+---
+
+## Why this failure case matters
+
+This failure case shows that a high-quality quantized VLM can still struggle with Japanese receipt structured extraction under degraded image conditions.
+
+It also provides a useful comparison point:
+
+* Qwen3.6 35B A3B Q4_K_M produced relatively small errors on this sample.
+* InternVL3.5-14B Q8_0 produced larger structured extraction errors.
+
+This suggests that `receipt_005_noisy.png` is useful for comparing model robustness, not just general OCR ability.
 

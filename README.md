@@ -344,6 +344,61 @@ Qwen3.6 35B A3B successfully extracted all tested fields from receipt\_001 throu
 In receipt\_005, the model produced several measurable errors.
 
 
+## Model comparison on receipt_005_noisy.png
+
+The hardest sample, `receipt_005_noisy.png`, was tested with two local VLMs in LM Studio.
+
+| Model           | Quantization | Result summary                                                                                           |
+| --------------- | ------------ | -------------------------------------------------------------------------------------------------------- |
+| Qwen3.6 35B A3B | Q4_K_M GGUF  | Mostly correct, with small tax target amount errors and dakuten/handakuten item-name errors              |
+| InternVL3.5-14B | Q8_0 GGUF    | More significant structured extraction errors, including missing items and incorrect tax/discount fields |
+
+### Qwen3.6 35B A3B Q4_K_M
+
+Qwen correctly extracted most fields, including item count, quantities, unit prices, amounts, subtotal, coupon discount, points used, total, cash received, change, points earned, and point balance.
+
+Observed errors:
+
+| Field         | Ground truth | Model output |
+| ------------- | -----------: | -----------: |
+| tax_8_target  |         2597 |         2607 |
+| tax_10_target |         2595 |         2605 |
+
+Item-name errors:
+
+| Ground truth | Model output |
+| ------------ | ------------ |
+| バウムクーヘン      | パウムクーヘン      |
+| ボックスティッシュ    | ポックスティッシュ    |
+
+### InternVL3.5-14B Q8_0
+
+InternVL correctly extracted several high-level fields, but produced larger structured extraction errors.
+
+Observed errors:
+
+| Field           | Ground truth | Model output |
+| --------------- | -----------: | -----------: |
+| coupon_discount |          150 |         1050 |
+| tax_8_target    |         2597 |         4671 |
+| tax_10_target   |         2595 |         2655 |
+| item_count      |           15 |           13 |
+
+Item-name errors:
+
+| Ground truth | Model output |
+| ------------ | ------------ |
+| バウムクーヘン      | パワムクーン       |
+| ボックスティッシュ    | ポックスティッシュ    |
+
+Missing items:
+
+* 充電ケーブル短
+* 靴下 無地
+
+This comparison suggests that `receipt_005_noisy.png` is useful for evaluating OCR/VLM robustness on degraded Japanese receipt images, especially for dense financial summary fields and item-level structured extraction.
+
+
 
 \## Example failure case
 

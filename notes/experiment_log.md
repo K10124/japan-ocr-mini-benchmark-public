@@ -1216,3 +1216,203 @@ Potential next difficulty additions:
 
 
 
+\---
+
+
+
+\## Test 007: receipt\_005\_noisy.png item-level extraction with InternVL3.5-14B Q8\_0
+
+
+
+\### Document type
+
+
+
+Synthetic Japanese narrow station-store-style receipt.
+
+
+
+\### Image file
+
+
+
+02\_receipt\_images/receipt\_005\_noisy.png
+
+
+
+\### Model tested
+
+
+
+InternVL3.5-14B Q8\_0 GGUF
+
+
+
+\### Runtime
+
+
+
+LM Studio
+
+
+
+\### Task
+
+
+
+Extract item-level receipt data from a narrow, degraded synthetic Japanese receipt image with quantity, unit price, coupon discount, point usage, tax target fields, final payment amount, cash received, and change.
+
+
+
+\### Comparison result
+
+
+
+InternVL3.5-14B Q8\_0 correctly extracted many high-level fields, but produced several significant errors.
+
+
+
+High-level fields:
+
+
+
+\* store\_name: OK
+
+\* date: OK
+
+\* time: OK
+
+\* subtotal: OK
+
+\* coupon\_discount: NG
+
+
+
+&#x20; \* ground\_truth: 150
+
+&#x20; \* predicted: 1050
+
+\* points\_used: OK
+
+\* tax\_8\_target: NG
+
+
+
+&#x20; \* ground\_truth: 2597
+
+&#x20; \* predicted: 4671
+
+\* tax\_10\_target: NG
+
+
+
+&#x20; \* ground\_truth: 2595
+
+&#x20; \* predicted: 2655
+
+\* total: OK
+
+\* payment\_method: OK
+
+\* cash\_received: OK
+
+\* change: OK
+
+\* points\_earned: OK
+
+\* point\_balance: OK
+
+
+
+Item-level fields:
+
+
+
+\* item\_count: NG
+
+
+
+&#x20; \* ground\_truth: 15
+
+&#x20; \* predicted: 13
+
+
+
+Item name errors:
+
+
+
+\* item 7:
+
+
+
+&#x20; \* ground\_truth: バウムクーヘン
+
+&#x20; \* predicted: パワムクーン
+
+\* item 9:
+
+
+
+&#x20; \* ground\_truth: ボックスティッシュ
+
+&#x20; \* predicted: ポックスティッシュ
+
+
+
+Missing items:
+
+
+
+\* item 14:
+
+
+
+&#x20; \* ground\_truth: 充電ケーブル短
+
+\* item 15:
+
+
+
+&#x20; \* ground\_truth: 靴下 無地
+
+
+
+\### Notes
+
+
+
+InternVL3.5-14B Q8\_0 showed weaker structured extraction performance than Qwen3.6 35B A3B Q4\_K\_M on receipt\_005\_noisy.png.
+
+
+
+Although InternVL correctly extracted many basic fields, it struggled with:
+
+
+
+\* coupon discount extraction
+
+\* tax target amount extraction
+
+\* item count completeness
+
+\* Japanese item name recognition
+
+\* lower-section receipt fields
+
+\* degraded narrow receipt layout
+
+
+
+This comparison is useful because InternVL3.5-14B was tested with Q8\_0 quantization, while the Qwen result was generated with Q4\_K\_M quantization.
+
+
+
+Even under a higher quantization setting, InternVL3.5-14B produced more errors than Qwen3.6 35B A3B Q4\_K\_M on this sample.
+
+
+
+This suggests that receipt\_005\_noisy.png is useful for comparing OCR/VLM structured extraction robustness across different vision-language models.
+
+
+
