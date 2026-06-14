@@ -490,3 +490,47 @@ Planned additions:
 ## License and usage notice
 
 Please see `LICENSE.md` for usage terms, synthetic data notice, warranty disclaimer, and attribution guidance.
+
+<!-- JOMB_V020_RELEASE_CANDIDATE_START -->
+<!-- This block is generated from the v0.2.0 release candidate artifacts. -->
+<!-- Edit the source release candidate notes if regeneration is needed. -->
+
+## v0.2.0 Release Candidate
+
+The v0.2.0 release candidate adds a synthetic Japanese receipt target run designed for OCR/VLM evaluation.
+
+### Contents
+
+- Records: `20`
+- Modalities: clean rendered receipt images, noisy rendered receipt images, source JSON, metadata JSON, degradation metadata, validation outputs, and human-review gallery files.
+- Receipt styles include convenience store, supermarket, drugstore, bakery, station-store narrow receipts, restaurant receipts, parking payment-machine receipts, and cafe receipts.
+
+### Item Generation
+
+- v0.2.0 uses a hybrid generation approach.
+- Deterministic item master data is mixed with a previously generated and validated LLM-approved item pool.
+- Documents with LLM-approved items: `19`
+- LLM-approved item count: `56`
+- Item-master item count: `124`
+- LLM mix ratio: `0.3111`
+
+### Noisy Rendering
+
+- Noisy images use strengthened degradation profiles.
+- Effects include resolution loss, thermal banding, print fading, stroke-level kasure, local blur, lighting unevenness, rotation, camera canvas, shadow, and JPEG roundtrip compression.
+- Noisy profile counts: `{'light': 3, 'hard': 8, 'medium': 9}`
+
+### Validation
+
+- Validation status: `warning`
+- Validation status counts: `{'ok': 8, 'warning': 12}`
+- Issue code top counts: `{'clean_noisy_size_large_difference': 12}`
+
+The remaining validation warning, `clean_noisy_size_large_difference`, is expected because noisy images include stronger camera-like framing and degradation.
+
+### Release Candidate Status
+
+- RC status: `release_candidate_ready`
+- Target run ID: `v020_target_20260613_221713`
+- Manual visual review: `ok_by_user_step148`
+<!-- JOMB_V020_RELEASE_CANDIDATE_END -->

@@ -1,0 +1,164 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_conv_003",
+  "template_id": "convenience_store_standard",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "convenience_store",
+  "store_name": "まちかどミニマート",
+  "store_branch_name": "浦和店",
+  "store_address": "埼玉県さいたま市浦和区仲町通7-11-12",
+  "store_location_profile": {
+    "prefecture": "埼玉県",
+    "city": "さいたま市",
+    "ward": "浦和区",
+    "branch_base": "浦和",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "18:55:41",
+  "layout_type": "name_amount_only",
+  "items": [
+    {
+      "name": "メロンパン",
+      "category": "food",
+      "amount": 120,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0018",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "一般的なパン名。",
+      "price_source_range": {
+        "min": 110,
+        "max": 160
+      }
+    },
+    {
+      "name": "クロワッサン",
+      "category": "food",
+      "amount": 150,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0015",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリーで最も一般的な商品名。漢字もカタカナも使わない素朴な名前。",
+      "price_source_range": {
+        "min": 120,
+        "max": 180
+      }
+    },
+    {
+      "name": "手ぬぐい 藍染め",
+      "category": "daily_goods",
+      "amount": 300,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0005",
+      "category_id": "daily_goods",
+      "receipt_category": "daily_goods",
+      "name_style_type": "seasonal",
+      "ocr_traps": [
+        "kanji_kana_mix"
+      ],
+      "source_notes": "季節感ある日用品。実在ブランド非包含。",
+      "price_source_range": {
+        "min": 300,
+        "max": 500
+      }
+    },
+    {
+      "name": "ノート A5",
+      "category": "daily_goods",
+      "amount": 100,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ノート A5",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 100,
+        "max": 160
+      }
+    }
+  ],
+  "subtotal": 670,
+  "total": 670,
+  "payment_method": "現金",
+  "cash_received": 1000,
+  "change": 330,
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "tax_total_only",
+    "invoice_display_style": "header_registration_number",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "points_after_footer",
+    "header_style": "no_logo_text_only"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 1
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 1,
+    "item_level_ocr_traps": [
+      "kanji_kana_mix"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "tax_total": 56,
+  "invoice_registration_number": "T7380714531435",
+  "invoice_display_style": "header_registration_number",
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_total",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "invoice_registration_number"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 270,
+    "tax_10_target_full": 400,
+    "tax_total_full": 56,
+    "total_discount": 0,
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 1
+    }
+  }
+}

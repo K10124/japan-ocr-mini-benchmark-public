@@ -1,0 +1,105 @@
+{
+  "document_id": "receipt_v020_station_002",
+  "template_id": "station_store_narrow",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "created_at": "2026-06-13T22:17:20",
+  "difficulty": "hard",
+  "receipt_width": "narrow",
+  "font_size": "small",
+  "item_layout": "name_then_quantity_unit_amount",
+  "summary_style": "dense",
+  "has_quantity_column": true,
+  "has_unit_price_column": true,
+  "has_discount_fields": false,
+  "has_point_fields": false,
+  "has_mixed_tax": true,
+  "has_tax_breakdown": true,
+  "has_invoice_registration_number": true,
+  "number_of_items": 16,
+  "expected_ocr_traps": [
+    "narrow layout",
+    "small font",
+    "quantity / unit price / amount alignment",
+    "coupon discount",
+    "points used",
+    "tax target amounts",
+    "point balance mistaken as total",
+    "missing lower items",
+    "dakuten and handakuten errors"
+  ],
+  "item_level_ocr_traps": [
+    "ambiguous_1_l_I",
+    "fullwidth_alnum"
+  ],
+  "source_file": "receipt_v020_station_002_source.json",
+  "display_options": {
+    "item_display_style": "name_then_quantity_unit_amount",
+    "tax_display_style": "tax_target_only",
+    "invoice_display_style": "bottom_registration_number",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "no_logo_text_only"
+  },
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_8_target",
+    "tax_10_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "invoice_registration_number"
+  ],
+  "store_location_profile": {
+    "prefecture": "千葉県",
+    "city": "千葉市",
+    "ward": "中央区",
+    "branch_base": "登戸",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "item_master": 13,
+      "llm_approved": 3
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 13,
+    "item_level_ocr_traps": [
+      "ambiguous_1_l_I",
+      "fullwidth_alnum"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "item_source_counts": {
+    "item_master": 13,
+    "llm_approved": 3
+  },
+  "has_llm_approved_items": true,
+  "llm_approved_item_count": 3,
+  "item_master_item_count": 13
+}

@@ -1,0 +1,190 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_restaurant_002",
+  "template_id": "restaurant_receipt",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "restaurant",
+  "store_name": "季節食堂",
+  "store_branch_name": "静岡葵店",
+  "store_address": "静岡県静岡市葵区七間町8-10-13",
+  "store_location_profile": {
+    "prefecture": "静岡県",
+    "city": "静岡市",
+    "ward": "葵区",
+    "branch_base": "静岡葵",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "21:36:16",
+  "layout_type": "name_amount_only",
+  "items": [
+    {
+      "name": "お茶",
+      "category": "food",
+      "amount": 160,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0022",
+      "category_id": "tea",
+      "receipt_category": "beverage",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "非常に一般的な品名。",
+      "price_source_range": {
+        "min": 100,
+        "max": 200
+      }
+    },
+    {
+      "name": "アイスコーヒー",
+      "category": "eat_in_food",
+      "amount": 400,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "アイスコーヒー",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 350,
+        "max": 550
+      }
+    },
+    {
+      "name": "水 500ml",
+      "category": "food",
+      "amount": 140,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0021",
+      "category_id": "drink",
+      "receipt_category": "beverage",
+      "name_style_type": "size_capacity",
+      "ocr_traps": [
+        "digits_in_name"
+      ],
+      "source_notes": "容量表記を含むシンプルな飲料名。",
+      "price_source_range": {
+        "min": 150,
+        "max": 300
+      }
+    },
+    {
+      "name": "ケーキセット",
+      "category": "eat_in_food",
+      "amount": 900,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ケーキセット",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 800,
+        "max": 1200
+      }
+    },
+    {
+      "name": "特製カレーライス",
+      "category": "food",
+      "amount": 900,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0020",
+      "category_id": "prepared_food",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "kanji_kana_mix"
+      ],
+      "source_notes": "レストランで一般的なカレーライス。漢字とひらがなの混在。",
+      "price_source_range": {
+        "min": 850,
+        "max": 1200
+      }
+    },
+    {
+      "name": "ランチセット",
+      "category": "eat_in_food",
+      "amount": 1200,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ランチセット",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 900,
+        "max": 1500
+      }
+    }
+  ],
+  "subtotal": 3700,
+  "total": 3700,
+  "payment_method": "現金",
+  "cash_received": 4000,
+  "change": 300,
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "tax_target_and_inner_tax",
+    "invoice_display_style": "none",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "wide_store_header"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 3
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 3,
+    "item_level_ocr_traps": [
+      "digits_in_name",
+      "kanji_kana_mix"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "tax_10_target": 3700,
+  "tax_10_inner_tax": 336,
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_10_target",
+    "tax_10_inner_tax",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 0,
+    "tax_10_target_full": 3700,
+    "tax_total_full": 336,
+    "total_discount": 0,
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 3
+    }
+  }
+}

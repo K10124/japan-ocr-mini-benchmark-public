@@ -1,0 +1,261 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_supermarket_003",
+  "template_id": "supermarket_long",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "supermarket",
+  "store_name": "みなとフレッシュマーケット",
+  "store_branch_name": "高円寺店",
+  "store_address": "東京都杉並区阿佐谷北2-2-10",
+  "store_location_profile": {
+    "prefecture": "東京都",
+    "city": "杉並区",
+    "ward": "",
+    "branch_base": "高円寺",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "21:32:41",
+  "layout_type": "name_then_quantity_unit_amount",
+  "items": [
+    {
+      "name": "食パン",
+      "category": "food",
+      "amount": 520,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0019",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "short_receipt_label",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "非常に短い商品名。レシート上でもそのまま印字されることが多い。",
+      "price_source_range": {
+        "min": 180,
+        "max": 280
+      },
+      "quantity": 2,
+      "unit_price": 260
+    },
+    {
+      "name": "カットサラダ",
+      "category": "food",
+      "amount": 560,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "カットサラダ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      },
+      "quantity": 2,
+      "unit_price": 280
+    },
+    {
+      "name": "ボックスティッシュ",
+      "category": "daily_goods",
+      "amount": 480,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ボックスティッシュ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 228,
+        "max": 328
+      },
+      "quantity": 2,
+      "unit_price": 240
+    },
+    {
+      "name": "食器用洗剤",
+      "category": "daily_goods",
+      "amount": 520,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "食器用洗剤",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 198,
+        "max": 298
+      },
+      "quantity": 2,
+      "unit_price": 260
+    },
+    {
+      "name": "炭酸水レモン",
+      "category": "food",
+      "amount": 110,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "炭酸水レモン",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 88,
+        "max": 128
+      },
+      "quantity": 1,
+      "unit_price": 110
+    },
+    {
+      "name": "バターロール",
+      "category": "food",
+      "amount": 300,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0017",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリー定番の素朴な商品名。",
+      "price_source_range": {
+        "min": 100,
+        "max": 150
+      },
+      "quantity": 2,
+      "unit_price": 150
+    },
+    {
+      "name": "ヨーグルト低脂肪",
+      "category": "food",
+      "amount": 110,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "ヨーグルト低脂肪",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 108,
+        "max": 148
+      },
+      "quantity": 1,
+      "unit_price": 110
+    },
+    {
+      "name": "キッチンペーパー",
+      "category": "daily_goods",
+      "amount": 760,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "キッチンペーパー",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      },
+      "quantity": 2,
+      "unit_price": 380
+    },
+    {
+      "name": "洗濯洗剤 詰替",
+      "category": "daily_goods",
+      "amount": 1000,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "洗濯洗剤 詰替",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 398,
+        "max": 598
+      },
+      "quantity": 2,
+      "unit_price": 500
+    },
+    {
+      "name": "メロンパン",
+      "category": "food",
+      "amount": 150,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0018",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "一般的なパン名。",
+      "price_source_range": {
+        "min": 110,
+        "max": 160
+      },
+      "quantity": 1,
+      "unit_price": 150
+    }
+  ],
+  "subtotal": 4510,
+  "total": 4510,
+  "payment_method": "現金",
+  "cash_received": 5000,
+  "change": 490,
+  "display_options": {
+    "item_display_style": "name_then_quantity_unit_amount",
+    "tax_display_style": "tax_target_only",
+    "invoice_display_style": "none",
+    "discount_display_style": "none",
+    "point_display_style": "earned_only",
+    "field_order_style": "standard_store_order",
+    "header_style": "wide_store_header"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 7
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 7,
+    "item_level_ocr_traps": [],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "points_earned": 45,
+  "tax_8_target": 1750,
+  "tax_10_target": 2760,
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_8_target",
+    "tax_10_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "points_earned"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 1750,
+    "tax_10_target_full": 2760,
+    "tax_total_full": 381,
+    "total_discount": 0,
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 7
+    }
+  }
+}

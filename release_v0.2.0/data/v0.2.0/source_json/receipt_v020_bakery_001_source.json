@@ -1,0 +1,217 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_bakery_001",
+  "template_id": "bakery_simple",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "bakery",
+  "store_name": "オーブンテラス",
+  "store_branch_name": "万代店",
+  "store_address": "新潟県新潟市中央区東堀前通7-5-6",
+  "store_location_profile": {
+    "prefecture": "新潟県",
+    "city": "新潟市",
+    "ward": "中央区",
+    "branch_base": "万代",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "09:33:42",
+  "layout_type": "name_amount_only",
+  "items": [
+    {
+      "name": "ギフト箱",
+      "category": "packaging",
+      "amount": 100,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ギフト箱",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 80,
+        "max": 180
+      }
+    },
+    {
+      "name": "アイスカフェラテ M",
+      "category": "food",
+      "amount": 300,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "アイスカフェラテ M",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      }
+    },
+    {
+      "name": "紙袋 小",
+      "category": "packaging",
+      "amount": 18,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "紙袋 小",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 10,
+        "max": 30
+      }
+    },
+    {
+      "name": "塩バターパン",
+      "category": "food",
+      "amount": 200,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "塩バターパン",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 168,
+        "max": 248
+      }
+    },
+    {
+      "name": "ミニあんぱん",
+      "category": "food",
+      "amount": 120,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0016",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "short_receipt_label",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "レシートでよく見かける短い商品名。サイズ表記を含む。",
+      "price_source_range": {
+        "min": 90,
+        "max": 130
+      }
+    },
+    {
+      "name": "バターロール",
+      "category": "food",
+      "amount": 150,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0017",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリー定番の素朴な商品名。",
+      "price_source_range": {
+        "min": 100,
+        "max": 150
+      }
+    },
+    {
+      "name": "チョコデニッシュ",
+      "category": "food",
+      "amount": 320,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "チョコデニッシュ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 248,
+        "max": 348
+      }
+    },
+    {
+      "name": "クロワッサン",
+      "category": "food",
+      "amount": 170,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0015",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリーで最も一般的な商品名。漢字もカタカナも使わない素朴な名前。",
+      "price_source_range": {
+        "min": 120,
+        "max": 180
+      }
+    }
+  ],
+  "subtotal": 1378,
+  "total": 1378,
+  "payment_method": "現金",
+  "cash_received": 2000,
+  "change": 622,
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "tax_target_and_inner_tax",
+    "invoice_display_style": "none",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "centered_store_name"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "item_master": 5,
+      "llm_approved": 3
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 5,
+    "item_level_ocr_traps": [],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "tax_8_target": 1260,
+  "tax_8_inner_tax": 93,
+  "tax_10_target": 118,
+  "tax_10_inner_tax": 11,
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_8_target",
+    "tax_10_target",
+    "tax_8_inner_tax",
+    "tax_10_inner_tax",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 1260,
+    "tax_10_target_full": 118,
+    "tax_total_full": 104,
+    "total_discount": 0,
+    "item_source_counts": {
+      "item_master": 5,
+      "llm_approved": 3
+    }
+  }
+}

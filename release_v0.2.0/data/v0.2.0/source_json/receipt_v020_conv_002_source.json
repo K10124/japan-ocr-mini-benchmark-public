@@ -1,0 +1,238 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_conv_002",
+  "template_id": "convenience_store_standard",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "convenience_store",
+  "store_name": "つばさコンビニエンス",
+  "store_branch_name": "新潟中央店",
+  "store_address": "新潟県新潟市中央区弁天町6-18-18",
+  "store_location_profile": {
+    "prefecture": "新潟県",
+    "city": "新潟市",
+    "ward": "中央区",
+    "branch_base": "新潟中央",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "18:27:11",
+  "layout_type": "name_amount_only",
+  "items": [
+    {
+      "name": "おにぎり梅",
+      "category": "food",
+      "amount": 130,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "おにぎり梅",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 118,
+        "max": 168
+      }
+    },
+    {
+      "name": "ボールペン黒",
+      "category": "daily_goods",
+      "amount": 90,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ボールペン黒",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 88,
+        "max": 132
+      }
+    },
+    {
+      "name": "クロワッサン",
+      "category": "food",
+      "amount": 170,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0015",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリーで最も一般的な商品名。漢字もカタカナも使わない素朴な名前。",
+      "price_source_range": {
+        "min": 120,
+        "max": 180
+      }
+    },
+    {
+      "name": "手ぬぐい 藍染め",
+      "category": "daily_goods",
+      "amount": 420,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0005",
+      "category_id": "daily_goods",
+      "receipt_category": "daily_goods",
+      "name_style_type": "seasonal",
+      "ocr_traps": [
+        "kanji_kana_mix"
+      ],
+      "source_notes": "季節感ある日用品。実在ブランド非包含。",
+      "price_source_range": {
+        "min": 300,
+        "max": 500
+      }
+    },
+    {
+      "name": "バウムクーヘン",
+      "category": "food",
+      "amount": 190,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "バウムクーヘン",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 148,
+        "max": 198
+      }
+    },
+    {
+      "name": "のど飴 はちみつ味",
+      "category": "food",
+      "amount": 220,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "のど飴 はちみつ味",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 168,
+        "max": 248
+      }
+    },
+    {
+      "name": "カットサラダ",
+      "category": "food",
+      "amount": 300,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "カットサラダ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      }
+    },
+    {
+      "name": "ノート A5",
+      "category": "daily_goods",
+      "amount": 130,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ノート A5",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 100,
+        "max": 160
+      }
+    },
+    {
+      "name": "ミックスナッツ 小",
+      "category": "food",
+      "amount": 400,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "ミックスナッツ 小",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 448
+      }
+    },
+    {
+      "name": "充電ケーブル短",
+      "category": "daily_goods",
+      "amount": 700,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "充電ケーブル短",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 680,
+        "max": 980
+      }
+    }
+  ],
+  "subtotal": 2750,
+  "total": 2750,
+  "payment_method": "現金",
+  "cash_received": 3000,
+  "change": 250,
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "tax_target_only",
+    "invoice_display_style": "bottom_registration_number",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "no_logo_text_only"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "item_master": 8,
+      "llm_approved": 2
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 2,
+    "item_master_item_count": 8,
+    "item_level_ocr_traps": [
+      "kanji_kana_mix"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "tax_8_target": 1410,
+  "tax_10_target": 1340,
+  "invoice_registration_number": "T8149939597756",
+  "invoice_display_style": "bottom_registration_number",
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_8_target",
+    "tax_10_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "invoice_registration_number"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 1410,
+    "tax_10_target_full": 1340,
+    "tax_total_full": 226,
+    "total_discount": 0,
+    "item_source_counts": {
+      "item_master": 8,
+      "llm_approved": 2
+    }
+  }
+}

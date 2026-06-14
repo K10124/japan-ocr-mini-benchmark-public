@@ -1,0 +1,268 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_drugstore_002",
+  "template_id": "drugstore_mixed_tax",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "drugstore",
+  "store_name": "まごころドラッグ",
+  "store_branch_name": "綱島店",
+  "store_address": "神奈川県横浜市港北区大倉山3-21-14",
+  "store_location_profile": {
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "ward": "港北区",
+    "branch_base": "綱島",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "20:48:41",
+  "layout_type": "name_amount_only",
+  "items": [
+    {
+      "name": "乾電池 単4",
+      "category": "daily_goods",
+      "amount": 420,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "乾電池 単4",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 398,
+        "max": 598
+      }
+    },
+    {
+      "name": "ハンドソープ 泡タイプ",
+      "category": "daily_goods",
+      "amount": 300,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ハンドソープ 泡タイプ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      }
+    },
+    {
+      "name": "のど飴 はちみつ味",
+      "category": "food",
+      "amount": 200,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "のど飴 はちみつ味",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 168,
+        "max": 248
+      }
+    },
+    {
+      "name": "食器用洗剤",
+      "category": "daily_goods",
+      "amount": 180,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "食器用洗剤",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 198,
+        "max": 298
+      }
+    },
+    {
+      "name": "洗濯洗剤 詰替",
+      "category": "daily_goods",
+      "amount": 440,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "洗濯洗剤 詰替",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 398,
+        "max": 598
+      }
+    },
+    {
+      "name": "保湿ローション 150ml",
+      "category": "daily_goods",
+      "amount": 1550,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0009",
+      "category_id": "skin_care",
+      "receipt_category": "cosmetics",
+      "name_style_type": "size_capacity",
+      "ocr_traps": [
+        "fullwidth_alnum"
+      ],
+      "source_notes": "ドラッグストアの化粧品棚にありそうな容量表記付き商品名。",
+      "price_source_range": {
+        "min": 1200,
+        "max": 2800
+      }
+    },
+    {
+      "name": "栄養ドリンク 3本",
+      "category": "food",
+      "amount": 440,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "栄養ドリンク 3本",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 398,
+        "max": 598
+      }
+    },
+    {
+      "name": "キッチンペーパー",
+      "category": "daily_goods",
+      "amount": 280,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "キッチンペーパー",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      }
+    },
+    {
+      "name": "ボックスティッシュ",
+      "category": "daily_goods",
+      "amount": 220,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ボックスティッシュ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 228,
+        "max": 328
+      }
+    },
+    {
+      "name": "胃腸薬",
+      "category": "daily_goods",
+      "amount": 800,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0010",
+      "category_id": "medicine_otc",
+      "receipt_category": "medicine_otc",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "一般的なOTC医薬品の名称。",
+      "price_source_range": {
+        "min": 800,
+        "max": 1500
+      }
+    },
+    {
+      "name": "除菌ウェット",
+      "category": "daily_goods",
+      "amount": 220,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "除菌ウェット",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 168,
+        "max": 248
+      }
+    },
+    {
+      "name": "スポンジ台所用",
+      "category": "daily_goods",
+      "amount": 240,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0011",
+      "category_id": "kitchen_goods",
+      "receipt_category": "kitchen_goods",
+      "name_style_type": "short_receipt_label",
+      "ocr_traps": [
+        "kanji_kana_mix"
+      ],
+      "source_notes": "キッチン用品の短いレシート印字名。",
+      "price_source_range": {
+        "min": 150,
+        "max": 350
+      }
+    }
+  ],
+  "subtotal": 5290,
+  "total": 5290,
+  "payment_method": "現金",
+  "cash_received": 6000,
+  "change": 710,
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "mixed_or_ambiguous_tax_labels",
+    "invoice_display_style": "none",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "centered_store_name"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "item_master": 9,
+      "llm_approved": 3
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 9,
+    "item_level_ocr_traps": [
+      "fullwidth_alnum",
+      "kanji_kana_mix"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "reduced_tax_target": 640,
+  "standard_tax_target": 4650,
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "reduced_tax_target",
+    "standard_tax_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 640,
+    "tax_10_target_full": 4650,
+    "tax_total_full": 470,
+    "total_discount": 0,
+    "item_source_counts": {
+      "item_master": 9,
+      "llm_approved": 3
+    }
+  }
+}

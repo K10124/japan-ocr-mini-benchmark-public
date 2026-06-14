@@ -1,0 +1,108 @@
+{
+  "release_candidate_status": "release_candidate_ready",
+  "target_run_id": "v020_target_20260613_221713",
+  "created_at": "2026-06-13T22:42:40",
+  "manual_visual_review_status": "ok_by_user_step148",
+  "project_root": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark",
+  "paths": {
+    "target_run_dir": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\target_runs\\v020_target_20260613_221713",
+    "release_candidate_dir": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\target_runs\\v020_target_20260613_221713\\release_candidate",
+    "target_run_summary_json": "release_v0.2.0/reports/v020_target_run_summary.json",
+    "validation_json": "release_v0.2.0/reports/v020_target_run_validation_latest.json",
+    "validation_csv": "release_v0.2.0/reports/v020_target_run_validation_latest.csv",
+    "target_run_audit_csv": "release_v0.2.0/reports/v020_target_run_audit.csv",
+    "review_full_csv": "release_v0.2.0/reports/v020_review_full_step147.csv",
+    "review_full_html": "release_v0.2.0/reports/v020_review_gallery_step147.html",
+    "review_shortlist_csv": "release_v0.2.0/reports/v020_review_shortlist_step147.csv",
+    "review_shortlist_html": "release_v0.2.0/reports/v020_review_shortlist_step147.html",
+    "release_candidate_summary_json": "release_v0.2.0/reports/v020_release_candidate_summary.json",
+    "release_candidate_checklist_md": "release_v0.2.0/reports/v020_release_candidate_checklist.md",
+    "release_candidate_files_csv": "release_v0.2.0/reports/v020_release_candidate_files.csv",
+    "release_candidate_status_txt": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\target_runs\\v020_target_20260613_221713\\release_candidate\\v020_release_candidate_status.txt"
+  },
+  "target_run_summary": {
+    "requested_total": 20,
+    "success_total": 20,
+    "warning_total": 0,
+    "failure_total": 0,
+    "documents_with_llm_approved_items": 19,
+    "total_llm_approved_items": 56,
+    "total_item_master_items": 124,
+    "llm_item_mix_ratio": 0.3111
+  },
+  "validation_status": "warning",
+  "validation_summary": {
+    "record_count": 20,
+    "status_counts": {
+      "ok": 8,
+      "warning": 12
+    },
+    "template_counts": {
+      "bakery_simple": 2,
+      "cafe_small_receipt": 2,
+      "convenience_store_standard": 3,
+      "drugstore_mixed_tax": 3,
+      "parking_machine": 1,
+      "restaurant_receipt": 2,
+      "station_store_narrow": 4,
+      "supermarket_long": 3
+    },
+    "severity_counts": {
+      "warning": 12
+    },
+    "issue_code_top_counts": {
+      "clean_noisy_size_large_difference": 12
+    },
+    "documents_with_llm_approved_items": 19,
+    "total_llm_approved_items": 56,
+    "total_item_master_items": 124,
+    "llm_item_mix_ratio": 0.3111,
+    "expected_from_target_run_summary": {
+      "requested_total": 20,
+      "success_total": 20,
+      "warning_total": 0,
+      "failure_total": 0,
+      "documents_with_llm_approved_items": 19,
+      "total_llm_approved_items": 56,
+      "total_item_master_items": 124,
+      "llm_item_mix_ratio": 0.3111
+    }
+  },
+  "template_counts": {
+    "convenience_store_standard": 3,
+    "supermarket_long": 3,
+    "drugstore_mixed_tax": 3,
+    "bakery_simple": 2,
+    "station_store_narrow": 4,
+    "restaurant_receipt": 2,
+    "parking_machine": 1,
+    "cafe_small_receipt": 2
+  },
+  "noisy_profile_counts": {
+    "light": 3,
+    "hard": 8,
+    "medium": 9
+  },
+  "parking_issues": [],
+  "local_place_issues": [],
+  "missing_artifacts_count": 0,
+  "degradation_version_issues": [],
+  "failed_records": [],
+  "allowed_warning_codes": [
+    "clean_noisy_size_large_difference"
+  ],
+  "checks": {
+    "20 records generated": true,
+    "0 generation failures": true,
+    "validation status ok or warning": true,
+    "only allowed validation warnings": true,
+    "manual visual review ok": true,
+    "parking tax breakdown hidden": true,
+    "local Osaka/Kita-ku exclusion passed": true,
+    "all expected artifacts exist": true,
+    "no failed validation records": true,
+    "step146d noisy renderer metadata confirmed": true,
+    "review gallery and shortlist generated": true
+  },
+  "strict_errors": []
+}

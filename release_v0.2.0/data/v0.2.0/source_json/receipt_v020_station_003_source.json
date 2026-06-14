@@ -1,0 +1,247 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_station_003",
+  "template_id": "station_store_narrow",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "station_store",
+  "store_name": "エキマエストア",
+  "store_branch_name": "住吉駅前店",
+  "store_address": "福岡県福岡市博多区博多駅前1-21-7",
+  "store_location_profile": {
+    "prefecture": "福岡県",
+    "city": "福岡市",
+    "ward": "博多区",
+    "branch_base": "住吉",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "13:52:53",
+  "layout_type": "name_then_quantity_unit_amount",
+  "items": [
+    {
+      "name": "バウムクーヘン",
+      "category": "food",
+      "amount": 320,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "バウムクーヘン",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 148,
+        "max": 198
+      },
+      "quantity": 2,
+      "unit_price": 160
+    },
+    {
+      "name": "ヨーグルト低脂肪",
+      "category": "food",
+      "amount": 220,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "ヨーグルト低脂肪",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 108,
+        "max": 148
+      },
+      "quantity": 2,
+      "unit_price": 110
+    },
+    {
+      "name": "ミニあんぱん",
+      "category": "food",
+      "amount": 130,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0016",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "short_receipt_label",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "レシートでよく見かける短い商品名。サイズ表記を含む。",
+      "price_source_range": {
+        "min": 90,
+        "max": 130
+      },
+      "quantity": 1,
+      "unit_price": 130
+    },
+    {
+      "name": "ボックスティッシュ",
+      "category": "daily_goods",
+      "amount": 300,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ボックスティッシュ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 228,
+        "max": 328
+      },
+      "quantity": 1,
+      "unit_price": 300
+    },
+    {
+      "name": "メロンパン",
+      "category": "food",
+      "amount": 110,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0018",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "一般的なパン名。",
+      "price_source_range": {
+        "min": 110,
+        "max": 160
+      },
+      "quantity": 1,
+      "unit_price": 110
+    },
+    {
+      "name": "クロワッサン",
+      "category": "food",
+      "amount": 120,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0015",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリーで最も一般的な商品名。漢字もカタカナも使わない素朴な名前。",
+      "price_source_range": {
+        "min": 120,
+        "max": 180
+      },
+      "quantity": 1,
+      "unit_price": 120
+    },
+    {
+      "name": "アイスカフェラテ M",
+      "category": "food",
+      "amount": 560,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "アイスカフェラテ M",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      },
+      "quantity": 2,
+      "unit_price": 280
+    },
+    {
+      "name": "カットサラダ",
+      "category": "food",
+      "amount": 760,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "カットサラダ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      },
+      "quantity": 2,
+      "unit_price": 380
+    },
+    {
+      "name": "おにぎり梅",
+      "category": "food",
+      "amount": 260,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "おにぎり梅",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 118,
+        "max": 168
+      },
+      "quantity": 2,
+      "unit_price": 130
+    }
+  ],
+  "subtotal": 2780,
+  "total": 2780,
+  "payment_method": "現金",
+  "cash_received": 3000,
+  "change": 220,
+  "display_options": {
+    "item_display_style": "name_then_quantity_unit_amount",
+    "tax_display_style": "tax_target_only",
+    "invoice_display_style": "bottom_registration_number",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "points_after_footer",
+    "header_style": "no_logo_text_only"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "item_master": 6,
+      "llm_approved": 3
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 6,
+    "item_level_ocr_traps": [],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "tax_8_target": 2480,
+  "tax_10_target": 300,
+  "invoice_registration_number": "T2702715301086",
+  "invoice_display_style": "bottom_registration_number",
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_8_target",
+    "tax_10_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "invoice_registration_number"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 2480,
+    "tax_10_target_full": 300,
+    "tax_total_full": 211,
+    "total_discount": 0,
+    "item_source_counts": {
+      "item_master": 6,
+      "llm_approved": 3
+    }
+  }
+}

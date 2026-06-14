@@ -1,0 +1,170 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_restaurant_001",
+  "template_id": "restaurant_receipt",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "restaurant",
+  "store_name": "テーブルテラス",
+  "store_branch_name": "荻窪店",
+  "store_address": "東京都杉並区成田東1-20-10",
+  "store_location_profile": {
+    "prefecture": "東京都",
+    "city": "杉並区",
+    "ward": "",
+    "branch_base": "荻窪",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "15:57:52",
+  "layout_type": "name_then_quantity_unit_amount",
+  "items": [
+    {
+      "name": "お茶",
+      "category": "food",
+      "amount": 300,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0022",
+      "category_id": "tea",
+      "receipt_category": "beverage",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "非常に一般的な品名。",
+      "price_source_range": {
+        "min": 100,
+        "max": 200
+      },
+      "quantity": 3,
+      "unit_price": 100
+    },
+    {
+      "name": "ケーキセット",
+      "category": "eat_in_food",
+      "amount": 1900,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "ケーキセット",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 800,
+        "max": 1200
+      },
+      "quantity": 2,
+      "unit_price": 950
+    },
+    {
+      "name": "水 500ml",
+      "category": "food",
+      "amount": 320,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0021",
+      "category_id": "drink",
+      "receipt_category": "beverage",
+      "name_style_type": "size_capacity",
+      "ocr_traps": [
+        "digits_in_name"
+      ],
+      "source_notes": "容量表記を含むシンプルな飲料名。",
+      "price_source_range": {
+        "min": 150,
+        "max": 300
+      },
+      "quantity": 2,
+      "unit_price": 160
+    },
+    {
+      "name": "特製カレーライス",
+      "category": "food",
+      "amount": 2850,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0020",
+      "category_id": "prepared_food",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "kanji_kana_mix"
+      ],
+      "source_notes": "レストランで一般的なカレーライス。漢字とひらがなの混在。",
+      "price_source_range": {
+        "min": 850,
+        "max": 1200
+      },
+      "quantity": 3,
+      "unit_price": 950
+    }
+  ],
+  "subtotal": 5370,
+  "total": 5370,
+  "payment_method": "現金",
+  "cash_received": 6000,
+  "change": 630,
+  "display_options": {
+    "item_display_style": "name_then_quantity_unit_amount",
+    "tax_display_style": "tax_target_only",
+    "invoice_display_style": "none",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "centered_store_name"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 1
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 1,
+    "item_level_ocr_traps": [
+      "digits_in_name",
+      "kanji_kana_mix"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "tax_10_target": 5370,
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_10_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 0,
+    "tax_10_target_full": 5370,
+    "tax_total_full": 488,
+    "total_discount": 0,
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 1
+    }
+  }
+}

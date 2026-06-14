@@ -1,0 +1,97 @@
+{
+  "document_id": "receipt_v020_cafe_001",
+  "template_id": "cafe_small_receipt",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "created_at": "2026-06-13T22:17:23",
+  "difficulty": "medium",
+  "receipt_width": "narrow_to_medium",
+  "font_size": "small",
+  "item_layout": "name_amount_only",
+  "summary_style": "simple",
+  "has_quantity_column": false,
+  "has_unit_price_column": false,
+  "has_discount_fields": false,
+  "has_point_fields": false,
+  "has_mixed_tax": true,
+  "has_tax_breakdown": true,
+  "has_invoice_registration_number": false,
+  "number_of_items": 2,
+  "expected_ocr_traps": [
+    "short item names",
+    "drink sizes such as S / M / L",
+    "takeout vs eat-in labels",
+    "small total section",
+    "low contrast print"
+  ],
+  "item_level_ocr_traps": [
+    "kanji_kana_mix"
+  ],
+  "source_file": "receipt_v020_cafe_001_source.json",
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "tax_target_only",
+    "invoice_display_style": "none",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "wide_store_header"
+  },
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "tax_8_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change"
+  ],
+  "store_location_profile": {
+    "prefecture": "東京都",
+    "city": "品川区",
+    "ward": "",
+    "branch_base": "大井町",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "item_master": 1,
+      "llm_approved": 1
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 1,
+    "item_master_item_count": 1,
+    "item_level_ocr_traps": [
+      "kanji_kana_mix"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "item_source_counts": {
+    "item_master": 1,
+    "llm_approved": 1
+  },
+  "has_llm_approved_items": true,
+  "llm_approved_item_count": 1,
+  "item_master_item_count": 1
+}

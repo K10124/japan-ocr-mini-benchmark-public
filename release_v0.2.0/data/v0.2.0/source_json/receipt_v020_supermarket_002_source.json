@@ -1,0 +1,276 @@
+{
+  "document_type": "receipt",
+  "document_id": "receipt_v020_supermarket_002",
+  "template_id": "supermarket_long",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "store_type": "supermarket",
+  "store_name": "あおばフレッシュマート",
+  "store_branch_name": "天文館店",
+  "store_address": "鹿児島県鹿児島市中央町5-17-6",
+  "store_location_profile": {
+    "prefecture": "鹿児島県",
+    "city": "鹿児島市",
+    "ward": "",
+    "branch_base": "天文館",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "date": "2026-06-11",
+  "time": "12:21:24",
+  "layout_type": "name_amount_only",
+  "items": [
+    {
+      "name": "バターロール",
+      "category": "food",
+      "amount": 150,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0017",
+      "category_id": "bread",
+      "receipt_category": "food",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "ベーカリー定番の素朴な商品名。",
+      "price_source_range": {
+        "min": 100,
+        "max": 150
+      }
+    },
+    {
+      "name": "キッチンペーパー",
+      "category": "daily_goods",
+      "amount": 300,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "キッチンペーパー",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      }
+    },
+    {
+      "name": "炭酸水レモン",
+      "category": "food",
+      "amount": 90,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "炭酸水レモン",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 88,
+        "max": 128
+      }
+    },
+    {
+      "name": "カットサラダ",
+      "category": "food",
+      "amount": 280,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "カットサラダ",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 298,
+        "max": 398
+      }
+    },
+    {
+      "name": "日替わり弁当",
+      "category": "food",
+      "amount": 500,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "日替わり弁当",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 498,
+        "max": 698
+      }
+    },
+    {
+      "name": "卵焼き",
+      "category": "food",
+      "amount": 260,
+      "tax_rate": 8,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0006",
+      "category_id": "prepared_food",
+      "receipt_category": "food",
+      "name_style_type": "short_receipt_label",
+      "ocr_traps": [
+        "none"
+      ],
+      "source_notes": "スーパーの惣菜コーナーでよく見かける素朴な品名。",
+      "price_source_range": {
+        "min": 120,
+        "max": 280
+      }
+    },
+    {
+      "name": "緑茶 600ml",
+      "category": "food",
+      "amount": 100,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "緑茶 600ml",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 98,
+        "max": 148
+      }
+    },
+    {
+      "name": "乾電池 単4",
+      "category": "daily_goods",
+      "amount": 580,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "乾電池 単4",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 398,
+        "max": 598
+      }
+    },
+    {
+      "name": "ヨーグルト低脂肪",
+      "category": "food",
+      "amount": 140,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "ヨーグルト低脂肪",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 108,
+        "max": 148
+      }
+    },
+    {
+      "name": "食器用洗剤",
+      "category": "daily_goods",
+      "amount": 180,
+      "tax_rate": 10,
+      "item_source": "item_master",
+      "source_item_id": "食器用洗剤",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 198,
+        "max": 298
+      }
+    },
+    {
+      "name": "洗剤 粉末 1kg",
+      "category": "daily_goods",
+      "amount": 650,
+      "tax_rate": 10,
+      "item_source": "llm_approved",
+      "source_item_id": "llm_v020_0008",
+      "category_id": "detergent",
+      "receipt_category": "daily_goods",
+      "name_style_type": "plain_generic",
+      "ocr_traps": [
+        "fullwidth_alnum"
+      ],
+      "source_notes": "日用品棚の標準的な商品名。全角英数字が混じる。",
+      "price_source_range": {
+        "min": 350,
+        "max": 650
+      }
+    },
+    {
+      "name": "冷凍チャーハン",
+      "category": "food",
+      "amount": 440,
+      "tax_rate": 8,
+      "item_source": "item_master",
+      "source_item_id": "冷凍チャーハン",
+      "name_style_type": "fixed_catalog",
+      "price_source_range": {
+        "min": 398,
+        "max": 528
+      }
+    }
+  ],
+  "subtotal": 3670,
+  "total": 3620,
+  "payment_method": "現金",
+  "cash_received": 4000,
+  "change": 380,
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "tax_target_and_inner_tax",
+    "invoice_display_style": "bottom_registration_number",
+    "discount_display_style": "coupon_discount",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "wide_store_header"
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 9
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 9,
+    "item_level_ocr_traps": [
+      "fullwidth_alnum"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "coupon_discount": 50,
+  "tax_8_target": 1960,
+  "tax_8_inner_tax": 145,
+  "tax_10_target": 1710,
+  "tax_10_inner_tax": 155,
+  "invoice_registration_number": "T1768259481191",
+  "invoice_display_style": "bottom_registration_number",
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "coupon_discount",
+    "tax_8_target",
+    "tax_10_target",
+    "tax_8_inner_tax",
+    "tax_10_inner_tax",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "invoice_registration_number"
+  ],
+  "internal_calculated_fields": {
+    "tax_8_target_full": 1960,
+    "tax_10_target_full": 1710,
+    "tax_total_full": 300,
+    "total_discount": 50,
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 9
+    }
+  }
+}

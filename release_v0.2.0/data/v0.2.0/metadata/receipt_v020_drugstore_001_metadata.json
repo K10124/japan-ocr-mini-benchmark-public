@@ -1,0 +1,101 @@
+{
+  "document_id": "receipt_v020_drugstore_001",
+  "template_id": "drugstore_mixed_tax",
+  "generator_version": "0.2.0-step141-parking-no-tax-national-store-location",
+  "created_at": "2026-06-13T22:17:17",
+  "difficulty": "medium",
+  "receipt_width": "medium",
+  "font_size": "medium",
+  "item_layout": "name_amount_only",
+  "summary_style": "tax_focused",
+  "has_quantity_column": false,
+  "has_unit_price_column": false,
+  "has_discount_fields": false,
+  "has_point_fields": false,
+  "has_mixed_tax": true,
+  "has_tax_breakdown": true,
+  "has_invoice_registration_number": true,
+  "number_of_items": 12,
+  "expected_ocr_traps": [
+    "food items at 8%",
+    "daily goods at 10%",
+    "tax target amount extraction",
+    "item category ambiguity",
+    "similar item names"
+  ],
+  "item_level_ocr_traps": [
+    "kanji_kana_mix",
+    "fullwidth_alnum"
+  ],
+  "source_file": "receipt_v020_drugstore_001_source.json",
+  "display_options": {
+    "item_display_style": "name_amount_only",
+    "tax_display_style": "mixed_or_ambiguous_tax_labels",
+    "invoice_display_style": "bottom_registration_number",
+    "discount_display_style": "none",
+    "point_display_style": "none",
+    "field_order_style": "standard_store_order",
+    "header_style": "no_logo_text_only"
+  },
+  "visible_fields": [
+    "store_name",
+    "store_branch_name",
+    "store_address",
+    "date",
+    "time",
+    "items",
+    "subtotal",
+    "reduced_tax_target",
+    "standard_tax_target",
+    "total",
+    "payment_method",
+    "cash_received",
+    "change",
+    "invoice_registration_number"
+  ],
+  "store_location_profile": {
+    "prefecture": "愛知県",
+    "city": "名古屋市",
+    "ward": "中区",
+    "branch_base": "錦",
+    "national_randomized": true,
+    "local_exclusion_applied": true
+  },
+  "item_generation": {
+    "mode": "hybrid_item_master_plus_llm_approved",
+    "item_source_counts": {
+      "llm_approved": 3,
+      "item_master": 9
+    },
+    "has_llm_approved_items": true,
+    "llm_approved_item_count": 3,
+    "item_master_item_count": 9,
+    "item_level_ocr_traps": [
+      "kanji_kana_mix",
+      "fullwidth_alnum"
+    ],
+    "llm_pool_status": {
+      "loaded": true,
+      "path": "<LOCAL_PATH_REMOVED>\\Desktop\\japan_ocr_mini_benchmark\\05_generation\\config\\llm_approved_item_pool.json",
+      "schema_version": "jomb-llm-approved-item-pool-config-v1",
+      "source_status": "ready_for_generation_pool",
+      "raw_item_count": 33,
+      "usable_item_count": 33
+    },
+    "llm_options": {
+      "enable_llm_items": true,
+      "llm_item_probability": 0.55,
+      "llm_max_items": 3,
+      "llm_min_items": 1,
+      "llm_min_fixed_items": 1,
+      "allow_llm_for_parking": false
+    }
+  },
+  "item_source_counts": {
+    "llm_approved": 3,
+    "item_master": 9
+  },
+  "has_llm_approved_items": true,
+  "llm_approved_item_count": 3,
+  "item_master_item_count": 9
+}
