@@ -2,11 +2,12 @@
 
 ## Sample image
 
-Example noisy receipt image used in this benchmark:
+Example v0.2.0 noisy receipt image used in this benchmark:
 
-![receipt_005_noisy](images/receipt_005_noisy.png)
+![receipt_v020_supermarket_001_noisy](release_v0.2.0/data/v0.2.0/images_noisy/receipt_v020_supermarket_001_noisy.png)
 
-This sample is intentionally degraded with blur, fading, shadow, narrow layout, quantity/unit-price columns, discounts, point usage, and similar-looking numeric fields.
+This sample is generated from the v0.2.0 synthetic Japanese receipt target run.
+The noisy image includes camera-like degradation such as print fading, local blur, thermal banding, resolution loss, shadow, and JPEG roundtrip compression.
 
 ## Quick start
 
