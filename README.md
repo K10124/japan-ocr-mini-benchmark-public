@@ -6,7 +6,9 @@ A small synthetic Japanese receipt OCR/VLM benchmark for testing document unders
 
 The current public dataset payload is **v0.2.0**.
 
-Use `release_v0.2.0/data/v0.2.0` as the canonical data root for v0.2.0. Older root-level sample folders such as `eval`, `ground_truth`, `images`, `model_outputs`, and `notes` are legacy materials from the earlier 5-receipt mini sample; they are kept for historical comparison and are not the latest dataset payload.
+Use `release_v0.2.0/data/v0.2.0` as the canonical data root for v0.2.0.
+
+Earlier 5-receipt sample materials are kept under `legacy/initial_5_receipt_sample/` for historical comparison. They are not the latest dataset payload.
 
 ## Sample Image
 
@@ -44,6 +46,13 @@ release_v0.2.0/reports/v0.2.0/
   v020_target_run_validation_latest.csv
   v020_review_full_step147.csv
   v020_review_shortlist_step147.csv
+legacy/initial_5_receipt_sample/
+  eval/
+  ground_truth/
+  images/
+  model_outputs/
+  notes/
+  README.md
 ```
 
 ## Manifest
@@ -151,4 +160,4 @@ The remaining validation warning, `clean_noisy_size_large_difference`, is expect
 
 ## Notes for Earlier Materials
 
-Root-level legacy folders remain in this repository so earlier experiments and model-output comparisons do not disappear. For new work, start from `release_v0.2.0/data/v0.2.0/manifest.jsonl`.
+The earlier 5-receipt mini sample is preserved at `legacy/initial_5_receipt_sample/`. For new work, start from `release_v0.2.0/data/v0.2.0/manifest.jsonl`.
