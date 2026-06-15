@@ -19,6 +19,7 @@ It is intentionally small, inspectable, and easy to run locally. That makes it u
 
 - **Dataset payload:** `v0.2.0`
 - **Official LM Studio baseline:** `v0.3.0`
+- **Leaderboard and scoring protocol:** `v0.3.1`
 - **Canonical data root:** `release_v0.2.0/data/v0.2.0`
 - **Official v0.3.0 reports:** `reports/v0.3.0`
 
@@ -51,6 +52,18 @@ Quick takeaways:
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_END -->
 
+<!-- JOMB_V031_LEADERBOARD_START -->
+## Leaderboard and Scoring
+
+v0.3.1 adds a reusable leaderboard and scoring protocol around `JOMB Core Score v1`.
+
+- Leaderboard: `LEADERBOARD.md`
+- Score protocol: `docs/evaluation/jomb_core_score_v1.md`
+- Evaluate your own model: `docs/evaluation/submit_model_results.md`
+
+Use this when you want to compare a new OCR/VLM run against the official v0.3.0 baselines.
+<!-- JOMB_V031_LEADERBOARD_END -->
+
 ## What You Get
 
 ```text
@@ -65,7 +78,12 @@ reports/v0.3.0/
   v030_lmstudio_5model_summary.json
   v030_lmstudio_5model_summary.csv
   v030_lmstudio_5model_summary.md
+  leaderboard.json
+  leaderboard.csv
+  leaderboard.md
 docs/releases/v0.3.0.md
+docs/releases/v0.3.1.md
+LEADERBOARD.md
 assets/jomb_v030_showcase.png
 ```
 
