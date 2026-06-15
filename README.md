@@ -1,36 +1,46 @@
 # Japan OCR Mini Benchmark
 
-A small synthetic Japanese receipt OCR/VLM benchmark for testing document understanding models on noisy Japanese receipts.
+A compact Japanese receipt OCR/VLM benchmark with noisy synthetic receipt images, ground-truth JSON, and local LM Studio baseline results.
 
-## Current Dataset
+![Japan OCR Mini Benchmark showcase](assets/jomb_v030_showcase.png)
 
-The current public dataset payload is **v0.2.0**.
+## Why This Exists
 
-Use `release_v0.2.0/data/v0.2.0` as the canonical data root for v0.2.0.
+Most OCR examples stop at "can the model read the text?" This benchmark checks whether a model can recover structured Japanese receipt data:
 
-Earlier 5-receipt sample materials are kept under `legacy/initial_5_receipt_sample/` for historical comparison. They are not the latest dataset payload.
+- receipt-level fields: store, branch, address, date, time, payment, tax, total
+- item-level fields: product name, quantity, unit price, line amount
+- noisy camera-like inputs: print fading, local blur, banding, shadow, rotation, JPEG compression
+- synthetic-only data: no real customer receipts, no personal information
 
-## Sample Image
+It is intentionally small, inspectable, and easy to run locally. That makes it useful for fast OCR/VLM smoke tests before you spend time or money on larger evaluations.
 
-Example v0.2.0 noisy receipt image:
+## Current Releases
 
-![receipt_v020_supermarket_001_noisy](release_v0.2.0/data/v0.2.0/images_noisy/receipt_v020_supermarket_001_noisy.png)
+- **Dataset payload:** `v0.2.0`
+- **Official LM Studio baseline:** `v0.3.0`
+- **Canonical data root:** `release_v0.2.0/data/v0.2.0`
+- **Official v0.3.0 reports:** `reports/v0.3.0`
 
-This sample comes from the v0.2.0 synthetic Japanese receipt target run and includes camera-like degradation such as print fading, local blur, thermal banding, resolution loss, shadow, and JPEG roundtrip compression.
+## v0.3.0 Result Snapshot
 
-## What Is Included
+The v0.3.0 release compares five local GGUF/VLM models through LM Studio's OpenAI-compatible API on the same 20 noisy receipt images.
 
-- Records: `20`
-- Source JSON files: `20`
-- Metadata JSON files: `20`
-- Degradation metadata JSON files: `20`
-- Clean PNG images: `20`
-- Noisy PNG images: `20`
-- Total item rows: `180`
-- LLM-approved item rows: `56`
-- Item-master rows: `124`
+| Rank | Model | Quant | Avg sec | Exact | Top-level | Item fields | Item count |
+| ---: | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 1 | `qwen36_35b_a3b_q4_k_m` | `Q4_K_M` | 4.282 | 0.45 | 0.972727 | 0.995833 | 1 |
+| 2 | `gemma4_31b_q8_0` | `Q8_0` | 53.195 | 0.6 | 0.979545 | 0.990278 | 1 |
+| 3 | `qwen3_vl_30b_q4_k_m` | `Q4_K_M` | 3.248 | 0.05 | 0.943182 | 0.690278 | 1 |
+| 4 | `qwen25_vl_7b_q8_0` | `Q8_0` | 5.094 | 0 | 0.934091 | 0.652778 | 1 |
+| 5 | `internvl3_5_14b_q8_0` | `Q8_0` | 9.519 | 0 | 0.725 | 0.565672 | 0.65 |
 
-## Data Layout
+Quick takeaways:
+
+- `qwen36_35b_a3b_q4_k_m` is the strongest item-level structured extraction baseline.
+- `gemma4_31b_q8_0` has the best exact-match and top-level-field score, but is much slower.
+- `qwen25_vl_7b_q8_0` is a useful lightweight speed baseline, but weak on unit-price extraction.
+
+## What You Get
 
 ```text
 release_v0.2.0/data/v0.2.0/
@@ -40,62 +50,29 @@ release_v0.2.0/data/v0.2.0/
   degradation_metadata/
   images_clean/
   images_noisy/
-release_v0.2.0/reports/v0.2.0/
-  v020_target_run_summary.json
-  v020_target_run_validation_latest.json
-  v020_target_run_validation_latest.csv
-  v020_review_full_step147.csv
-  v020_review_shortlist_step147.csv
-legacy/initial_5_receipt_sample/
-  eval/
-  ground_truth/
-  images/
-  model_outputs/
-  notes/
-  README.md
+reports/v0.3.0/
+  v030_lmstudio_5model_summary.json
+  v030_lmstudio_5model_summary.csv
+  v030_lmstudio_5model_summary.md
+docs/releases/v0.3.0.md
+assets/jomb_v030_showcase.png
 ```
-
-## Manifest
-
-`manifest.jsonl` is the easiest entry point for programmatic use. Each line is one JSON object with:
-
-- `document_id`
-- `template_id`
-- `clean_image`
-- `noisy_image`
-- `source_json`
-- `metadata_json`
-- `degradation_metadata`
-- `noisy_profile`
-- `item_count`
-- `llm_item_count`
-- `total`
-
-The file paths inside `manifest.jsonl` are relative to `release_v0.2.0/data/v0.2.0`.
-
-## Template Coverage
-
-| Template | Records | Noisy profiles |
-| --- | ---: | --- |
-| `bakery_simple` | 2 | medium=2 |
-| `cafe_small_receipt` | 2 | medium=2 |
-| `convenience_store_standard` | 3 | light=3 |
-| `drugstore_mixed_tax` | 3 | medium=3 |
-| `parking_machine` | 1 | hard=1 |
-| `restaurant_receipt` | 2 | medium=2 |
-| `station_store_narrow` | 4 | hard=4 |
-| `supermarket_long` | 3 | hard=3 |
-
-## Data Policy
-
-All receipt images and JSON files are synthetic.
-
-This project does not include real receipts, real store data, real customer data, personal information, or real transaction records. Store names, addresses, invoice numbers, receipt contents, and transaction details are fictional test data.
-
 
 ## Quick Start
 
-Read `manifest.jsonl` and resolve each artifact path relative to `release_v0.2.0/data/v0.2.0`:
+List a few records from the manifest:
+
+```powershell
+python examples/load_v020_manifest.py --data-root "release_v0.2.0/data/v0.2.0" --limit 5 --show-paths
+```
+
+Evaluate your own prediction JSON files:
+
+```powershell
+python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0/data/v0.2.0" --prediction-dir ".\model_outputs\my-model"
+```
+
+Read the manifest directly:
 
 ```python
 from pathlib import Path
@@ -112,52 +89,45 @@ print(data_root / first["noisy_image"])
 print(data_root / first["source_json"])
 ```
 
+## Template Coverage
+
+| Template | Records | Noisy profiles |
+| --- | ---: | --- |
+| `bakery_simple` | 2 | medium=2 |
+| `cafe_small_receipt` | 2 | medium=2 |
+| `convenience_store_standard` | 3 | light=3 |
+| `drugstore_mixed_tax` | 3 | medium=3 |
+| `parking_machine` | 1 | hard=1 |
+| `restaurant_receipt` | 2 | medium=2 |
+| `station_store_narrow` | 4 | hard=4 |
+| `supermarket_long` | 3 | hard=3 |
+
+## Data Policy
+
+All receipt images and JSON files are synthetic. Store names, branch names, addresses, invoice numbers, dates, products, prices, totals, and transaction details are artificial test data.
+
 <!-- JOMB_V020_RELEASE_CANDIDATE_START -->
-<!-- This block summarizes the published v0.2.0 payload frozen from the release candidate artifacts. -->
-<!-- Edit the source release notes or refresh script if regeneration is needed. -->
+## v0.2.0 Dataset Payload
 
-## v0.2.0 Release Payload
-
-The v0.2.0 payload is the current public dataset release for OCR/VLM evaluation on synthetic Japanese receipts.
-
-### Contents
+The v0.2.0 payload is the frozen public dataset release used by the v0.3.0 LM Studio baseline.
 
 - Records: `20`
-- Successful records: `20`
-- Failed records: `0`
-- Modalities: source JSON, metadata JSON, degradation metadata, clean PNG images, noisy PNG images, validation outputs, and human-review reports.
-- Receipt styles: convenience store, supermarket, drugstore, bakery, station-store narrow receipts, restaurant receipts, parking payment-machine receipts, and cafe receipts.
-
-### Item Generation
-
-- Generation method: hybrid deterministic item master plus validated LLM-approved item pool.
-- Documents with LLM-approved items: `19`
-- LLM-approved item count: `56`
-- Item-master item count: `124`
-- LLM mix ratio: `0.3111`
-
-### Noisy Rendering
-
-- Noisy images use strengthened camera-like degradation profiles.
-- Effects include resolution loss, thermal banding, print fading, stroke-level kasure, local blur, lighting unevenness, rotation, camera canvas, shadow, and JPEG roundtrip compression.
-- Noisy profile counts: `{'light': 3, 'medium': 9, 'hard': 8}`
-
-### Validation
-
-- Validation status: `warning`
-- Validation status counts: `{'ok': 8, 'warning': 12}`
-- Issue code top counts: `{'clean_noisy_size_large_difference': 12}`
-
-The remaining validation warning, `clean_noisy_size_large_difference`, is expected because noisy images include stronger camera-like framing and degradation.
-
-### Release Status
-
-- Published payload version: `v0.2.0`
+- Source JSON files: `20`
+- Metadata JSON files: `20`
+- Degradation metadata JSON files: `20`
+- Clean PNG images: `20`
+- Noisy PNG images: `20`
+- Total item rows: `180`
+- Noisy profile counts: `light=3`, `medium=9`, `hard=8`
 - Frozen target run ID: `v020_target_20260613_221713`
-- Manual visual review: `ok_by_user_step148`
+- Data root: `release_v0.2.0/data/v0.2.0`
+- Reports root: `reports/v0.2.0`
 
+All receipt images and JSON files are synthetic. No real customer receipt data is included.
 <!-- JOMB_V020_RELEASE_CANDIDATE_END -->
 
-## Notes for Earlier Materials
 
-The earlier 5-receipt mini sample is preserved at `legacy/initial_5_receipt_sample/`. For new work, start from `release_v0.2.0/data/v0.2.0/manifest.jsonl`.
+
+## Notes
+
+Earlier 5-receipt sample materials are preserved at `legacy/initial_5_receipt_sample/`. For current work, start from `manifest.jsonl` in the v0.2.0 data root.

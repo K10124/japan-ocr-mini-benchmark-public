@@ -1,0 +1,6 @@
+rank_by_item_field,model_key,model_display_name,lmstudio_model_id,quantization,mmproj_quantization,architecture,records,completed,failed,avg_seconds,record_exact_match_accuracy,top_level_field_accuracy,item_field_accuracy,item_count_exact_accuracy,item_name_accuracy,item_quantity_accuracy,item_unit_price_accuracy,item_amount_accuracy,default_role
+1,qwen36_35b_a3b_q4_k_m,Qwen3.6 35B A3B Q4_K_M,qwen/qwen3.6-35b-a3b,Q4_K_M,BF16,qwen35moe,20,20,0,4.282,0.45,0.972727,0.995833,1.0,0.988889,0.994444,1.0,1.0,qwen_reference_comparison
+2,gemma4_31b_q8_0,Gemma 4 31B Q8_0,google/gemma-4-31b,Q8_0,BF16,gemma4,20,20,0,53.195,0.6,0.979545,0.990278,1.0,0.988889,1.0,0.972222,1.0,google_vlm_comparison
+3,qwen3_vl_30b_q4_k_m,Qwen3-VL 30B Q4_K_M,qwen/qwen3-vl-30b,Q4_K_M,F16,qwen3-vl-30b,20,20,0,3.248,0.05,0.943182,0.690278,1.0,0.938889,0.411111,0.411111,1.0,main_vlm_baseline
+4,qwen25_vl_7b_q8_0,Qwen2.5-VL 7B Q8_0,qwen/qwen2.5-vl-7b,Q8_0,F16,qwen2vl,20,20,0,5.094,0.0,0.934091,0.652778,1.0,0.95,0.622222,0.044444,0.994444,lightweight_qwen_vl_comparison
+5,internvl3_5_14b_q8_0,InternVL3.5 14B Q8_0,internvl3_5-14b,Q8_0,F16,qwen3,20,20,0,9.519,0.0,0.725,0.565672,0.65,0.544444,0.748387,0.316129,0.644444,non_qwen_vlm_comparison
