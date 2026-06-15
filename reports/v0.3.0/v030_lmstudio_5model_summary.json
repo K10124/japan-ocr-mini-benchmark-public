@@ -1,35 +1,26 @@
 {
   "schema_version": "jomb-v030-lmstudio-five-model-summary-v1",
-  "created_at": "2026-06-15T11:48:42.499085+00:00",
+  "created_at": "2026-06-15T14:27:19.370783+00:00",
   "evaluation_version": "v0.3.0",
   "dataset_version": "v0.2.0",
   "target_run_id": "v020_target_20260613_221713",
   "runtime": "lmstudio_openai_compatible_api",
   "records": 20,
-  "rank_metric": "item_field_accuracy",
-  "models": [
-    {
-      "model_key": "qwen36_35b_a3b_q4_k_m",
-      "model_display_name": "Qwen3.6 35B A3B Q4_K_M",
-      "lmstudio_model_id": "qwen/qwen3.6-35b-a3b",
-      "quantization": "Q4_K_M",
-      "mmproj_quantization": "BF16",
-      "architecture": "qwen35moe",
-      "records": 20,
-      "completed": 20,
-      "failed": 0,
-      "avg_seconds": 4.282,
-      "record_exact_match_accuracy": 0.45,
-      "top_level_field_accuracy": 0.972727,
-      "item_field_accuracy": 0.995833,
-      "item_count_exact_accuracy": 1.0,
-      "item_name_accuracy": 0.988889,
-      "item_quantity_accuracy": 0.994444,
-      "item_unit_price_accuracy": 1.0,
-      "item_amount_accuracy": 1.0,
-      "default_role": "qwen_reference_comparison",
-      "rank_by_item_field": 1
+  "rank_metric": "jomb_core_score_v1",
+  "score_definition": {
+    "name": "JOMB Core Score v1",
+    "range": "0-100 points",
+    "formula": "Exact * 10 + Top-level * 25 + Item fields * 50 + Item count * 15",
+    "weights": {
+      "record_exact_match_accuracy": 0.1,
+      "top_level_field_accuracy": 0.25,
+      "item_field_accuracy": 0.5,
+      "item_count_exact_accuracy": 0.15
     },
+    "runtime_included": false,
+    "missing_or_invalid_prediction_policy": "zero contribution for the affected record"
+  },
+  "models": [
     {
       "model_key": "gemma4_31b_q8_0",
       "model_display_name": "Gemma 4 31B Q8_0",
@@ -50,7 +41,35 @@
       "item_unit_price_accuracy": 0.972222,
       "item_amount_accuracy": 1.0,
       "default_role": "google_vlm_comparison",
-      "rank_by_item_field": 2
+      "jomb_core_score_v1": 0.950025,
+      "jomb_core_score_v1_points": 95.0,
+      "rank_by_item_field": 2,
+      "rank_by_jomb_core_score_v1": 1
+    },
+    {
+      "model_key": "qwen36_35b_a3b_q4_k_m",
+      "model_display_name": "Qwen3.6 35B A3B Q4_K_M",
+      "lmstudio_model_id": "qwen/qwen3.6-35b-a3b",
+      "quantization": "Q4_K_M",
+      "mmproj_quantization": "BF16",
+      "architecture": "qwen35moe",
+      "records": 20,
+      "completed": 20,
+      "failed": 0,
+      "avg_seconds": 4.282,
+      "record_exact_match_accuracy": 0.45,
+      "top_level_field_accuracy": 0.972727,
+      "item_field_accuracy": 0.995833,
+      "item_count_exact_accuracy": 1.0,
+      "item_name_accuracy": 0.988889,
+      "item_quantity_accuracy": 0.994444,
+      "item_unit_price_accuracy": 1.0,
+      "item_amount_accuracy": 1.0,
+      "default_role": "qwen_reference_comparison",
+      "jomb_core_score_v1": 0.936098,
+      "jomb_core_score_v1_points": 93.61,
+      "rank_by_item_field": 1,
+      "rank_by_jomb_core_score_v1": 2
     },
     {
       "model_key": "qwen3_vl_30b_q4_k_m",
@@ -72,7 +91,10 @@
       "item_unit_price_accuracy": 0.411111,
       "item_amount_accuracy": 1.0,
       "default_role": "main_vlm_baseline",
-      "rank_by_item_field": 3
+      "jomb_core_score_v1": 0.735935,
+      "jomb_core_score_v1_points": 73.59,
+      "rank_by_item_field": 3,
+      "rank_by_jomb_core_score_v1": 3
     },
     {
       "model_key": "qwen25_vl_7b_q8_0",
@@ -94,7 +116,10 @@
       "item_unit_price_accuracy": 0.044444,
       "item_amount_accuracy": 0.994444,
       "default_role": "lightweight_qwen_vl_comparison",
-      "rank_by_item_field": 4
+      "jomb_core_score_v1": 0.709912,
+      "jomb_core_score_v1_points": 70.99,
+      "rank_by_item_field": 4,
+      "rank_by_jomb_core_score_v1": 4
     },
     {
       "model_key": "internvl3_5_14b_q8_0",
@@ -116,7 +141,10 @@
       "item_unit_price_accuracy": 0.316129,
       "item_amount_accuracy": 0.644444,
       "default_role": "non_qwen_vlm_comparison",
-      "rank_by_item_field": 5
+      "jomb_core_score_v1": 0.561586,
+      "jomb_core_score_v1_points": 56.16,
+      "rank_by_item_field": 5,
+      "rank_by_jomb_core_score_v1": 5
     }
   ]
 }
