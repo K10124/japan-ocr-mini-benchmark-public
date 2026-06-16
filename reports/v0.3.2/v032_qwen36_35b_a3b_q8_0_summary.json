@@ -1,0 +1,54 @@
+{
+  "schema_version": "jomb-v032-qwen36-q8-refresh-summary-v1",
+  "created_at": "2026-06-16T22:41:17.339603+00:00",
+  "release_version": "v0.3.2",
+  "dataset_version": "v0.2.0",
+  "evaluation_version": "v0.3.0",
+  "target_run_id": "v020_target_20260613_221713",
+  "runtime": "lmstudio_openai_compatible_api",
+  "records": 20,
+  "rank_metric": "jomb_core_score_v1",
+  "score_definition": {
+    "name": "JOMB Core Score v1",
+    "range": "0-100 points",
+    "formula": "Exact * 10 + Top-level * 25 + Item fields * 50 + Item count * 15",
+    "weights": {
+      "record_exact_match_accuracy": 0.1,
+      "top_level_field_accuracy": 0.25,
+      "item_field_accuracy": 0.5,
+      "item_count_exact_accuracy": 0.15
+    },
+    "runtime_included": false,
+    "missing_or_invalid_prediction_policy": "zero contribution for the affected record"
+  },
+  "models": [
+    {
+      "run_version": "v0.3.2",
+      "run_label": "Qwen3.6 35B A3B Q8_0 noisy 20-image refresh",
+      "model_key": "qwen36_35b_a3b_q8_0",
+      "model_display_name": "Qwen3.6 35B A3B Q8_0",
+      "lmstudio_model_id": "qwen/qwen3.6-35b-a3b",
+      "quantization": "Q8_0",
+      "mmproj_quantization": "unknown",
+      "architecture": "qwen35moe",
+      "image_variant": "noisy",
+      "records": 20,
+      "completed": 20,
+      "failed": 0,
+      "avg_seconds": 4.633,
+      "record_exact_match_accuracy": 0.55,
+      "top_level_field_accuracy": 0.977273,
+      "item_field_accuracy": 0.997222,
+      "item_count_exact_accuracy": 1.0,
+      "item_name_accuracy": 0.994444,
+      "item_quantity_accuracy": 0.994444,
+      "item_unit_price_accuracy": 1.0,
+      "item_amount_accuracy": 1.0,
+      "jomb_core_score_v1": 0.947929,
+      "jomb_core_score_v1_points": 94.79,
+      "source_run_dir": "05_generation\\baseline_runs\\v040_operational_20image_qwen36_35b_a3b_q8_0_20260617_073229",
+      "source_evaluation_summary": "05_generation\\baseline_runs\\v040_operational_20image_qwen36_35b_a3b_q8_0_20260617_073229\\evaluation\\baseline_summary.json",
+      "rank": 1
+    }
+  ]
+}

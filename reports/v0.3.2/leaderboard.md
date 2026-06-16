@@ -9,7 +9,7 @@ This leaderboard ranks model runs on the frozen v0.2.0 synthetic Japanese receip
 - Records per run: `20`
 - Image variant: `noisy`
 - Rank metric: `JOMB Core Score v1`
-- Updated at: `2026-06-16T22:41:17.345377+00:00`
+- Updated at: `2026-06-16T22:41:17.342157+00:00`
 
 ## Score Definition
 
