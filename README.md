@@ -21,8 +21,8 @@ It is intentionally small, inspectable, and easy to run locally. That makes it u
 - **Official LM Studio baseline:** `v0.3.0`
 - **Latest operational result snapshot:** `v0.3.1`
 - **Leaderboard and scoring protocol:** `v0.3.1`
-- **Canonical data root:** `../hf_dataset_upload/data/v0.2.0`
-- **Official reports:** `reports/v0.3.0`, `reports/v0.3.1`, and `05_generation/generated_reports`
+- **Canonical data root:** `release_v0.2.0/data/v0.2.0`
+- **Official reports:** `reports/v0.3.0` and `reports/v0.3.1`
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_START -->
 ## v0.3.0 LM Studio 5-Model Baseline
@@ -80,7 +80,7 @@ Use this when you want to compare a new OCR/VLM run against the official local L
 ## What You Get
 
 ```text
-../hf_dataset_upload/data/v0.2.0/
+release_v0.2.0/data/v0.2.0/
   manifest.jsonl
   source_json/
   metadata/
@@ -109,13 +109,13 @@ assets/jomb_v030_showcase.png
 List a few records from the manifest:
 
 ```powershell
-python examples/load_v020_manifest.py --data-root "..\hf_dataset_upload\data\v0.2.0" --limit 5 --show-paths
+python examples/load_v020_manifest.py --data-root "release_v0.2.0/data/v0.2.0" --limit 5 --show-paths
 ```
 
 Evaluate your own prediction JSON files:
 
 ```powershell
-python examples/evaluate_v020_baseline.py --data-root "..\hf_dataset_upload\data\v0.2.0" --prediction-dir ".\model_outputs\my-model"
+python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0/data/v0.2.0" --prediction-dir ".\model_outputs\my-model"
 ```
 
 Read the manifest directly:
@@ -124,7 +124,7 @@ Read the manifest directly:
 from pathlib import Path
 import json
 
-data_root = Path("../hf_dataset_upload/data/v0.2.0")
+data_root = Path("release_v0.2.0/data/v0.2.0")
 manifest_path = data_root / "manifest.jsonl"
 
 with manifest_path.open("r", encoding="utf-8") as f:
@@ -166,7 +166,7 @@ The v0.2.0 payload is the frozen public dataset release used by the v0.3.0 LM St
 - Total item rows: `180`
 - Noisy profile counts: `light=3`, `medium=9`, `hard=8`
 - Frozen target run ID: `v020_target_20260613_221713`
-- Data root: `../hf_dataset_upload/data/v0.2.0`
+- Data root: `release_v0.2.0/data/v0.2.0`
 - Reports root: `reports/v0.2.0`
 
 All receipt images and JSON files are synthetic. No real customer receipt data is included.

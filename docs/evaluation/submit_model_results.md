@@ -18,7 +18,7 @@ Each JSON should follow the schema described in `docs/evaluation/baseline_predic
 ## Evaluate One Model
 
 ```powershell
-python examples/evaluate_v020_baseline.py --data-root "..\hf_dataset_upload\data\v0.2.0" --prediction-dir ".\model_outputs\my-model"
+python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0/data/v0.2.0" --prediction-dir ".\model_outputs\my-model"
 ```
 
 The evaluator writes:
