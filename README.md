@@ -25,9 +25,9 @@ It is intentionally small, inspectable, and easy to run locally. That makes it u
 - **Official reports:** `reports/v0.3.0` and `reports/v0.3.1`
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_START -->
-## v0.3.0 LM Studio 5-Model Baseline
+## v0.3.0/v0.3.1 LM Studio Combined Ranking
 
-The v0.3.0 release compares five local GGUF/VLM models through LM Studio's OpenAI-compatible API on the same 20 noisy receipt images.
+The table below puts the original v0.3.0 five-model baseline and the v0.3.1 operational refresh into one leaderboard on the same frozen v0.2.0 dataset.
 
 ### JOMB Core Score v1
 
@@ -37,37 +37,30 @@ The score is intentionally quality-only: runtime is reported separately, and ite
 
 ### Result Snapshot
 
-| Rank | Model | Core /100 | Quant | Avg sec | Exact | Top-level | Item fields | Item count |
-| ---: | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
-| 1 | `gemma4_31b_q8_0` | 95.00 | `Q8_0` | 53.195 | 0.6 | 0.979545 | 0.990278 | 1 |
-| 2 | `qwen36_35b_a3b_q4_k_m` | 93.61 | `Q4_K_M` | 4.282 | 0.45 | 0.972727 | 0.995833 | 1 |
-| 3 | `qwen3_vl_30b_q4_k_m` | 73.59 | `Q4_K_M` | 3.248 | 0.05 | 0.943182 | 0.690278 | 1 |
-| 4 | `qwen25_vl_7b_q8_0` | 70.99 | `Q8_0` | 5.094 | 0 | 0.934091 | 0.652778 | 1 |
-| 5 | `internvl3_5_14b_q8_0` | 56.16 | `Q8_0` | 9.519 | 0 | 0.725 | 0.565672 | 0.65 |
+| Rank | Run | Model | Core /100 | Quant | Completed | Avg sec | Exact | Top-level | Item fields | Item count |
+| ---: | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | `v0.3.1` | `gemma4_31b_qat_q4_0` | 95.29 | `Q4_0` | 20/20 | 35.128 | 0.6 | 0.977273 | 0.997222 | 1 |
+| 2 | `v0.3.0` | `gemma4_31b_q8_0` | 95.00 | `Q8_0` | 20/20 | 53.195 | 0.6 | 0.979545 | 0.990278 | 1 |
+| 3 | `v0.3.1` | `gemma4_31b_q4_k_m_retest` | 94.92 | `Q4_K_M` | 20/20 | 57.263 | 0.6 | 0.981818 | 0.9875 | 1 |
+| 4 | `v0.3.0` | `qwen36_35b_a3b_q4_k_m` | 93.61 | `Q4_K_M` | 20/20 | 4.282 | 0.45 | 0.972727 | 0.995833 | 1 |
+| 5 | `v0.3.1` | `qwen36_27b_q8_0` | 88.31 | `Q8_0` | 20/20 | 17.754 | 0.5 | 0.979545 | 0.876389 | 1 |
+| 6 | `v0.3.0` | `qwen3_vl_30b_q4_k_m` | 73.59 | `Q4_K_M` | 20/20 | 3.248 | 0.05 | 0.943182 | 0.690278 | 1 |
+| 7 | `v0.3.0` | `qwen25_vl_7b_q8_0` | 70.99 | `Q8_0` | 20/20 | 5.094 | 0 | 0.934091 | 0.652778 | 1 |
+| 8 | `v0.3.1` | `gemma4_26b_a4b_qat_q4_0` | 64.22 | `Q4_0` | 17/20 | 15.236 | 0.2 | 0.797727 | 0.635621 | 0.7 |
+| 9 | `v0.3.0` | `internvl3_5_14b_q8_0` | 56.16 | `Q8_0` | 20/20 | 9.519 | 0 | 0.725 | 0.565672 | 0.65 |
 
 Quick takeaways:
 
-- `gemma4_31b_q8_0` has the best JOMB Core Score v1 and exact-match score, but is much slower.
-- `qwen36_35b_a3b_q4_k_m` is the strongest item-level structured extraction baseline and the best speed/quality tradeoff among the top two.
-- `qwen25_vl_7b_q8_0` is a useful lightweight speed baseline, but weak on unit-price extraction.
+- `gemma4_31b_qat_q4_0` is the current top run at `95.29` / 100.
+- The best original v0.3.0 row remains visible in the same table, so newer operational runs can be compared directly against the first official baseline.
+- Runtime is shown for convenience, but ranking is based only on `JOMB Core Score v1`.
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_END -->
 
 <!-- JOMB_V031_LEADERBOARD_START -->
-## v0.3.1 Operational Result Snapshot
-
-v0.3.1 adds a refreshed LM Studio run for four currently operational local GGUF/VLM models, using the same frozen v0.2.0 dataset and the same `JOMB Core Score v1` formula.
-
-| Rank | Model | Core /100 | Quant | Completed | Avg sec | Exact | Top-level | Item fields | Item count |
-| ---: | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | `gemma4_31b_qat_q4_0` | 95.29 | `Q4_0` | 20/20 | 35.128 | 0.6 | 0.977273 | 0.997222 | 1 |
-| 2 | `gemma4_31b_q4_k_m_retest` | 94.92 | `Q4_K_M` | 20/20 | 57.263 | 0.6 | 0.981818 | 0.9875 | 1 |
-| 3 | `qwen36_27b_q8_0` | 88.31 | `Q8_0` | 20/20 | 17.754 | 0.5 | 0.979545 | 0.876389 | 1 |
-| 4 | `gemma4_26b_a4b_qat_q4_0` | 64.22 | `Q4_0` | 17/20 | 15.236 | 0.2 | 0.797727 | 0.635621 | 0.7 |
-
-The combined leaderboard keeps the original v0.3.0 five-model baseline and adds these v0.3.1 rows. The current top run is `gemma4_31b_qat_q4_0` at `95.29` / 100.
-
 ## Leaderboard and Scoring
+
+v0.3.1 adds `4` operational rows to the same ranking table above. The current top run is `gemma4_31b_qat_q4_0` at `95.29` / 100.
 
 - Leaderboard: `LEADERBOARD.md`
 - v0.3.1 reports: `reports/v0.3.1`
