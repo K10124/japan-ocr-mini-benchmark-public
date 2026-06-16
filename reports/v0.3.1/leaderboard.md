@@ -8,7 +8,7 @@ This leaderboard ranks model runs on the frozen v0.2.0 synthetic Japanese receip
 - Target run ID: `v020_target_20260613_221713`
 - Records per run: `20`
 - Rank metric: `JOMB Core Score v1`
-- Updated at: `2026-06-16T14:05:50.137032+00:00`
+- Updated at: `2026-06-16T14:05:50.135075+00:00`
 
 ## Score Definition
 

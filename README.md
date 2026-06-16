@@ -19,9 +19,10 @@ It is intentionally small, inspectable, and easy to run locally. That makes it u
 
 - **Dataset payload:** `v0.2.0`
 - **Official LM Studio baseline:** `v0.3.0`
+- **Latest operational result snapshot:** `v0.3.1`
 - **Leaderboard and scoring protocol:** `v0.3.1`
-- **Canonical data root:** `release_v0.2.0/data/v0.2.0`
-- **Official v0.3.0 reports:** `reports/v0.3.0`
+- **Canonical data root:** `../hf_dataset_upload/data/v0.2.0`
+- **Official reports:** `reports/v0.3.0`, `reports/v0.3.1`, and `05_generation/generated_reports`
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_START -->
 ## v0.3.0 LM Studio 5-Model Baseline
@@ -53,21 +54,33 @@ Quick takeaways:
 <!-- JOMB_V030_LMSTUDIO_BASELINE_END -->
 
 <!-- JOMB_V031_LEADERBOARD_START -->
+## v0.3.1 Operational Result Snapshot
+
+v0.3.1 adds a refreshed LM Studio run for four currently operational local GGUF/VLM models, using the same frozen v0.2.0 dataset and the same `JOMB Core Score v1` formula.
+
+| Rank | Model | Core /100 | Quant | Completed | Avg sec | Exact | Top-level | Item fields | Item count |
+| ---: | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | `gemma4_31b_qat_q4_0` | 95.29 | `Q4_0` | 20/20 | 35.128 | 0.6 | 0.977273 | 0.997222 | 1 |
+| 2 | `gemma4_31b_q4_k_m_retest` | 94.92 | `Q4_K_M` | 20/20 | 57.263 | 0.6 | 0.981818 | 0.9875 | 1 |
+| 3 | `qwen36_27b_q8_0` | 88.31 | `Q8_0` | 20/20 | 17.754 | 0.5 | 0.979545 | 0.876389 | 1 |
+| 4 | `gemma4_26b_a4b_qat_q4_0` | 64.22 | `Q4_0` | 17/20 | 15.236 | 0.2 | 0.797727 | 0.635621 | 0.7 |
+
+The combined leaderboard keeps the original v0.3.0 five-model baseline and adds these v0.3.1 rows. The current top run is `gemma4_31b_qat_q4_0` at `95.29` / 100.
+
 ## Leaderboard and Scoring
 
-v0.3.1 adds a reusable leaderboard and scoring protocol around `JOMB Core Score v1`.
-
 - Leaderboard: `LEADERBOARD.md`
+- v0.3.1 reports: `reports/v0.3.1`
 - Score protocol: `docs/evaluation/jomb_core_score_v1.md`
 - Evaluate your own model: `docs/evaluation/submit_model_results.md`
 
-Use this when you want to compare a new OCR/VLM run against the official v0.3.0 baselines.
+Use this when you want to compare a new OCR/VLM run against the official local LM Studio baselines.
 <!-- JOMB_V031_LEADERBOARD_END -->
 
 ## What You Get
 
 ```text
-release_v0.2.0/data/v0.2.0/
+../hf_dataset_upload/data/v0.2.0/
   manifest.jsonl
   source_json/
   metadata/
@@ -78,6 +91,10 @@ reports/v0.3.0/
   v030_lmstudio_5model_summary.json
   v030_lmstudio_5model_summary.csv
   v030_lmstudio_5model_summary.md
+reports/v0.3.1/
+  v031_operational_20image_summary.json
+  v031_operational_20image_summary.csv
+  v031_operational_20image_summary.md
   leaderboard.json
   leaderboard.csv
   leaderboard.md
@@ -92,13 +109,13 @@ assets/jomb_v030_showcase.png
 List a few records from the manifest:
 
 ```powershell
-python examples/load_v020_manifest.py --data-root "release_v0.2.0/data/v0.2.0" --limit 5 --show-paths
+python examples/load_v020_manifest.py --data-root "..\hf_dataset_upload\data\v0.2.0" --limit 5 --show-paths
 ```
 
 Evaluate your own prediction JSON files:
 
 ```powershell
-python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0/data/v0.2.0" --prediction-dir ".\model_outputs\my-model"
+python examples/evaluate_v020_baseline.py --data-root "..\hf_dataset_upload\data\v0.2.0" --prediction-dir ".\model_outputs\my-model"
 ```
 
 Read the manifest directly:
@@ -107,7 +124,7 @@ Read the manifest directly:
 from pathlib import Path
 import json
 
-data_root = Path("release_v0.2.0/data/v0.2.0")
+data_root = Path("../hf_dataset_upload/data/v0.2.0")
 manifest_path = data_root / "manifest.jsonl"
 
 with manifest_path.open("r", encoding="utf-8") as f:
@@ -149,7 +166,7 @@ The v0.2.0 payload is the frozen public dataset release used by the v0.3.0 LM St
 - Total item rows: `180`
 - Noisy profile counts: `light=3`, `medium=9`, `hard=8`
 - Frozen target run ID: `v020_target_20260613_221713`
-- Data root: `release_v0.2.0/data/v0.2.0`
+- Data root: `../hf_dataset_upload/data/v0.2.0`
 - Reports root: `reports/v0.2.0`
 
 All receipt images and JSON files are synthetic. No real customer receipt data is included.
