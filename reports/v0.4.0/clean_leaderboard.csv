@@ -1,0 +1,10 @@
+﻿clean_rank,model_key,jomb_core_score_v1_points,quantization,completed,failed,avg_seconds,record_exact_match_accuracy,top_level_field_accuracy,item_field_accuracy,item_count_exact_accuracy,source_run_dir
+1,qwen36_35b_a3b_q8_0,95.42,Q8_0,20,0,5.78,0.6,0.979545,0.998611,1.0,05_generation\baseline_runs\v041_clean_20image_qwen36_35b_a3b_q8_0_20260617_090609
+2,qwen36_35b_a3b_q4_k_m,94.86,Q4_K_M,20,0,5.149,0.55,0.977273,0.998611,1.0,05_generation\baseline_runs\v041_clean_20image_qwen36_35b_a3b_q4_k_m_20260617_111231
+3,gemma4_31b_q8_0,94.82,Q8_0,20,0,55.076,0.55,0.972727,1.0,1.0,05_generation\baseline_runs\v041_clean_20image_gemma4_31b_q8_0_20260617_145031
+4,qwen36_27b_q8_0,93.41,Q8_0,20,0,17.891,0.65,0.993182,0.941667,1.0,05_generation\baseline_runs\v041_clean_20image_qwen36_27b_q8_0_20260617_083926
+5,gemma4_31b_qat_q4_0,93.03,Q4_0,20,0,35.239,0.45,0.977273,0.981944,1.0,05_generation\baseline_runs\v041_clean_20image_gemma4_31b_qat_q4_0_20260617_082717
+6,qwen3_vl_30b_q4_k_m,75.38,Q4_K_M,20,0,2.539,0.15,0.963636,0.695833,1.0,05_generation\baseline_runs\v041_clean_20image_qwen3_vl_30b_q4_k_m_20260617_081504
+7,internvl3_5_14b_q8_0,72.87,Q8_0,20,0,9.598,0.15,0.895455,0.709722,0.9,05_generation\baseline_runs\v041_clean_20image_internvl3_5_14b_q8_0_20260617_081616
+8,qwen25_vl_7b_q8_0,71.88,Q8_0,20,0,5.447,0.0,0.936364,0.669444,1.0,05_generation\baseline_runs\v041_clean_20image_qwen25_vl_7b_q8_0_20260617_082001
+9,gemma4_26b_a4b_qat_q4_0,68.95,Q4_0,16,4,14.119,0.15,0.856818,0.680685,0.8,05_generation\baseline_runs\v041_clean_20image_gemma4_26b_a4b_qat_q4_0_20260617_082213

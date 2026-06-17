@@ -1,0 +1,16 @@
+{
+  "schema_version": "jomb-v040-clean-noisy-release-v1",
+  "created_at": "2026-06-17T06:24:51.021483+00:00",
+  "release_version": "v0.4.0",
+  "dataset_version": "v0.2.0",
+  "evaluation_version": "v0.3.0",
+  "rank_metric": "jomb_core_score_v1",
+  "score_formula": "Exact * 10 + Top-level * 25 + Item fields * 50 + Item count * 15",
+  "records_per_model": 20,
+  "best_clean_model_key": "qwen36_35b_a3b_q8_0",
+  "best_clean_points": 95.42,
+  "best_noisy_model_key": "gemma4_31b_qat_q4_0",
+  "best_noisy_points": 95.29,
+  "largest_clean_over_noisy_gap_model_key": "internvl3_5_14b_q8_0",
+  "largest_clean_over_noisy_gap_points": 16.71
+}

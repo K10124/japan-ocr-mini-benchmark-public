@@ -2,7 +2,7 @@
 
 A compact Japanese receipt OCR/VLM benchmark with noisy synthetic receipt images, ground-truth JSON, and local LM Studio baseline results.
 
-![Japan OCR Mini Benchmark showcase](assets/jomb_v030_showcase.png)
+![Japan OCR Mini Benchmark v0.4.0 Clean/Noisy showcase](assets/jomb_v040_clean_noisy_showcase.png)
 
 ## Why This Exists
 
@@ -20,55 +20,92 @@ It is intentionally small, inspectable, and easy to run locally. That makes it u
 - **Dataset payload:** `v0.2.0`
 - **Official LM Studio baseline:** `v0.3.0`
 - **Operational result snapshots:** `v0.3.1`, `v0.3.2`
-- **Leaderboard and scoring protocol:** `v0.3.2`
+- **Clean/Noisy benchmark release:** `v0.4.0`
 - **Canonical data root:** `release_v0.2.0/data/v0.2.0`
-- **Official reports:** `reports/v0.3.0`, `reports/v0.3.1`, and `reports/v0.3.2`
+- **Official reports:** `reports/v0.3.0`, `reports/v0.3.1`, `reports/v0.3.2`, and `reports/v0.4.0`
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_START -->
-## v0.3.0-v0.3.2 LM Studio Combined Ranking
+## v0.4.0 Clean and Noisy LM Studio Benchmarks
 
-The table below puts the original v0.3.0 five-model baseline, the v0.3.1 operational refresh, and the v0.3.2 Qwen3.6 Q8_0 row into one leaderboard on the same frozen v0.2.0 noisy-image dataset.
+The tables below use the same frozen `v0.2.0` synthetic receipt dataset and the same `JOMB Core Score v1` formula. Clean images measure structured extraction on controlled renders. Noisy images are the main stress test with camera-like degradation.
 
 ### JOMB Core Score v1
 
 `Core Score / 100 = Exact * 10 + Top-level * 25 + Item fields * 50 + Item count * 15`
 
-The score is intentionally quality-only: runtime is reported separately, and item-field extraction receives the largest weight because line-item recovery is the main benchmark task.
+The score is quality-only. Runtime is reported separately and is not part of the rank.
 
-### Result Snapshot
+### Clean Image Benchmark
+
+- Source: `reports/v0.4.0/clean_leaderboard.json`
+- Generated: `2026-06-17T06:24:51.021483+00:00`
+- Image variant: `clean`
+- Records per model: `20`
+
+| Rank | Model | Core /100 | Quant | Completed | Avg sec | Exact | Top-level | Item fields | Item count |
+| ---: | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | `qwen36_35b_a3b_q8_0` | 95.42 | `Q8_0` | 20/20 | 5.78 | 0.6 | 0.979545 | 0.998611 | 1 |
+| 2 | `qwen36_35b_a3b_q4_k_m` | 94.86 | `Q4_K_M` | 20/20 | 5.149 | 0.55 | 0.977273 | 0.998611 | 1 |
+| 3 | `gemma4_31b_q8_0` | 94.82 | `Q8_0` | 20/20 | 55.076 | 0.55 | 0.972727 | 1 | 1 |
+| 4 | `qwen36_27b_q8_0` | 93.41 | `Q8_0` | 20/20 | 17.891 | 0.65 | 0.993182 | 0.941667 | 1 |
+| 5 | `gemma4_31b_qat_q4_0` | 93.03 | `Q4_0` | 20/20 | 35.239 | 0.45 | 0.977273 | 0.981944 | 1 |
+| 6 | `qwen3_vl_30b_q4_k_m` | 75.38 | `Q4_K_M` | 20/20 | 2.539 | 0.15 | 0.963636 | 0.695833 | 1 |
+| 7 | `internvl3_5_14b_q8_0` | 72.87 | `Q8_0` | 20/20 | 9.598 | 0.15 | 0.895455 | 0.709722 | 0.9 |
+| 8 | `qwen25_vl_7b_q8_0` | 71.88 | `Q8_0` | 20/20 | 5.447 | 0 | 0.936364 | 0.669444 | 1 |
+| 9 | `gemma4_26b_a4b_qat_q4_0` | 68.95 | `Q4_0` | 16/20 | 14.119 | 0.15 | 0.856818 | 0.680685 | 0.8 |
+
+### Noisy Image Benchmark
+
+- Source: `reports/v0.4.0/noisy_leaderboard.json`
+- Image variant: `noisy`
+- Records per model: `20`
 
 | Rank | Run | Model | Core /100 | Quant | Completed | Avg sec | Exact | Top-level | Item fields | Item count |
 | ---: | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 1 | `v0.3.1` | `gemma4_31b_qat_q4_0` | 95.29 | `Q4_0` | 20/20 | 35.128 | 0.6 | 0.977273 | 0.997222 | 1 |
 | 2 | `v0.3.0` | `gemma4_31b_q8_0` | 95.00 | `Q8_0` | 20/20 | 53.195 | 0.6 | 0.979545 | 0.990278 | 1 |
-| 3 | `v0.3.1` | `gemma4_31b_q4_k_m_retest` | 94.92 | `Q4_K_M` | 20/20 | 57.263 | 0.6 | 0.981818 | 0.9875 | 1 |
-| 4 | `v0.3.2` | `qwen36_35b_a3b_q8_0` | 94.79 | `Q8_0` | 20/20 | 4.633 | 0.55 | 0.977273 | 0.997222 | 1 |
-| 5 | `v0.3.0` | `qwen36_35b_a3b_q4_k_m` | 93.61 | `Q4_K_M` | 20/20 | 4.282 | 0.45 | 0.972727 | 0.995833 | 1 |
-| 6 | `v0.3.1` | `qwen36_27b_q8_0` | 88.31 | `Q8_0` | 20/20 | 17.754 | 0.5 | 0.979545 | 0.876389 | 1 |
-| 7 | `v0.3.0` | `qwen3_vl_30b_q4_k_m` | 73.59 | `Q4_K_M` | 20/20 | 3.248 | 0.05 | 0.943182 | 0.690278 | 1 |
-| 8 | `v0.3.0` | `qwen25_vl_7b_q8_0` | 70.99 | `Q8_0` | 20/20 | 5.094 | 0 | 0.934091 | 0.652778 | 1 |
-| 9 | `v0.3.1` | `gemma4_26b_a4b_qat_q4_0` | 64.22 | `Q4_0` | 17/20 | 15.236 | 0.2 | 0.797727 | 0.635621 | 0.7 |
-| 10 | `v0.3.0` | `internvl3_5_14b_q8_0` | 56.16 | `Q8_0` | 20/20 | 9.519 | 0 | 0.725 | 0.565672 | 0.65 |
+| 3 | `v0.3.2` | `qwen36_35b_a3b_q8_0` | 94.79 | `Q8_0` | 20/20 | 4.633 | 0.55 | 0.977273 | 0.997222 | 1 |
+| 4 | `v0.3.0` | `qwen36_35b_a3b_q4_k_m` | 93.61 | `Q4_K_M` | 20/20 | 4.282 | 0.45 | 0.972727 | 0.995833 | 1 |
+| 5 | `v0.3.1` | `qwen36_27b_q8_0` | 88.31 | `Q8_0` | 20/20 | 17.754 | 0.5 | 0.979545 | 0.876389 | 1 |
+| 6 | `v0.3.0` | `qwen3_vl_30b_q4_k_m` | 73.59 | `Q4_K_M` | 20/20 | 3.248 | 0.05 | 0.943182 | 0.690278 | 1 |
+| 7 | `v0.3.0` | `qwen25_vl_7b_q8_0` | 70.99 | `Q8_0` | 20/20 | 5.094 | 0 | 0.934091 | 0.652778 | 1 |
+| 8 | `v0.3.1` | `gemma4_26b_a4b_qat_q4_0` | 64.22 | `Q4_0` | 17/20 | 15.236 | 0.2 | 0.797727 | 0.635621 | 0.7 |
+| 9 | `v0.3.0` | `internvl3_5_14b_q8_0` | 56.16 | `Q8_0` | 20/20 | 9.519 | 0 | 0.725 | 0.565672 | 0.65 |
 
-Quick takeaways:
+### Paired Clean vs Noisy
 
-- `gemma4_31b_qat_q4_0` is the current top run at `95.29` / 100.
-- `qwen36_35b_a3b_q8_0` enters at `94.79` / 100, just below the top Gemma 31B cluster.
-- Runtime is shown for convenience, but ranking is based only on `JOMB Core Score v1`.
+| Clean Rank | Model | Clean /100 | Noisy /100 | Delta | Quant | Clean Avg sec | Noisy Avg sec |
+| ---: | --- | ---: | ---: | ---: | --- | ---: | ---: |
+| 1 | `qwen36_35b_a3b_q8_0` | 95.42 | 94.79 | 0.63 | `Q8_0` | 5.78 | 4.633 |
+| 2 | `qwen36_35b_a3b_q4_k_m` | 94.86 | 93.61 | 1.25 | `Q4_K_M` | 5.149 | 4.282 |
+| 3 | `gemma4_31b_q8_0` | 94.82 | 95.00 | -0.18 | `Q8_0` | 55.076 | 53.195 |
+| 4 | `qwen36_27b_q8_0` | 93.41 | 88.31 | 5.1 | `Q8_0` | 17.891 | 17.754 |
+| 5 | `gemma4_31b_qat_q4_0` | 93.03 | 95.29 | -2.26 | `Q4_0` | 35.239 | 35.128 |
+| 6 | `qwen3_vl_30b_q4_k_m` | 75.38 | 73.59 | 1.79 | `Q4_K_M` | 2.539 | 3.248 |
+| 7 | `internvl3_5_14b_q8_0` | 72.87 | 56.16 | 16.71 | `Q8_0` | 9.598 | 9.519 |
+| 8 | `qwen25_vl_7b_q8_0` | 71.88 | 70.99 | 0.89 | `Q8_0` | 5.447 | 5.094 |
+| 9 | `gemma4_26b_a4b_qat_q4_0` | 68.95 | 64.22 | 4.73 | `Q4_0` | 14.119 | 15.236 |
+
+### Quick Takeaways
+
+- Best clean score: `qwen36_35b_a3b_q8_0` at `95.42` / 100.
+- Best noisy score: `gemma4_31b_qat_q4_0` at `95.29` / 100.
+- Largest clean-over-noisy gap in the paired rows: `internvl3_5_14b_q8_0` at `16.71` points.
+- A high clean score with a much lower noisy score is useful signal: it suggests the model understands the receipt structure but is sensitive to real-world image degradation.
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_END -->
 
 <!-- JOMB_V031_LEADERBOARD_START -->
 ## Leaderboard and Scoring
 
-v0.3.2 adds `qwen36_35b_a3b_q8_0` to the same ranking table above. The new Qwen Q8_0 row completed `20/20` and scored `94.79` / 100. The current top run is `gemma4_31b_qat_q4_0` at `95.29` / 100.
+v0.4.0 publishes separate Clean and Noisy image leaderboards. The Clean leader is `qwen36_35b_a3b_q8_0` at `95.42` / 100, and the Noisy leader is `gemma4_31b_qat_q4_0` at `95.29` / 100.
 
 - Leaderboard: `LEADERBOARD.md`
-- v0.3.2 reports: `reports/v0.3.2`
+- v0.4.0 reports: `reports/v0.4.0`
 - Score protocol: `docs/evaluation/jomb_core_score_v1.md`
 - Evaluate your own model: `docs/evaluation/submit_model_results.md`
 
-Use this when you want to compare a new OCR/VLM run against the official local LM Studio baselines.
+Use this when you want to compare a new OCR/VLM run against both clean-render and noisy-image local LM Studio baselines.
 <!-- JOMB_V031_LEADERBOARD_END -->
 
 ## What You Get
@@ -99,9 +136,20 @@ reports/v0.3.2/
   leaderboard.json
   leaderboard.csv
   leaderboard.md
+reports/v0.4.0/
+  clean_leaderboard.json
+  clean_leaderboard.csv
+  clean_leaderboard.md
+  noisy_leaderboard.json
+  noisy_leaderboard.csv
+  noisy_leaderboard.md
+  clean_noisy_paired_leaderboard.json
+  clean_noisy_paired_leaderboard.csv
+  clean_noisy_paired_leaderboard.md
 docs/releases/v0.3.0.md
 docs/releases/v0.3.1.md
 docs/releases/v0.3.2.md
+docs/releases/v0.4.0.md
 LEADERBOARD.md
 assets/jomb_v030_showcase.png
 ```
@@ -111,13 +159,13 @@ assets/jomb_v030_showcase.png
 List a few records from the manifest:
 
 ```powershell
-python examples/load_v020_manifest.py --data-root "release_v0.2.0/data/v0.2.0" --limit 5 --show-paths
+python examples/load_v020_manifest.py --data-root "release_v0.2.0\data\v0.2.0" --limit 5 --show-paths
 ```
 
 Evaluate your own prediction JSON files:
 
 ```powershell
-python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0/data/v0.2.0" --prediction-dir ".\model_outputs\my-model"
+python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0\data\v0.2.0" --prediction-dir ".\model_outputs\my-model"
 ```
 
 Read the manifest directly:
