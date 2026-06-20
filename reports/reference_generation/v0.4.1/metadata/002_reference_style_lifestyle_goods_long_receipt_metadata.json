@@ -1,0 +1,212 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_lifestyle_goods_long_receipt",
+  "created_at": "2026-06-20T14:35:26.911126",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean long lifestyle goods receipt with food and household goods",
+    "special_reference_note": "reduced-tax star markers, unit-price child rows, varied food and household items, and bundle discount are rendered as extraction traps"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "branch_name": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_lifestyle_brand_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_lifestyle_retail_identity"
+  },
+  "randomization": {
+    "seed": 1289119538,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 13,
+    "item_count_range": [
+      1,
+      24
+    ],
+    "font_profile": "large_biz_ud_wordmark_with_dense_ms_gothic_body",
+    "randomized_fields": [
+      "fictional_store_profile",
+      "receipt_datetime",
+      "food_and_household_item_mix",
+      "unit_price_child_rows",
+      "reduced_tax_markers",
+      "bundle_discount",
+      "cash_received_and_change",
+      "bottom_barcode"
+    ],
+    "texture_seed": 118688,
+    "barcode_seed": 410274
+  },
+  "store_profile": {
+    "store_name": "日日生活",
+    "branch_name": "西口モール店",
+    "roman_name": "NICHI NICHI",
+    "phone": "045-9546-7204",
+    "invoice_registration_number": "T2197095666337",
+    "register_no": "6499/78230",
+    "receipt_no": "923639"
+  },
+  "receipt_datetime": "2026-12-16T21:32:00",
+  "items": [
+    {
+      "name": "発酵ぬか床ミニ",
+      "unit_price": 680,
+      "qty": 1,
+      "amount": 680,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "国産野菜100%ジュース にんじん",
+      "unit_price": 120,
+      "qty": 1,
+      "amount": 120,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "南高梅入りべっこう飴",
+      "unit_price": 230,
+      "qty": 2,
+      "amount": 460,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "プチケーキ",
+      "unit_price": 400,
+      "qty": 1,
+      "amount": 400,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "素材を生かした豆乳スープ",
+      "unit_price": 300,
+      "qty": 1,
+      "amount": 300,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": "MM:4488"
+    },
+    {
+      "name": "ほたて貝柱と昆布のごはん",
+      "unit_price": 490,
+      "qty": 2,
+      "amount": 980,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "果実入りゼリー りんご",
+      "unit_price": 160,
+      "qty": 1,
+      "amount": 160,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "すけそうだらとぶりのソーセージ",
+      "unit_price": 250,
+      "qty": 1,
+      "amount": 250,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "小さめバウム 塩キャラメル",
+      "unit_price": 170,
+      "qty": 2,
+      "amount": 340,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "てんさい糖ビスケット",
+      "unit_price": 140,
+      "qty": 1,
+      "amount": 140,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "ハンバーグのデミグラスソースカレー",
+      "unit_price": 490,
+      "qty": 1,
+      "amount": 490,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": null
+    },
+    {
+      "name": "手づくり鍋の素 養生鍋",
+      "unit_price": 340,
+      "qty": 2,
+      "amount": 680,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": "MM:1459"
+    },
+    {
+      "name": "ノンカフェイン黒豆茶",
+      "unit_price": 110,
+      "qty": 1,
+      "amount": 110,
+      "tax_rate": 8,
+      "mark": "*",
+      "member_code": "MM:1923"
+    }
+  ],
+  "calculation": {
+    "gross_total": 5110,
+    "bundle_discount": 60,
+    "total": 5050,
+    "tax8_target_after_discount": 5050,
+    "tax10_target": 0,
+    "tax8_amount": 374,
+    "tax10_amount": 0,
+    "received": 6000,
+    "change": 950,
+    "item_units": 17
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/002_reference_style_lifestyle_goods_long_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_lifestyle_goods_long_receipt_sample_watermarked.png",
+  "layout_features": [
+    "long_lifestyle_goods_receipt",
+    "large_fictional_minimal_store_wordmark",
+    "many_food_and_household_item_rows",
+    "reduced_tax_star_markers",
+    "unit_price_and_quantity_child_rows",
+    "optional_member_code_lines",
+    "bundle_discount_line",
+    "mixed_8_and_10_percent_tax_summary",
+    "large_total_near_bottom",
+    "bottom_barcode_and_datetime"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "002_reference_style_lifestyle_goods_long_receipt",
+  "generation_index": 2,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 2,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1289119538,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_lifestyle_goods_long_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/002_reference_style_lifestyle_goods_long_receipt_metadata.json"
+}

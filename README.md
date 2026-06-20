@@ -21,8 +21,9 @@ It is intentionally small, inspectable, and easy to run locally. That makes it u
 - **Official LM Studio baseline:** `v0.3.0`
 - **Operational result snapshots:** `v0.3.1`, `v0.3.2`
 - **Clean/Noisy benchmark release:** `v0.4.0`
+- **Reference generator audit snapshot:** `v0.4.1`
 - **Canonical data root:** `release_v0.2.0/data/v0.2.0`
-- **Official reports:** `reports/v0.3.0`, `reports/v0.3.1`, `reports/v0.3.2`, and `reports/v0.4.0`
+- **Official reports:** `reports/v0.3.0`, `reports/v0.3.1`, `reports/v0.3.2`, `reports/v0.4.0`, and `reports/reference_generation/v0.4.1`
 
 <!-- JOMB_V030_LMSTUDIO_BASELINE_START -->
 ## v0.4.0 Clean and Noisy LM Studio Benchmarks
@@ -108,6 +109,18 @@ v0.4.0 publishes separate Clean and Noisy image leaderboards. The Clean leader i
 Use this when you want to compare a new OCR/VLM run against both clean-render and noisy-image local LM Studio baselines.
 <!-- JOMB_V031_LEADERBOARD_END -->
 
+## Reference Receipt Generator Audit
+
+`v0.4.1` adds a public-quality audit snapshot for the reference-derived synthetic receipt generator. It is separate from the frozen benchmark payload: the goal is to prove that the growing receipt-template library can generate varied, fictional clean receipts without obvious item-line integrity problems.
+
+- Report: `reports/reference_generation/v0.4.1`
+- Review page: `reports/reference_generation/v0.4.1/index.html`
+- Contact sheet: `reports/reference_generation/v0.4.1/contact_sheet.png`
+- Audit summary: `reports/reference_generation/v0.4.1/duplicate_audit_summary.json`
+- Release note: `docs/releases/v0.4.1.md`
+
+Latest audited snapshot: `23` synthetic receipt templates, `118` item/service semantic lines, `0` normal item amount-missing errors, `0` invalid 0-yen item errors, and `0` exact name + quantity + amount duplicates.
+
 ## What You Get
 
 ```text
@@ -146,12 +159,26 @@ reports/v0.4.0/
   clean_noisy_paired_leaderboard.json
   clean_noisy_paired_leaderboard.csv
   clean_noisy_paired_leaderboard.md
+reports/reference_generation/v0.4.1/
+  README.md
+  index.html
+  contact_sheet.png
+  duplicate_audit.html
+  duplicate_audit_summary.json
+  item_line_duplicate_audit.csv
+  manifest.jsonl
+  summary.json
+  images_clean/
+  metadata/
 docs/releases/v0.3.0.md
 docs/releases/v0.3.1.md
 docs/releases/v0.3.2.md
 docs/releases/v0.4.0.md
+docs/releases/v0.4.1.md
+docs/usage/reference_receipt_fictionalization_recipe.md
 LEADERBOARD.md
 assets/jomb_v030_showcase.png
+assets/samples/reference_style_fictional_receipt_photo.png
 ```
 
 ## Quick Start
@@ -201,6 +228,8 @@ print(data_root / first["source_json"])
 ## Data Policy
 
 All receipt images and JSON files are synthetic. Store names, branch names, addresses, invoice numbers, dates, products, prices, totals, and transaction details are artificial test data.
+
+Real receipt photos may be used as private visual references for future template design, but only at the high-level layout/degradation level. The public dataset must contain fictional synthetic outputs, not the original real receipt photos or copied brand text. See `docs/usage/reference_receipt_fictionalization_recipe.md`.
 
 <!-- JOMB_V020_RELEASE_CANDIDATE_START -->
 ## v0.2.0 Dataset Payload

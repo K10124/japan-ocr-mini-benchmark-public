@@ -1,0 +1,128 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_conveyor_sushi_coupon_receipt",
+  "created_at": "2026-06-20T14:35:27.903663",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean conveyor sushi receipt with plate-price aggregation and coupon block"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "restaurant_chain": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "url": "fictional_example_domain",
+    "qr_code": "non_functional_fake_pattern",
+    "coupon_campaign": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity"
+  },
+  "randomization": {
+    "seed": 1073302295,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 55,
+    "plate_row_count": 4,
+    "item_count_range": [
+      1,
+      70
+    ],
+    "font_profile": "biz_ud_gothic_header_ms_gothic_receipt_body",
+    "randomized_fields": [
+      "store_profile",
+      "date_time",
+      "table_no",
+      "guest_count",
+      "plate_price_rows",
+      "quantities",
+      "coupon_amount",
+      "coupon_expiry",
+      "fake_qr",
+      "invoice_registration_number"
+    ],
+    "texture_seed": 566975
+  },
+  "store_profile": {
+    "brand": "すし波",
+    "tagline": "港の味を、いつもの席で。",
+    "branch_name": "川越新宿店",
+    "address": "埼玉県川越市新宿町2-4-9",
+    "phone": "049-249-9478",
+    "invoice_registration_number": "T8764264692268",
+    "store_no": "635",
+    "terminal_no": "8",
+    "table_no": "64",
+    "guest_count": "1",
+    "staff_name": "高瀬"
+  },
+  "receipt_datetime": "2026-09-17T13:32:00",
+  "plate_rows": [
+    {
+      "name": "100円皿",
+      "unit": 100,
+      "qty": 52,
+      "amount": 5200
+    },
+    {
+      "name": "220円茶碗蒸し",
+      "unit": 220,
+      "qty": 1,
+      "amount": 220
+    },
+    {
+      "name": "280円うどん",
+      "unit": 280,
+      "qty": 1,
+      "amount": 280
+    },
+    {
+      "name": "480円盛合せ",
+      "unit": 480,
+      "qty": 1,
+      "amount": 480
+    }
+  ],
+  "calculation": {
+    "subtotal_ex_tax": 6180,
+    "external_tax_10_target": 6180,
+    "external_tax_10_amount": 618,
+    "total": 6798,
+    "deposit": 8000,
+    "change": 1202,
+    "payment_method": "現金",
+    "item_count_total": 55
+  },
+  "coupon": {
+    "discount_yen": 30,
+    "expiry": "2026-10-16",
+    "qr_code": "non_functional_fake_pattern"
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/007_reference_style_conveyor_sushi_coupon_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_conveyor_sushi_coupon_receipt_sample_watermarked.png",
+  "layout_features": [
+    "large_fictional_conveyor_sushi_wordmark",
+    "staff_recruitment_message_under_header",
+    "table_terminal_guest_count_block",
+    "plate_price_aggregation_rows",
+    "quantity_child_rows_with_unit_price",
+    "external_10_percent_tax_summary",
+    "large_total_deposit_change_block",
+    "bottom_survey_coupon_with_fake_qr",
+    "bottom_coupon_discount_and_expiry"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "007_reference_style_conveyor_sushi_coupon_receipt",
+  "generation_index": 7,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 7,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1073302295,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_conveyor_sushi_coupon_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/007_reference_style_conveyor_sushi_coupon_receipt_metadata.json"
+}

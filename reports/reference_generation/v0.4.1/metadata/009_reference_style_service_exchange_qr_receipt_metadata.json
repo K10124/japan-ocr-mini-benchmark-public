@@ -1,0 +1,120 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_service_exchange_qr_receipt",
+  "created_at": "2026-06-20T14:35:28.098657",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "same-type multiple narrow service exchange receipts grouped into one clean template",
+    "multi_receipt_reference_grouping": "same_service_exchange_receipt_type_grouped_into_one_template",
+    "special_reference_note": "receipt has stacked input, payout, fee, tax, total sections plus stamp-tax box and QR code"
+  },
+  "copyright_safety": {
+    "counter_name": "fictional",
+    "branch_name": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "qr_code": "non_functional_fake_qr",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_service_operator_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_service_exchange_operator_identity"
+  },
+  "randomization": {
+    "seed": 1736291694,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 3,
+    "item_count_range": [
+      1,
+      8
+    ],
+    "font_profile": "very_narrow_ms_gothic_service_receipt",
+    "randomized_fields": [
+      "fictional_counter_profile",
+      "receipt_datetime",
+      "input_exchange_lines",
+      "payout_lines",
+      "exchange_fee",
+      "exchange_difference",
+      "taxable_and_nontaxable_totals",
+      "cash_received_and_change",
+      "stamp_tax_box",
+      "fake_qr"
+    ],
+    "texture_seed": 181343,
+    "qr_seed": 508427
+  },
+  "counter_profile": {
+    "counter_name": "リンク精算サービス",
+    "branch_name": "中央通り受付機",
+    "roman_name": "LINK SERVICE",
+    "phone": "06-8730-3216",
+    "invoice_registration_number": "T7143923554910",
+    "receipt_no": "7063",
+    "terminal_no": "87",
+    "operator_no": "949"
+  },
+  "receipt_datetime": "2026-04-26T14:10:00",
+  "input_lines": [
+    {
+      "name": "交換券25円紙券",
+      "unit_price": 25,
+      "qty": 1,
+      "amount": 25
+    }
+  ],
+  "payout_lines": [
+    {
+      "name": "62円郵送券・封筒",
+      "unit_price": 62,
+      "qty": 3,
+      "amount": 186
+    },
+    {
+      "name": "5円差額券・ミニタグ",
+      "unit_price": 5,
+      "qty": 4,
+      "amount": 20
+    }
+  ],
+  "calculation": {
+    "input_total": 25,
+    "payout_total": 206,
+    "exchange_fee": 20,
+    "exchange_difference": 181,
+    "taxable_total": 201,
+    "tax10_amount": 18,
+    "non_taxable_total": 25,
+    "total": 226,
+    "received": 300,
+    "change": 74
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/009_reference_style_service_exchange_qr_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_service_exchange_qr_receipt_sample_watermarked.png",
+  "layout_features": [
+    "same_type_multi_receipt_reference_grouped_as_one_template",
+    "very_narrow_service_exchange_receipt",
+    "large_receipt_title_and_customer_suffix",
+    "input_acceptance_section",
+    "payout_section",
+    "exchange_fee_and_difference_section",
+    "taxable_and_non_taxable_summary",
+    "cash_received_and_change_rows",
+    "stamp_tax_declaration_box",
+    "bottom_fake_qr_code"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "009_reference_style_service_exchange_qr_receipt",
+  "generation_index": 9,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 9,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1736291694,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_service_exchange_qr_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/009_reference_style_service_exchange_qr_receipt_metadata.json"
+}

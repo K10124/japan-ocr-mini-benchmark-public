@@ -1,0 +1,101 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_parking_invoice_watermark_receipt",
+  "created_at": "2026-06-20T14:35:28.332713",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean parking receipt with invoice watermark printed across entire paper",
+    "special_reference_note": "invoice registration text is repeated as a pale full-paper background pattern"
+  },
+  "copyright_safety": {
+    "parking_company": "fictional",
+    "parking_lot_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_parking_company_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_parking_company_identity"
+  },
+  "randomization": {
+    "seed": 1858273968,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 2,
+    "item_count_range": [
+      1,
+      2
+    ],
+    "font_profile": "bold_biz_ud_header_ms_gothic_machine_body",
+    "randomized_fields": [
+      "parking_company_profile",
+      "parking_lot_name",
+      "invoice_registration_number",
+      "full_paper_invoice_watermark",
+      "parking_datetime",
+      "duration_minutes",
+      "parking_fee",
+      "discount",
+      "receipt_no",
+      "machine_no",
+      "parking_space_no"
+    ],
+    "texture_seed": 849786
+  },
+  "parking_profile": {
+    "company_name": "オレンジ駐車場サービス",
+    "brand": "OrangeP",
+    "lot_name": "中洲川端パーキング",
+    "address": "福岡県福岡市博多区上川端町3-7",
+    "phone": "092-446-9211",
+    "invoice_registration_number": "T3846709616080",
+    "machine_no": "37",
+    "receipt_no": "804850",
+    "parking_space_no": "809"
+  },
+  "parking_start_datetime": "2026-06-17T12:47:00",
+  "parking_end_datetime": "2026-06-17T13:47:00",
+  "calculation": {
+    "parking_fee": 1200,
+    "discount": 100,
+    "total": 1100,
+    "prepaid": 1100,
+    "cash": 0,
+    "change": 0,
+    "tax_included_10_amount": 100,
+    "duration_minutes": 60
+  },
+  "invoice_watermark": {
+    "enabled": true,
+    "text_repeats_across_entire_receipt": true,
+    "invoice_registration_number": "T3846709616080",
+    "tax_rate_text": "適用税率10%"
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/011_reference_style_parking_invoice_watermark_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_parking_invoice_watermark_receipt_sample_watermarked.png",
+  "layout_features": [
+    "parking_ticket_receipt",
+    "full_paper_pale_invoice_registration_watermark",
+    "large_parking_operator_and_lot_name",
+    "large_phone_number",
+    "parking_datetime_and_duration",
+    "parking_fee_discount_total",
+    "receipt_title_inside_body",
+    "payment_rows_for_prepaid_cash_change",
+    "bottom_invoice_registration_number"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "011_reference_style_parking_invoice_watermark_receipt",
+  "generation_index": 11,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 11,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1858273968,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_parking_invoice_watermark_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/011_reference_style_parking_invoice_watermark_receipt_metadata.json"
+}

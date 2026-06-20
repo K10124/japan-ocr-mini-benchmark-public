@@ -1,0 +1,144 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_karaoke_room_order_receipt",
+  "created_at": "2026-06-20T14:35:28.013237",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean karaoke room receipt with room fee, stay time, food/drink orders, discount, and tax summary",
+    "special_reference_note": "room usage section and food/drink order section are separate, then summarized by room fee and food subtotal"
+  },
+  "copyright_safety": {
+    "karaoke_brand": "fictional",
+    "branch_name": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_karaoke_operator_used": false,
+    "real_logo_or_character_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_karaoke_chain_identity"
+  },
+  "randomization": {
+    "seed": 1144887970,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 6,
+    "item_count_range": [
+      1,
+      16
+    ],
+    "font_profile": "narrow_karaoke_room_receipt_ms_gothic",
+    "randomized_fields": [
+      "fictional_karaoke_store_profile",
+      "receipt_datetime",
+      "room_no",
+      "entry_checkout_duration",
+      "guest_count",
+      "room_course_fee",
+      "food_drink_order_items",
+      "overall_discount",
+      "mixed_8_and_10_percent_tax_summary",
+      "payment_method"
+    ],
+    "texture_seed": 637153
+  },
+  "store_profile": {
+    "brand": "メロディキューブ",
+    "branch_name": "水戸中央店",
+    "roman_name": "MELODY CUBE",
+    "phone": "043-651-6913",
+    "invoice_registration_number": "T7402095922279",
+    "receipt_no": "547033",
+    "room_no": "35号室",
+    "staff_no": "360"
+  },
+  "entry_datetime": "2026-11-12T13:17:00",
+  "checkout_datetime": "2026-11-12T16:08:00",
+  "receipt_datetime": "2026-11-12T16:10:00",
+  "usage": {
+    "guest_count": 3,
+    "course_name": "昼フリータイム",
+    "minutes": 171,
+    "base_minutes": 180,
+    "per_guest": 980,
+    "room_fee": 2940
+  },
+  "order_items": [
+    {
+      "name": "アイスカフェオレ",
+      "unit_price": 440,
+      "qty": 1,
+      "amount": 440,
+      "tax_rate": 10
+    },
+    {
+      "name": "コカ・ソーダ",
+      "unit_price": 420,
+      "qty": 1,
+      "amount": 420,
+      "tax_rate": 10
+    },
+    {
+      "name": "からあげバスケット",
+      "unit_price": 740,
+      "qty": 1,
+      "amount": 740,
+      "tax_rate": 8
+    },
+    {
+      "name": "ミックスピザ",
+      "unit_price": 860,
+      "qty": 3,
+      "amount": 2580,
+      "tax_rate": 8
+    },
+    {
+      "name": "チキンナゲット",
+      "unit_price": 640,
+      "qty": 1,
+      "amount": 640,
+      "tax_rate": 8
+    }
+  ],
+  "calculation": {
+    "room_fee": 2940,
+    "food_total": 4820,
+    "subtotal": 7760,
+    "discount_rate": 0,
+    "discount": 0,
+    "tax10_target_after_discount": 3800,
+    "tax8_target_after_discount": 3960,
+    "tax10_amount": 345,
+    "tax8_amount": 293,
+    "total": 7760,
+    "payment_method": "クレジット計",
+    "received": 7760,
+    "change": 0
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/008_reference_style_karaoke_room_order_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_karaoke_room_order_receipt_sample_watermarked.png",
+  "layout_features": [
+    "karaoke_room_receipt",
+    "fictional_wordmark_with_receipt_title",
+    "room_number_and_room_fee_section",
+    "entry_checkout_guest_count_rows",
+    "food_and_drink_order_rows_with_unit_price_qty",
+    "room_fee_and_food_subtotal_summary",
+    "overall_percent_discount",
+    "mixed_8_and_10_percent_tax_summary",
+    "large_total_and_payment_rows"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "008_reference_style_karaoke_room_order_receipt",
+  "generation_index": 8,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 8,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1144887970,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_karaoke_room_order_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/008_reference_style_karaoke_room_order_receipt_metadata.json"
+}

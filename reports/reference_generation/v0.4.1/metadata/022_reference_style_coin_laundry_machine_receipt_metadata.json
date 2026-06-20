@@ -1,0 +1,89 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_coin_laundry_machine_receipt",
+  "created_at": "2026-06-20T14:35:29.567831",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "short coin laundry machine receipt",
+    "special_reference_note": "compact machine receipt with service line, payment total, transaction number, serial number, card number, and store block"
+  },
+  "copyright_safety": {
+    "laundry_brand": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_store_name_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_laundry_operator_identity"
+  },
+  "randomization": {
+    "seed": 1425455661,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 1,
+    "item_count_range": [
+      1,
+      2
+    ],
+    "font_profile": "compact_coin_laundry_machine_receipt_ms_gothic",
+    "randomized_fields": [
+      "fictional_laundry_store_profile",
+      "receipt_datetime",
+      "machine_no",
+      "service_lines",
+      "payment_method",
+      "transaction_no",
+      "serial_no",
+      "card_no"
+    ],
+    "texture_seed": 696628
+  },
+  "store_profile": {
+    "name": "クリーンスピン",
+    "address": "兵庫県明石市朝霧台4丁目12-9",
+    "phone": "078-915-6204",
+    "invoice_registration_number": "T6260166775018",
+    "machine_no": "01",
+    "serial_no": "CL62005474",
+    "card_no": "ICVC41468318",
+    "transaction_no": "202608330362"
+  },
+  "receipt_datetime": "2026-08-04T12:43:06",
+  "service_items": [
+    {
+      "name": "洗濯 7kg",
+      "amount": 300
+    }
+  ],
+  "calculation": {
+    "subtotal": 300,
+    "tax_style": "tax_included_or_not_separately_printed",
+    "total": 300,
+    "payment_method": "電子マネー支払"
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/022_reference_style_coin_laundry_machine_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_coin_laundry_machine_receipt_sample_watermarked.png",
+  "layout_features": [
+    "coin_laundry_machine_receipt",
+    "very_short_receipt_body",
+    "machine_number_prefix",
+    "single_or_two_service_lines",
+    "cash_or_card_payment_total",
+    "transaction_serial_and_card_identifiers",
+    "fictional_store_block"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "022_reference_style_coin_laundry_machine_receipt",
+  "generation_index": 22,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 22,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1425455661,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_coin_laundry_machine_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/022_reference_style_coin_laundry_machine_receipt_metadata.json"
+}

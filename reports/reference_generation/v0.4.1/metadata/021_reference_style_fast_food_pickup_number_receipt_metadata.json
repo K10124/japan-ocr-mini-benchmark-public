@@ -1,0 +1,134 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_fast_food_pickup_number_receipt",
+  "created_at": "2026-06-20T14:35:29.506648",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "narrow fast-food receipt with many zero-yen set component rows and large pickup number"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "fictional",
+    "pickup_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity"
+  },
+  "randomization": {
+    "seed": 1510207705,
+    "output_suffix": "",
+    "requested_bundle_count": null,
+    "resolved_row_count": 5,
+    "nonzero_item_count": 1,
+    "item_count_range": [
+      1,
+      3
+    ],
+    "randomized_fields": [
+      "store_profile",
+      "date_time",
+      "bundle_items",
+      "zero_yen_component_rows",
+      "pickup_number",
+      "transaction_numbers",
+      "texture_seed"
+    ],
+    "texture_seed": 288935
+  },
+  "store_profile": {
+    "brand": "TOWN BURGER",
+    "store_name": "タウンバーガー",
+    "branch_name": "岡山中央店",
+    "address": "岡山県岡山市北区本町5-11-2",
+    "phone": "086-108-3721",
+    "invoice_registration_number": "T2453750073052",
+    "register_no": "89",
+    "terminal_no": "797",
+    "transaction_no": "4885",
+    "staff_no": "481"
+  },
+  "receipt_datetime": "2026年07月17日(金)09:56",
+  "items": [
+    {
+      "name": "こどもバーガーセット",
+      "amount": 540,
+      "qty": 1,
+      "row_type": "bundle_parent",
+      "line_role": "set_parent",
+      "amount_semantics": "line_total",
+      "tax_rate": 8
+    },
+    {
+      "name": "チーズミニバーガー",
+      "amount": 0,
+      "qty": 1,
+      "row_type": "bundle_child",
+      "line_role": "set_component",
+      "amount_semantics": "included_in_set",
+      "tax_rate": 8
+    },
+    {
+      "name": "ポテトS",
+      "amount": 0,
+      "qty": 1,
+      "row_type": "bundle_child",
+      "line_role": "set_component",
+      "amount_semantics": "included_in_set",
+      "tax_rate": 8
+    },
+    {
+      "name": "アップルジュースS",
+      "amount": 0,
+      "qty": 1,
+      "row_type": "bundle_child",
+      "line_role": "set_component",
+      "amount_semantics": "included_in_set",
+      "tax_rate": 8
+    },
+    {
+      "name": "えほんクーポン",
+      "amount": 0,
+      "qty": 1,
+      "row_type": "bundle_child",
+      "line_role": "set_component",
+      "amount_semantics": "included_in_set",
+      "tax_rate": 8
+    }
+  ],
+  "calculation": {
+    "subtotal": 540,
+    "tax_included_8_amount": 40,
+    "total": 540,
+    "cash_received": 540,
+    "change": 0,
+    "pickup_number": 265,
+    "zero_yen_row_count": 4
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/021_reference_style_fast_food_pickup_number_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_fast_food_pickup_number_receipt_sample_watermarked.png",
+  "layout_features": [
+    "narrow_fast_food_receipt",
+    "fictional_wordmark_header",
+    "store_address_phone_invoice_block",
+    "many_set_component_rows_with_zero_yen_amounts",
+    "compact_tax_included_summary",
+    "receipt_statement_and_feedback_note",
+    "large_black_pickup_number_box"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "021_reference_style_fast_food_pickup_number_receipt",
+  "generation_index": 21,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 21,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1510207705,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_fast_food_pickup_number_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/021_reference_style_fast_food_pickup_number_receipt_metadata.json"
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_dry_cleaning_adjustment_receipt",
+  "created_at": "2026-06-20T14:35:29.176386",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "dry cleaning adjustment receipt with discounts and point settlement",
+    "special_reference_note": "cleaning service rows use item codes, child adjustment rows, point settlement, tax-included target, and payment/change rows"
+  },
+  "copyright_safety": {
+    "cleaning_brand": "fictional",
+    "branch_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_cleaning_chain_identity"
+  },
+  "randomization": {
+    "seed": 2113674451,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 3,
+    "item_count_range": [
+      1,
+      8
+    ],
+    "font_profile": "dry_cleaning_adjustment_receipt_mixed_logo_and_ms_gothic",
+    "randomized_fields": [
+      "fictional_cleaning_store_profile",
+      "receipt_datetime",
+      "cleaning_item_codes",
+      "clothing_service_items",
+      "discount_child_rows",
+      "renewal_fee",
+      "point_settlement",
+      "tax_included_summary",
+      "payment_method"
+    ],
+    "texture_seed": 983710
+  },
+  "store_profile": {
+    "brand": "みどり洗研",
+    "branch_name": "八王子北店",
+    "address": "東京都八王子市松木2-17-6",
+    "phone": "042-670-8911",
+    "invoice_registration_number": "T1447026779804",
+    "register_no": "4-1741",
+    "staff_code": "44"
+  },
+  "receipt_datetime": "2026-07-23T12:14:00",
+  "service_items": [
+    {
+      "code": "8575",
+      "name": "コート",
+      "price": 1620,
+      "discount": 0,
+      "discount_note": null,
+      "flag": "d"
+    },
+    {
+      "code": "8576",
+      "name": "ネクタイ",
+      "price": 330,
+      "discount": -33,
+      "discount_note": "春の会員割",
+      "flag": "d"
+    },
+    {
+      "code": "8577",
+      "name": "ブラウス",
+      "price": 440,
+      "discount": 0,
+      "discount_note": null,
+      "flag": "d"
+    }
+  ],
+  "calculation": {
+    "item_total_after_item_discounts": 2357,
+    "renewal_fee": 330,
+    "subtotal": 2687,
+    "point_target": 2577,
+    "point_discount": -88,
+    "taxable_target": 2599,
+    "tax_rate": 10,
+    "tax_amount": 236,
+    "total": 2599,
+    "payment_method": "電子マネー",
+    "received": 2599,
+    "change": 0,
+    "point_gain": 25
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/018_reference_style_dry_cleaning_adjustment_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_dry_cleaning_adjustment_receipt_sample_watermarked.png",
+  "layout_features": [
+    "dry_cleaning_adjustment_receipt",
+    "large_cleaning_store_wordmark",
+    "item_code_clothing_service_rows",
+    "child_discount_rows",
+    "optional_renewal_fee_row",
+    "point_settlement_row",
+    "tax_included_target_row",
+    "large_total_credit_or_cash_payment",
+    "point_target_and_store_footer"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "018_reference_style_dry_cleaning_adjustment_receipt",
+  "generation_index": 18,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 18,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 2113674451,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_dry_cleaning_adjustment_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/018_reference_style_dry_cleaning_adjustment_receipt_metadata.json"
+}

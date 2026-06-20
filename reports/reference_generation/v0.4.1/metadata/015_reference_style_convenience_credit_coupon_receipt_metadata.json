@@ -1,0 +1,70 @@
+{
+  "schema_version": "reference-style-clean-template-v1",
+  "template_id": "reference_style_convenience_credit_coupon_receipt",
+  "created_at": "2026-06-20T14:35:28.919109",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "credit_card_slip": "fictional",
+    "campaign_ad": "fictional",
+    "qr_code": "non_functional_fake_pattern",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity"
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/015_reference_style_convenience_credit_coupon_receipt_clean.png",
+  "items": [
+    {
+      "name": "バイオスレンジ フクロ25ヒガシ",
+      "line_amount": 3,
+      "mark": ""
+    },
+    {
+      "name": "BIGデミグラスハンバーグ弁当",
+      "line_amount": 498,
+      "mark": "軽"
+    }
+  ],
+  "total": 540,
+  "randomized_fields": {
+    "renderer_variant_seed": 867989307,
+    "credit_brand": "NOVA CREDIT",
+    "app_name": "レシートリンク",
+    "coupon_variant": {
+      "headline": "ホットスナック50円引き",
+      "sub": "アプリ連携でもらえます!"
+    },
+    "receipt_number": "7-6141-73",
+    "staff_code": "800",
+    "auth_number": "232054",
+    "slip_number": "46444"
+  },
+  "layout_features": [
+    "large_convenience_header_with_logo_area",
+    "store_address_phone_block",
+    "receipt_title_and_datetime",
+    "two_item_tax_mixed_purchase",
+    "external_tax_8_and_10_breakdown",
+    "credit_total",
+    "credit_card_customer_copy",
+    "coupon_ad_with_fake_qr_block",
+    "bottom_register_and_staff_line"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "015_reference_style_convenience_credit_coupon_receipt",
+  "generation_index": 15,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 15,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 867989307,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_convenience_credit_coupon_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/015_reference_style_convenience_credit_coupon_receipt_metadata.json"
+}

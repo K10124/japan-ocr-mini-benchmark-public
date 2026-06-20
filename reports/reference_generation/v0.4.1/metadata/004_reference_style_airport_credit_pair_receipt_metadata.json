@@ -1,0 +1,105 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_airport_credit_pair_receipt",
+  "created_at": "2026-06-20T14:35:27.285759",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "paired airport store receipt and credit-card customer copy slip"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "airport_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "credit_slip": "fictional",
+    "qr_code": "non_functional_fake_pattern",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_airport_brand_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity"
+  },
+  "randomization": {
+    "seed": 371373443,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 2,
+    "item_count_range": [
+      1,
+      4
+    ],
+    "randomized_fields": [
+      "store_profile",
+      "date_time",
+      "items",
+      "tax_rates",
+      "credit_slip_numbers",
+      "masked_member_fields",
+      "fake_qr",
+      "texture_seed"
+    ],
+    "texture_seed": 727755
+  },
+  "store_profile": {
+    "brand": "BLUE WING MART",
+    "branch_name": "展望デッキ前店",
+    "address": "大阪府泉佐野市空港北1-4-6 旅客棟内",
+    "phone": "072-8983-9379",
+    "store_no": "71129",
+    "invoice_registration_number": "T8912681771253",
+    "receipt_no": "7005",
+    "terminal_no": "9",
+    "staff_no": "87",
+    "transaction_no": "188706"
+  },
+  "receipt_datetime": "2026/08/02 18:10:00",
+  "items": [
+    {
+      "name": "搭乗前サンド",
+      "amount": 670,
+      "qty": 1,
+      "tax_rate": 8
+    },
+    {
+      "name": "変更あさり汁",
+      "amount": 140,
+      "qty": 1,
+      "tax_rate": 8
+    }
+  ],
+  "calculation": {
+    "subtotal": 810,
+    "total": 810,
+    "payment_method": "credit",
+    "credit_payment_amount": 810,
+    "tax_included_10_amount": 0,
+    "tax_included_8_amount": 59,
+    "left_receipt_total": 810,
+    "right_credit_slip_total": 810,
+    "paired_slip_count": 2
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/004_reference_style_airport_credit_pair_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_airport_credit_pair_receipt_sample_watermarked.png",
+  "layout_features": [
+    "two_slips_side_by_side",
+    "left_store_receipt_with_coupon_qr_and_points",
+    "right_credit_card_customer_copy",
+    "same_total_repeated_on_both_slips",
+    "masked_member_and_card_fields",
+    "airport_terminal_store_context",
+    "narrow_thermal_paper_pair"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "004_reference_style_airport_credit_pair_receipt",
+  "generation_index": 4,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 4,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 371373443,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_airport_credit_pair_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/004_reference_style_airport_credit_pair_receipt_metadata.json"
+}

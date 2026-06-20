@@ -1,0 +1,108 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_cinema_ticket_receipt",
+  "created_at": "2026-06-20T14:35:29.028081",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "cinema admission ticket with separate receipt block",
+    "special_reference_note": "upper admission ticket area and lower receipt area are rendered as one clean thermal-paper document"
+  },
+  "copyright_safety": {
+    "cinema_brand": "fictional",
+    "movie_title": "fictional",
+    "branch_name": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_movie_title_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_cinema_chain_identity"
+  },
+  "randomization": {
+    "seed": 934096894,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 2,
+    "item_count_range": [
+      1,
+      4
+    ],
+    "font_profile": "cinema_ticket_narrow_mixed_gothic",
+    "randomized_fields": [
+      "fictional_cinema_profile",
+      "fictional_movie_title",
+      "show_datetime",
+      "screen_number",
+      "seat_numbers",
+      "ticket_type",
+      "ticket_count",
+      "payment_method",
+      "barcode_digits"
+    ],
+    "texture_seed": 233951
+  },
+  "cinema_profile": {
+    "brand": "HORIZON CINEMA",
+    "branch": "長町",
+    "address": "宮城県仙台市南町5-20-6",
+    "phone": "022-713-4088",
+    "invoice_registration_number": "T4318822609462",
+    "movie_title": "機械仕掛けの花束",
+    "screen": 7,
+    "row": "K",
+    "seat_start": 19,
+    "ticket_type": "学生特別料金",
+    "unit_price": 1300,
+    "ticket_issue_no": "617226",
+    "register_no": "18-5795",
+    "staff_code": "4052"
+  },
+  "show_datetime": "2026-02-26T11:00:00",
+  "issue_datetime": "2026-02-26T10:33:00",
+  "tickets": {
+    "ticket_type": "学生特別料金",
+    "unit_price": 1300,
+    "ticket_count": 2,
+    "seat_numbers": [
+      "K列-19番",
+      "K列-20番"
+    ],
+    "screen": 7,
+    "barcode_digits": "857392628392837159"
+  },
+  "calculation": {
+    "subtotal": 2600,
+    "tax_rate": 10,
+    "tax_amount": 236,
+    "total": 2600,
+    "payment_method": "クレジットカード",
+    "received": 2600,
+    "change": 0
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/016_reference_style_cinema_ticket_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_cinema_ticket_receipt_sample_watermarked.png",
+  "layout_features": [
+    "cinema_ticket_receipt",
+    "fictional_cinema_wordmark",
+    "upper_admission_ticket_block",
+    "movie_title_showtime_screen_seat_rows",
+    "fake_barcode_ticket_identifier",
+    "perforation_like_separator",
+    "lower_receipt_block",
+    "tax_included_payment_summary",
+    "invoice_registration_number"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "016_reference_style_cinema_ticket_receipt",
+  "generation_index": 16,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 16,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 934096894,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_cinema_ticket_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/016_reference_style_cinema_ticket_receipt_metadata.json"
+}

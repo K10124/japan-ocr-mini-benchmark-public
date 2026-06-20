@@ -1,0 +1,221 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_family_restaurant_long_item_receipt",
+  "created_at": "2026-06-20T14:35:27.431618",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean long family restaurant receipt with many menu rows"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "restaurant_chain": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "menu_items": "fictional_or_generic_restaurant_items",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity"
+  },
+  "randomization": {
+    "seed": 1592931476,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 16,
+    "item_count_range": [
+      1,
+      24
+    ],
+    "font_profile": "mincho_header_biz_ud_gothic_body",
+    "randomized_fields": [
+      "restaurant_profile",
+      "date_time",
+      "table_no",
+      "guest_count",
+      "item_codes",
+      "menu_items",
+      "prices",
+      "quantities",
+      "invoice_registration_number",
+      "font_profile"
+    ]
+  },
+  "store_profile": {
+    "brand": "カフェレストラン ノーヴァ",
+    "brand_kana": "イタリアン・ワイン＆カフェレストラン",
+    "branch_name": "横浜みなと店",
+    "address": "横浜市中区海岸通4-7-2",
+    "phone": "045-819-2920",
+    "table_no": "15",
+    "guest_count": "1",
+    "invoice_registration_number": "T6857626486110",
+    "receipt_no": "87462",
+    "staff_no": "199"
+  },
+  "receipt_datetime": "2026-02-02T16:03:00",
+  "items": [
+    {
+      "code": "09922",
+      "name": "若鶏の香味グリル",
+      "qty": 1,
+      "unit": 850,
+      "amount": 850,
+      "tax_rate": 10
+    },
+    {
+      "code": "05611",
+      "name": "白ぶどうグラス",
+      "qty": 1,
+      "unit": 380,
+      "amount": 380,
+      "tax_rate": 10
+    },
+    {
+      "code": "05837",
+      "name": "フォカッチャ",
+      "qty": 1,
+      "unit": 180,
+      "amount": 180,
+      "tax_rate": 10
+    },
+    {
+      "code": "02778",
+      "name": "ガーリックトースト",
+      "qty": 2,
+      "unit": 240,
+      "amount": 480,
+      "tax_rate": 10
+    },
+    {
+      "code": "08749",
+      "name": "コーヒーゼリー＆ミルクジェラート",
+      "qty": 1,
+      "unit": 330,
+      "amount": 330,
+      "tax_rate": 10
+    },
+    {
+      "code": "09733",
+      "name": "季節野菜のソテー",
+      "qty": 1,
+      "unit": 450,
+      "amount": 450,
+      "tax_rate": 10
+    },
+    {
+      "code": "02584",
+      "name": "柔らか青豆の温サラダ",
+      "qty": 1,
+      "unit": 390,
+      "amount": 390,
+      "tax_rate": 10
+    },
+    {
+      "code": "08897",
+      "name": "チーズ盛り小皿",
+      "qty": 1,
+      "unit": 600,
+      "amount": 600,
+      "tax_rate": 10
+    },
+    {
+      "code": "05726",
+      "name": "赤ぶどうグラス",
+      "qty": 1,
+      "unit": 540,
+      "amount": 540,
+      "tax_rate": 10
+    },
+    {
+      "code": "09729",
+      "name": "ティラミス風ケーキ",
+      "qty": 1,
+      "unit": 320,
+      "amount": 320,
+      "tax_rate": 10
+    },
+    {
+      "code": "09842",
+      "name": "温野菜プレート",
+      "qty": 1,
+      "unit": 510,
+      "amount": 510,
+      "tax_rate": 10
+    },
+    {
+      "code": "06826",
+      "name": "白身魚のオーブン焼き",
+      "qty": 1,
+      "unit": 900,
+      "amount": 900,
+      "tax_rate": 10
+    },
+    {
+      "code": "03762",
+      "name": "セットドリンクバー",
+      "qty": 3,
+      "unit": 180,
+      "amount": 540,
+      "tax_rate": 10
+    },
+    {
+      "code": "08570",
+      "name": "シェフの小皿",
+      "qty": 1,
+      "unit": 410,
+      "amount": 410,
+      "tax_rate": 10
+    },
+    {
+      "code": "06213",
+      "name": "海老と香草のサラダ",
+      "qty": 1,
+      "unit": 370,
+      "amount": 370,
+      "tax_rate": 10
+    },
+    {
+      "code": "07517",
+      "name": "ミートソーススパゲティ",
+      "qty": 2,
+      "unit": 590,
+      "amount": 1180,
+      "tax_rate": 10
+    }
+  ],
+  "calculation": {
+    "subtotal": 8430,
+    "total": 8430,
+    "tax_included_10_target": 8430,
+    "tax_included_10_amount": 766,
+    "payment_method": "クレジット",
+    "payment_amount": 8430,
+    "item_line_count": 16
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/005_reference_style_family_restaurant_long_item_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_family_restaurant_long_item_receipt_sample_watermarked.png",
+  "layout_features": [
+    "narrow_long_clean_restaurant_receipt",
+    "large_fictional_japanese_restaurant_wordmark",
+    "receipt_title_with_angle_brackets",
+    "date_table_number_guest_count_block",
+    "many_code_name_amount_item_rows",
+    "some_quantity_child_rows",
+    "tax_included_10_percent_summary",
+    "large_total_and_credit_payment_line",
+    "bottom_invoice_registration_number"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "005_reference_style_family_restaurant_long_item_receipt",
+  "generation_index": 5,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 5,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1592931476,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_family_restaurant_long_item_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/005_reference_style_family_restaurant_long_item_receipt_metadata.json"
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_electronics_barcode_point_receipt",
+  "created_at": "2026-06-20T14:35:28.213477",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean electronics retailer receipt with top barcode and point/return notes",
+    "special_reference_note": "top barcode and inquiry-number boxes are rendered as semantic traps separate from product totals"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "branch_name": "fictional",
+    "phone_number": "fictional",
+    "url": "non_resolving_example_domain",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_electronics_retailer_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_electronics_retailer_identity"
+  },
+  "randomization": {
+    "seed": 1388549615,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 2,
+    "item_count_range": [
+      1,
+      4
+    ],
+    "font_profile": "bold_biz_ud_header_compact_ms_gothic_receipt_body",
+    "randomized_fields": [
+      "fictional_store_profile",
+      "receipt_datetime",
+      "barcode_number",
+      "product_names_and_model_codes",
+      "item_count",
+      "discount",
+      "payment_method",
+      "point_awarded",
+      "return_service_phone"
+    ],
+    "texture_seed": 116251,
+    "barcode_seed": 765061
+  },
+  "store_profile": {
+    "store_name": "アーバンデンキ",
+    "branch_name": "中央口店",
+    "roman_name": "URBAN DENKI",
+    "phone": "03-3563-5895",
+    "invoice_registration_number": "T6784522036262",
+    "receipt_no": "8395-433230",
+    "terminal_no": "99",
+    "staff_name": "森本",
+    "member_mask": "*96*6*6***"
+  },
+  "receipt_datetime": "2026-03-24T11:17:00",
+  "items": [
+    {
+      "name": "ノートPCスタンド",
+      "model_code": "NPS-17-89",
+      "qty": 1,
+      "unit_price": 2860,
+      "amount": 2860,
+      "tax_rate": 10
+    },
+    {
+      "name": "スマートフォン保護ガラス",
+      "model_code": "GLS-96P-74",
+      "qty": 2,
+      "unit_price": 1380,
+      "amount": 2760,
+      "tax_rate": 10
+    }
+  ],
+  "barcode_number": "7661231401571",
+  "calculation": {
+    "subtotal": 5620,
+    "discount": 0,
+    "total": 5620,
+    "tax_included_10_amount": 510,
+    "point_rate_percent": 8,
+    "point_awarded": 449,
+    "payment_method": "クレジット支払",
+    "received": 5620,
+    "change": 0
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/010_reference_style_electronics_barcode_point_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_electronics_barcode_point_receipt_sample_watermarked.png",
+  "layout_features": [
+    "narrow_electronics_retail_receipt",
+    "fictional_large_camera_or_electronics_store_wordmark",
+    "receipt_title_with_customer_suffix",
+    "top_barcode_and_numeric_barcode_row",
+    "inquiry_receipt_number_box",
+    "stamp_tax_notice_box",
+    "product_name_model_code_quantity_unit_price_rows",
+    "tax_included_10_percent_summary",
+    "point_awarded_row",
+    "return_exchange_service_note_block",
+    "non_resolving_example_shop_url"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "010_reference_style_electronics_barcode_point_receipt",
+  "generation_index": 10,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 10,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1388549615,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_electronics_barcode_point_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/010_reference_style_electronics_barcode_point_receipt_metadata.json"
+}

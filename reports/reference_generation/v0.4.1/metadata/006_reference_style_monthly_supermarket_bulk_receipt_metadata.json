@@ -1,0 +1,414 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_monthly_supermarket_bulk_receipt",
+  "created_at": "2026-06-20T14:35:27.774337",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "long monthly supermarket bulk receipt with reduced-tax marks and barcode footer"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "payment_brand": "fictional",
+    "barcode": "non_functional_fake_pattern",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity"
+  },
+  "randomization": {
+    "seed": 489013581,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_purchased_item_count": 44,
+    "item_line_count": 40,
+    "item_count_range": [
+      1,
+      50
+    ],
+    "randomized_fields": [
+      "store_profile",
+      "date_time",
+      "items",
+      "prices",
+      "quantities",
+      "invoice_registration_number",
+      "payment_numbers",
+      "barcode_pattern",
+      "texture_seed"
+    ],
+    "texture_seed": 146022
+  },
+  "store_profile": {
+    "store_name": "サンリーフマーケット",
+    "branch_name": "高松木太店",
+    "company_name": "サンリーフマーケット株式会社",
+    "address": "香川県高松市木太町2-9-11",
+    "phone": "087-864-1215",
+    "invoice_registration_number": "T3892223668516",
+    "register_no": "0075",
+    "transaction_no": "3168",
+    "staff_no": "29-3"
+  },
+  "receipt_datetime": "2026/06/18(木)　09:11",
+  "items": [
+    {
+      "name": "BPクリームチーズ",
+      "qty": 1,
+      "unit": 250,
+      "amount": 250,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "チョコ効果パウチ",
+      "qty": 1,
+      "unit": 250,
+      "amount": 250,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "米久 串つきフランク",
+      "qty": 2,
+      "unit": 330,
+      "amount": 660,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "大陸肉ワンタン",
+      "qty": 2,
+      "unit": 140,
+      "amount": 280,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "富士の恵み 木綿",
+      "qty": 1,
+      "unit": 70,
+      "amount": 70,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "野菜",
+      "qty": 1,
+      "unit": 140,
+      "amount": 140,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "豚肉しゃぶしゃぶ用",
+      "qty": 1,
+      "unit": 980,
+      "amount": 980,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "金のつぶ とろっ豆",
+      "qty": 1,
+      "unit": 100,
+      "amount": 100,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "塩昆布",
+      "qty": 1,
+      "unit": 110,
+      "amount": 110,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "明治エッセルクッキー",
+      "qty": 2,
+      "unit": 100,
+      "amount": 200,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "ジャガリコバター",
+      "qty": 1,
+      "unit": 150,
+      "amount": 150,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "Smile マイルド",
+      "qty": 1,
+      "unit": 120,
+      "amount": 120,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "キャベツ",
+      "qty": 1,
+      "unit": 90,
+      "amount": 90,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "いわし蒲焼",
+      "qty": 1,
+      "unit": 150,
+      "amount": 150,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "金のつぶ 海苔たれ",
+      "qty": 1,
+      "unit": 120,
+      "amount": 120,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "TVBP 生ハム",
+      "qty": 1,
+      "unit": 170,
+      "amount": 170,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "ツナマヨおにぎり",
+      "qty": 1,
+      "unit": 140,
+      "amount": 140,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "ジャガリコサラダ",
+      "qty": 1,
+      "unit": 130,
+      "amount": 130,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "ミックスサラダ",
+      "qty": 2,
+      "unit": 130,
+      "amount": 260,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "早ゆでフィジリ",
+      "qty": 1,
+      "unit": 70,
+      "amount": 70,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "納豆3P",
+      "qty": 1,
+      "unit": 110,
+      "amount": 110,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "CBアップルティー",
+      "qty": 1,
+      "unit": 80,
+      "amount": 80,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "バナナ袋",
+      "qty": 1,
+      "unit": 170,
+      "amount": 170,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "きざみねぎ",
+      "qty": 1,
+      "unit": 90,
+      "amount": 90,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "さばみそ煮",
+      "qty": 1,
+      "unit": 130,
+      "amount": 130,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "チップスターSうなぎ",
+      "qty": 1,
+      "unit": 80,
+      "amount": 80,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "ミニノダイズシオアジ",
+      "qty": 1,
+      "unit": 90,
+      "amount": 90,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "まるごとイカ唐揚げ",
+      "qty": 1,
+      "unit": 280,
+      "amount": 280,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "たまご10個",
+      "qty": 1,
+      "unit": 240,
+      "amount": 240,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "明治エッセルチョコ",
+      "qty": 1,
+      "unit": 100,
+      "amount": 100,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "骨なしチキンとフランク",
+      "qty": 1,
+      "unit": 550,
+      "amount": 550,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "オーガニック磯のり塩",
+      "qty": 1,
+      "unit": 110,
+      "amount": 110,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "千切キャベツ スーパー",
+      "qty": 1,
+      "unit": 230,
+      "amount": 230,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "冷凍うどん5食",
+      "qty": 1,
+      "unit": 230,
+      "amount": 230,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "トマトケチャップ",
+      "qty": 1,
+      "unit": 190,
+      "amount": 190,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "丸永おいももなか",
+      "qty": 1,
+      "unit": 90,
+      "amount": 90,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "牛角にんにく塩ドレ",
+      "qty": 1,
+      "unit": 180,
+      "amount": 180,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "かぼちゃ1/4カット",
+      "qty": 1,
+      "unit": 150,
+      "amount": 150,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "ハッシュドポテト",
+      "qty": 1,
+      "unit": 230,
+      "amount": 230,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    },
+    {
+      "name": "カットレタス",
+      "qty": 1,
+      "unit": 120,
+      "amount": 120,
+      "tax_rate": 8,
+      "tax_mark": "※"
+    }
+  ],
+  "calculation": {
+    "subtotal_ex_tax": 7890,
+    "external_tax_8_target": 7890,
+    "external_tax_8_amount": 631,
+    "total": 8521,
+    "payment_method": "ミライPay(クレジット)",
+    "payment_amount": 8521,
+    "change": 0,
+    "purchased_item_count": 44,
+    "item_line_count": 40
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/006_reference_style_monthly_supermarket_bulk_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_monthly_supermarket_bulk_receipt_sample_watermarked.png",
+  "layout_features": [
+    "large_fictional_supermarket_wordmark",
+    "app_member_recruitment_message",
+    "very_many_food_item_rows",
+    "right_aligned_amounts_with_reduced_tax_mark",
+    "quantity_child_rows_on_some_items",
+    "external_8_percent_tax_summary",
+    "large_total_and_code_payment_line",
+    "purchased_item_count_line",
+    "fake_barcode_footer"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "006_reference_style_monthly_supermarket_bulk_receipt",
+  "generation_index": 6,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 6,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 489013581,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_monthly_supermarket_bulk_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/006_reference_style_monthly_supermarket_bulk_receipt_metadata.json"
+}
