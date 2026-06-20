@@ -1,0 +1,111 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_yakitori_vertical_brush",
+  "batch_id": "logo_style_receipt_prototypes_20260620_223713",
+  "index": 10,
+  "family": "yakitori",
+  "logo_style": "vertical_brush",
+  "store_identity": {
+    "name": "やきとり丸灯",
+    "subtitle": "串焼き",
+    "branch": "本町店",
+    "english": "KUSHI DINING",
+    "logo_style": "vertical_brush"
+  },
+  "items": [
+    {
+      "name": "串つくね",
+      "qty": 1,
+      "unit_price": 110,
+      "amount": 110,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "定番もつ煮",
+      "qty": 1,
+      "unit_price": 500,
+      "amount": 500,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "串ぼんじり",
+      "qty": 1,
+      "unit_price": 220,
+      "amount": 220,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "串ねぎま",
+      "qty": 1,
+      "unit_price": 198,
+      "amount": 198,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "お通しA",
+      "qty": 1,
+      "unit_price": 110,
+      "amount": 110,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "生ビール",
+      "qty": 1,
+      "unit_price": 640,
+      "amount": 640,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "串ししとう",
+      "qty": 1,
+      "unit_price": 250,
+      "amount": 250,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 2028,
+    "positive_item_total": 2028,
+    "taxable_8": 0,
+    "taxable_10": 2028,
+    "tax_8": 0,
+    "tax_10": 184,
+    "total": 2028
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "vertical_brush",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 975675727,
+    "resolved_item_count": 7
+  },
+  "release_version": "v0.4.2",
+  "release_index": 83,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "logo_style_receipt_prototypes_20260620_223713",
+    "document_id": "010_logo_style_yakitori_vertical_brush",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

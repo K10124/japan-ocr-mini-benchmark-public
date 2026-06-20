@@ -1,0 +1,112 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_042_reuse_shop_seal_square",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 19,
+  "family": "reuse_shop",
+  "logo_style": "seal_square",
+  "store_identity": {
+    "name": "くらし循環店",
+    "subtitle": "買取販売",
+    "branch": "北口店",
+    "english": "SHOP",
+    "logo_style": "seal_square",
+    "logo_shift": "25"
+  },
+  "items": [
+    {
+      "name": "ポイント利用",
+      "qty": 1,
+      "unit_price": 1100,
+      "amount": 1100,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "梱包袋",
+      "qty": 1,
+      "unit_price": 1380,
+      "amount": 1380,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "小型家電品",
+      "qty": 1,
+      "unit_price": 1440,
+      "amount": 1440,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "中古雑貨",
+      "qty": 1,
+      "unit_price": 250,
+      "amount": 250,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "査定手数料",
+      "qty": 1,
+      "unit_price": 430,
+      "amount": 430,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "衣類まとめ",
+      "qty": 1,
+      "unit_price": 1000,
+      "amount": 1000,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 5600,
+    "positive_item_total": 5600,
+    "taxable_8": 0,
+    "taxable_10": 5600,
+    "tax_8": 0,
+    "tax_10": 509,
+    "total": 5600
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "seal_square",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 659347870,
+    "resolved_item_count": 6
+  },
+  "source_reference": {
+    "source_reference_no": 42,
+    "source_reference_industry": "リサイクルショップ",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 52,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "019_store_unique_v5_logo_style_042_reuse_shop_seal_square",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_sweets_circle_stamp",
+  "batch_id": "logo_style_receipt_prototypes_20260620_223713",
+  "index": 1,
+  "family": "sweets",
+  "logo_style": "circle_stamp",
+  "store_identity": {
+    "name": "錦乃庵",
+    "subtitle": "和菓子",
+    "branch": "本町店",
+    "english": "SWEETS SHOP",
+    "logo_style": "circle_stamp"
+  },
+  "items": [
+    {
+      "name": "栗どら焼",
+      "qty": 1,
+      "unit_price": 1020,
+      "amount": 1020,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "豆大福",
+      "qty": 1,
+      "unit_price": 140,
+      "amount": 140,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "季節の羊羹",
+      "qty": 1,
+      "unit_price": 780,
+      "amount": 780,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "紙袋",
+      "qty": 1,
+      "unit_price": 1220,
+      "amount": 1220,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "進物箱",
+      "qty": 2,
+      "unit_price": 220,
+      "amount": 440,
+      "tax_rate": 8,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 3600,
+    "positive_item_total": 3600,
+    "taxable_8": 3600,
+    "taxable_10": 0,
+    "tax_8": 266,
+    "tax_10": 0,
+    "total": 3600
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "circle_stamp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 378895475,
+    "resolved_item_count": 5
+  },
+  "release_version": "v0.4.2",
+  "release_index": 68,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "logo_style_receipt_prototypes_20260620_223713",
+    "document_id": "001_logo_style_sweets_circle_stamp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

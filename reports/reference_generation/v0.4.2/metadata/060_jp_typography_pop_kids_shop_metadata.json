@@ -1,0 +1,92 @@
+{
+  "schema_version": "japanese-typography-receipt-prototype-v1",
+  "template_id": "jp_typography_pop_kids_shop",
+  "batch_id": "learned_trial_japanese_typography_20260620_235110",
+  "index": 5,
+  "family": "pop_kids",
+  "items": [
+    {
+      "name": "どうぶつシール 1",
+      "qty": 1,
+      "unit_price": 490,
+      "amount": 490,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "色えんぴつ 2",
+      "qty": 2,
+      "unit_price": 780,
+      "amount": 1560,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ミニノート 3",
+      "qty": 2,
+      "unit_price": 450,
+      "amount": 900,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "巾着袋 4",
+      "qty": 2,
+      "unit_price": 620,
+      "amount": 1240,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "小さな値引",
+      "qty": 1,
+      "unit_price": -60,
+      "amount": -60,
+      "tax_rate": 10,
+      "row_type": "discount"
+    }
+  ],
+  "calculation": {
+    "subtotal": 4130,
+    "taxable_8": 0,
+    "taxable_10": 4190,
+    "tax_8": 0,
+    "tax_10": 380,
+    "total": 4130
+  },
+  "typography": {
+    "title_script": "Japanese",
+    "title_text": "にじいろ雑貨",
+    "title_style": "pop",
+    "body_style": "gothic",
+    "font_candidates": [
+      "C:\\Windows\\Fonts\\HGRPP1.TTC",
+      "C:\\Windows\\Fonts\\HGRSMP.TTF",
+      "C:\\Windows\\Fonts\\meiryob.ttc"
+    ],
+    "purpose": "Pop-style Japanese title for a small stationery/goods receipt."
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "typography_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 182416950,
+    "resolved_item_count": 5
+  },
+  "release_version": "v0.4.2",
+  "release_index": 60,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_japanese_typography_20260620_235110",
+    "document_id": "005_jp_typography_pop_kids_shop",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

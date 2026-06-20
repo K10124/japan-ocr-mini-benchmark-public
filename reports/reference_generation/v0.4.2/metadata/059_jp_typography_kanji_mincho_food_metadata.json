@@ -1,0 +1,84 @@
+{
+  "schema_version": "japanese-typography-receipt-prototype-v1",
+  "template_id": "jp_typography_kanji_mincho_food",
+  "batch_id": "learned_trial_japanese_typography_20260620_235110",
+  "index": 1,
+  "family": "kanji_mincho",
+  "items": [
+    {
+      "name": "栗ようかん 1",
+      "qty": 1,
+      "unit_price": 1680,
+      "amount": 1680,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "山菜おこわ 2",
+      "qty": 1,
+      "unit_price": 1260,
+      "amount": 1260,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "銀鮭西京焼 3",
+      "qty": 1,
+      "unit_price": 690,
+      "amount": 690,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "茶碗むし 4",
+      "qty": 2,
+      "unit_price": 370,
+      "amount": 740,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 4370,
+    "taxable_8": 690,
+    "taxable_10": 3680,
+    "tax_8": 51,
+    "tax_10": 334,
+    "total": 4370
+  },
+  "typography": {
+    "title_script": "Japanese",
+    "title_text": "青葉堂",
+    "title_style": "mincho",
+    "body_style": "mincho",
+    "font_candidates": [
+      "C:\\Windows\\Fonts\\BIZ-UDMinchoM.ttc",
+      "C:\\Windows\\Fonts\\yumin.ttf",
+      "C:\\Windows\\Fonts\\msmincho.ttc"
+    ],
+    "purpose": "Kanji-heavy Mincho title, formal local food-shop receipt."
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "typography_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 246095498,
+    "resolved_item_count": 4
+  },
+  "release_version": "v0.4.2",
+  "release_index": 59,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_japanese_typography_20260620_235110",
+    "document_id": "001_jp_typography_kanji_mincho_food",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

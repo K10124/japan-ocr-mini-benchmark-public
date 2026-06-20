@@ -1,0 +1,62 @@
+{
+  "schema_version": "jomb-v042-accepted-receipt-structure-release-v1",
+  "version": "v0.4.2",
+  "created_at": "2026-06-21T00:47:02.302324",
+  "accepted_count": 83,
+  "selection_source": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+  "inventory_source": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439",
+  "batch_kind_counts": {
+    "blogger_v4_reference_derived": 10,
+    "generated_receipt_batch": 23,
+    "japanese_typography_prototype": 5,
+    "logo_style_prototype": 23,
+    "store_unique_v5_reference_derived": 22
+  },
+  "top_family_counts": {
+    "sweets": 6,
+    "washoku": 6,
+    "udon": 4,
+    "butcher_shop": 3,
+    "sushi": 3,
+    "restaurant": 3,
+    "home_center": 2,
+    "apparel": 2,
+    "bakery": 2,
+    "onsen": 2,
+    "yakiniku": 2,
+    "yakitori": 2,
+    "specialty_grocery": 1,
+    "department_store": 1,
+    "grocery": 1,
+    "cafe": 1,
+    "leisure_ticket": 1,
+    "sweets_shop": 1,
+    "drugstore": 1,
+    "station_deli": 1
+  },
+  "top_logo_style_counts": {
+    "seal_square": 12,
+    "heavy_horizontal_brush": 11,
+    "english_jp": 9,
+    "horizontal_brush": 5,
+    "ink_enso_brush": 4,
+    "side_icons": 3,
+    "circle_stamp": 3,
+    "udon_bold": 2,
+    "vertical_brush": 2,
+    "kyokasho": 2,
+    "heavy_vertical_brush": 2,
+    "fish_badge": 1,
+    "gyosho": 1,
+    "mincho": 1,
+    "pop": 1,
+    "onsen_bold": 1
+  },
+  "report_dir": "reports/reference_generation/v0.4.2",
+  "hero_asset": "assets/jomb_v042_receipt_wall.png",
+  "public_data_safety": {
+    "real_reference_images_copied": false,
+    "real_personal_information_copied": false,
+    "fictional_synthetic_receipts_only": true
+  }
+}

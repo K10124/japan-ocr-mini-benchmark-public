@@ -1,0 +1,104 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_taxi_short_receipt",
+  "created_at": "2026-06-20T14:35:28.741101",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean short taxi or transport fare receipt",
+    "multi_receipt_reference_grouping": "same_store_type_grouped_into_one_template"
+  },
+  "copyright_safety": {
+    "company_name": "fictional",
+    "transport_operator": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "driver_name": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_transport_company_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_transport_company_identity",
+    "store_name": "fictional",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1713528917,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 1,
+    "item_count_range": [
+      1,
+      2
+    ],
+    "layout_variant": "centered_ticket",
+    "font_profile": "compact_ms_gothic_body_biz_ud_heading",
+    "randomized_fields": [
+      "transport_company_profile",
+      "receipt_datetime",
+      "fare",
+      "surcharge",
+      "vehicle_no",
+      "driver_name",
+      "receipt_no",
+      "terminal_no",
+      "invoice_registration_number",
+      "layout_variant"
+    ],
+    "texture_seed": 615481
+  },
+  "company_profile": {
+    "company_name": "東雲さくら交通",
+    "group_name": "SAKURA CITY CAB",
+    "address": "東京都江東区新木場2-4-8",
+    "phone": "03-833-9969",
+    "invoice_registration_number": "T4800602955894",
+    "vehicle_no": "42-83",
+    "driver_name": "伊藤",
+    "receipt_no": "4397",
+    "terminal_no": "56"
+  },
+  "receipt_datetime": "2026-07-08T13:34:00",
+  "calculation": {
+    "fare": 1200,
+    "surcharge": 0,
+    "total": 1200,
+    "tax_included_10_amount": 109,
+    "payment_method": "fare_receipt",
+    "line_count": 1
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/014_reference_style_taxi_short_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_taxi_short_receipt_sample_watermarked.png",
+  "layout_features": [
+    "short_taxi_fare_receipt",
+    "large_receipt_title",
+    "fare_amount_prominent",
+    "tax_included_10_percent_lines",
+    "vehicle_driver_terminal_identifiers",
+    "bottom_invoice_registration_number",
+    "fictional_transport_company_footer",
+    "same_type_multi_receipt_reference_grouped_as_one_template"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "014_reference_style_taxi_short_receipt",
+  "generation_index": 14,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 14,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1713528917,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_taxi_short_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/014_reference_style_taxi_short_receipt_metadata.json",
+  "release_version": "v0.4.2",
+  "release_index": 33,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "reference_clean_audit_fixed_20260620_143526",
+    "document_id": "014_reference_style_taxi_short_receipt",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

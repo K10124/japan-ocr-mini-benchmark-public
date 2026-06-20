@@ -1,0 +1,124 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_shared_workspace_time_receipt",
+  "created_at": "2026-06-20T14:35:26.767958",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean shared workspace or booth usage receipt with time-based billing",
+    "special_reference_note": "membership number, entry number, entry/checkout time, stay duration, course fee, and 8/10 percent subtotal rows are extraction traps"
+  },
+  "copyright_safety": {
+    "space_brand": "fictional",
+    "branch_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_shared_space_operator_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_net_cafe_or_shared_space_identity",
+    "store_name": "fictional",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 405942532,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 2,
+    "item_count_range": [
+      1,
+      5
+    ],
+    "font_profile": "narrow_ms_gothic_membership_time_receipt",
+    "randomized_fields": [
+      "fictional_space_profile",
+      "member_no",
+      "entry_no",
+      "entry_checkout_receipt_datetimes",
+      "stay_duration",
+      "usage_course",
+      "extension_fee",
+      "optional_service_lines",
+      "8_and_10_percent_subtotals",
+      "payment_method"
+    ],
+    "texture_seed": 263131
+  },
+  "space_profile": {
+    "brand_en": "WORK POD SPACE",
+    "brand_jp": "ワークポッドラウンジ",
+    "branch_name": "水町駅前店",
+    "address": "滋賀県水町市中央通1-7-4",
+    "phone": "0748-84-1710",
+    "invoice_registration_number": "T4898912749100",
+    "member_no": "4051541685",
+    "entry_no": "489783903",
+    "receipt_no": "6272"
+  },
+  "entry_datetime": "2026-06-22T22:56:00",
+  "checkout_datetime": "2026-06-23T03:48:00",
+  "receipt_datetime": "2026-06-23T03:48:00",
+  "usage": {
+    "course_name": "5時間集中パック",
+    "base_minutes": 300,
+    "base_fee": 1980,
+    "extra_minutes": 0,
+    "extension_fee": 0,
+    "usage_minutes": 292
+  },
+  "booth": "リクライニング",
+  "options": [
+    {
+      "name": "ドリンク追加",
+      "amount": 260,
+      "tax_rate": 8
+    }
+  ],
+  "calculation": {
+    "service_total_10": 1980,
+    "goods_total_8": 260,
+    "tax10_amount": 180,
+    "tax8_amount": 19,
+    "total": 2240,
+    "payment_method": "コード決済",
+    "received": 2240,
+    "change": 0
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/001_reference_style_shared_workspace_time_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_shared_workspace_time_receipt_sample_watermarked.png",
+  "layout_features": [
+    "shared_workspace_time_billing_receipt",
+    "large_english_space_brand_header",
+    "member_no_and_entry_no_row",
+    "entry_checkout_and_stay_duration_rows",
+    "usage_course_and_package_fee",
+    "optional_extension_or_service_rows",
+    "8_percent_and_10_percent_subtotal_rows",
+    "large_total_near_bottom",
+    "payment_and_change_rows"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "001_reference_style_shared_workspace_time_receipt",
+  "generation_index": 1,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 1,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 405942532,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_shared_workspace_time_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/001_reference_style_shared_workspace_time_receipt_metadata.json",
+  "release_version": "v0.4.2",
+  "release_index": 32,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "reference_clean_audit_fixed_20260620_143526",
+    "document_id": "001_reference_style_shared_workspace_time_receipt",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "japanese-typography-receipt-prototype-v1",
+  "template_id": "jp_typography_gyosho_sweets",
+  "batch_id": "learned_trial_japanese_typography_20260620_235110",
+  "index": 4,
+  "family": "gyosho_sweets",
+  "items": [
+    {
+      "name": "抹茶まんじゅう 1",
+      "qty": 2,
+      "unit_price": 710,
+      "amount": 1420,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "進物箱 2",
+      "qty": 1,
+      "unit_price": 400,
+      "amount": 400,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "季節の羊羹 3",
+      "qty": 1,
+      "unit_price": 650,
+      "amount": 650,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "栗どら焼 4",
+      "qty": 1,
+      "unit_price": 220,
+      "amount": 220,
+      "tax_rate": 8,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 2690,
+    "taxable_8": 2690,
+    "taxable_10": 0,
+    "tax_8": 199,
+    "tax_10": 0,
+    "total": 2690
+  },
+  "typography": {
+    "title_script": "Japanese",
+    "title_text": "菓匠 こはる",
+    "title_style": "gyosho",
+    "body_style": "mincho",
+    "font_candidates": [
+      "C:\\Windows\\Fonts\\HGRGY.TTC",
+      "C:\\Windows\\Fonts\\HGRGE.TTC",
+      "C:\\Windows\\Fonts\\HGRKK.TTC",
+      "C:\\Windows\\Fonts\\yumin.ttf"
+    ],
+    "purpose": "Brush/gyosho-like Japanese title for sweets gift receipts."
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "typography_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1063135612,
+    "resolved_item_count": 4
+  },
+  "release_version": "v0.4.2",
+  "release_index": 56,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_japanese_typography_20260620_235110",
+    "document_id": "004_jp_typography_gyosho_sweets",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

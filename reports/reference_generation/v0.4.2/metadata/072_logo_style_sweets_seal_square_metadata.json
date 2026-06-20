@@ -1,0 +1,103 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_sweets_seal_square",
+  "batch_id": "logo_style_receipt_prototypes_20260620_223713",
+  "index": 3,
+  "family": "sweets",
+  "logo_style": "seal_square",
+  "store_identity": {
+    "name": "菓匠 こはる",
+    "subtitle": "和菓子",
+    "branch": "金池店",
+    "english": "SWEETS SHOP",
+    "logo_style": "seal_square"
+  },
+  "items": [
+    {
+      "name": "季節の羊羹",
+      "qty": 1,
+      "unit_price": 720,
+      "amount": 720,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "抹茶まんじゅう",
+      "qty": 1,
+      "unit_price": 430,
+      "amount": 430,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "豆大福",
+      "qty": 1,
+      "unit_price": 370,
+      "amount": 370,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "栗どら焼",
+      "qty": 1,
+      "unit_price": 490,
+      "amount": 490,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "紙袋",
+      "qty": 1,
+      "unit_price": 890,
+      "amount": 890,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "進物箱",
+      "qty": 1,
+      "unit_price": 900,
+      "amount": 900,
+      "tax_rate": 8,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 3800,
+    "positive_item_total": 3800,
+    "taxable_8": 3800,
+    "taxable_10": 0,
+    "tax_8": 281,
+    "tax_10": 0,
+    "total": 3800
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "seal_square",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1476835090,
+    "resolved_item_count": 6
+  },
+  "release_version": "v0.4.2",
+  "release_index": 72,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "logo_style_receipt_prototypes_20260620_223713",
+    "document_id": "003_logo_style_sweets_seal_square",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

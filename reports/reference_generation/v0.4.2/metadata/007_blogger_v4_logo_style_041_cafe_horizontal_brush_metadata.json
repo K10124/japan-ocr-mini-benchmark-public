@@ -1,0 +1,112 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "blogger_v4_logo_style_041_cafe_horizontal_brush",
+  "batch_id": "learned_trial_blogger_v4_20260620_235110",
+  "index": 7,
+  "family": "cafe",
+  "logo_style": "horizontal_brush",
+  "store_identity": {
+    "name": "豆庭カフェ",
+    "subtitle": "CAFE",
+    "branch": "駅前店",
+    "english": "SHOP",
+    "logo_style": "horizontal_brush",
+    "logo_shift": "2"
+  },
+  "items": [
+    {
+      "name": "カフェラテ",
+      "qty": 1,
+      "unit_price": 150,
+      "amount": 150,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "焼き菓子袋",
+      "qty": 1,
+      "unit_price": 600,
+      "amount": 600,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ブレンドコーヒー",
+      "qty": 2,
+      "unit_price": 1050,
+      "amount": 2100,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ミニサラダ",
+      "qty": 1,
+      "unit_price": 1270,
+      "amount": 1270,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "モーニングセット",
+      "qty": 1,
+      "unit_price": 920,
+      "amount": 920,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "厚切りトースト",
+      "qty": 1,
+      "unit_price": 1020,
+      "amount": 1020,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 6060,
+    "positive_item_total": 6060,
+    "taxable_8": 0,
+    "taxable_10": 6060,
+    "tax_8": 0,
+    "tax_10": 550,
+    "total": 6060
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "horizontal_brush",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 2015047711,
+    "resolved_item_count": 6
+  },
+  "source_reference": {
+    "source_reference_no": 41,
+    "source_reference_industry": "カフェ",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 7,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_blogger_v4_20260620_235110",
+    "document_id": "007_blogger_v4_logo_style_041_cafe_horizontal_brush",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

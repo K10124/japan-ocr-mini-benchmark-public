@@ -1,0 +1,83 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_dark_phone_coupon_receipt",
+  "created_at": "2026-06-20T14:35:29.415488",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "invoice_registration_number": "fictional",
+    "payment_brand": "fictional",
+    "campaign_ad": "fictional",
+    "qr_code": "non_functional_fake_pattern",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity",
+    "real_reference_images_are_dataset_records": false
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/020_reference_style_dark_phone_coupon_receipt_clean.png",
+  "items": [
+    {
+      "name": "FF ふわチキン旨しお",
+      "line_amount": 248
+    },
+    {
+      "name": "からあげカップ レモン味",
+      "line_amount": 248
+    },
+    {
+      "name": "ホワイトウォーター500ML",
+      "line_amount": 149
+    },
+    {
+      "name": "カントリー 焼きカカオ185g",
+      "line_amount": 132
+    }
+  ],
+  "total": 777,
+  "invoice_registration_number": "T0000000000000",
+  "randomized_fields": {
+    "renderer_variant_seed": 541961409,
+    "payment_brand": "HARBOR PAY",
+    "ad_variant": {
+      "headline": "アプリ登録キャンペーン!",
+      "lead": "初回登録で",
+      "big": "50",
+      "unit": "ポイント"
+    }
+  },
+  "layout_features": [
+    "compact_large_wordmark_header",
+    "dense_store_phone_invoice_terminal_lines",
+    "receipt_title_bracket",
+    "short_item_list_with_right_aligned_amounts",
+    "dense_tax_payment_points_sections",
+    "lower_coupon_and_fake_qr_block"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "020_reference_style_dark_phone_coupon_receipt",
+  "generation_index": 20,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 20,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 541961409,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_coupon_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/020_reference_style_dark_phone_coupon_receipt_metadata.json",
+  "release_version": "v0.4.2",
+  "release_index": 19,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "reference_clean_audit_fixed_20260620_143526",
+    "document_id": "020_reference_style_dark_phone_coupon_receipt",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

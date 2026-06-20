@@ -1,0 +1,140 @@
+{
+  "schema_version": "reference-style-clean-template-v2",
+  "template_id": "reference_style_home_center_point_receipt",
+  "created_at": "2026-06-20T14:35:29.654260",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false,
+    "visual_family": "clean home center receipt with JAN-code item rows and point details",
+    "special_reference_note": "item rows include JAN-like numbers and category/product lines before each amount"
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "branch_name": "fictional",
+    "phone_number": "fictional",
+    "point_program": "fictional",
+    "invoice_registration_number": "synthetic_T_plus_13_digits",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "real_home_center_used": false,
+    "real_point_program_used": false,
+    "real_logo_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_home_center_identity",
+    "address": "fictional",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1356085564,
+    "output_suffix": "",
+    "requested_item_count": null,
+    "resolved_item_count": 3,
+    "item_count_range": [
+      1,
+      6
+    ],
+    "font_profile": "narrow_ms_gothic_jan_rows_with_bold_home_center_header",
+    "randomized_fields": [
+      "fictional_store_profile",
+      "receipt_datetime",
+      "jan_numbers",
+      "item_codes",
+      "home_center_product_names",
+      "item_count",
+      "gift_payment",
+      "cash_received_and_change",
+      "point_card_mask",
+      "point_balance"
+    ],
+    "texture_seed": 621946
+  },
+  "store_profile": {
+    "store_name": "ホームコア",
+    "branch_name": "大和南店",
+    "roman_name": "HOME CORE",
+    "phone": "052-2571-4186",
+    "invoice_registration_number": "T1337969425414",
+    "receipt_no": "1523",
+    "register_no": "3-1082",
+    "staff_name": "西尾",
+    "member_mask": "888*8**8**"
+  },
+  "receipt_datetime": "2026-12-07T19:08:00",
+  "items": [
+    {
+      "jan": "1045455276611",
+      "item_code": "144095",
+      "category": "HC金物",
+      "name": "ステンレス小ねじ",
+      "qty": 2,
+      "unit_price": 220,
+      "amount": 440,
+      "tax_rate": 10
+    },
+    {
+      "jan": "1203756933939",
+      "item_code": "434886",
+      "category": "HC作業手袋",
+      "name": "軍手 12双組",
+      "qty": 1,
+      "unit_price": 770,
+      "amount": 770,
+      "tax_rate": 10
+    },
+    {
+      "jan": "6353488047429",
+      "item_code": "912673",
+      "category": "HC園芸資材",
+      "name": "グロウコンテナ",
+      "qty": 1,
+      "unit_price": 240,
+      "amount": 240,
+      "tax_rate": 10
+    }
+  ],
+  "calculation": {
+    "subtotal": 1450,
+    "tax_included_10_amount": 131,
+    "gift_amount": 0,
+    "received": 2000,
+    "paid_cash": 2000,
+    "change": 550,
+    "earned_points": 6,
+    "point_balance": 2904
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/023_reference_style_home_center_point_receipt_clean.png",
+  "preview_sample_watermarked_png": "assets\\samples\\images_preview_sample_watermarked\\reference_style_home_center_point_receipt_sample_watermarked.png",
+  "layout_features": [
+    "very_narrow_home_center_receipt",
+    "receipt_title_above_fictional_home_center_logo",
+    "return_exchange_notice_block_near_top",
+    "date_and_receipt_number_near_header",
+    "jan_number_rows_before_product_rows",
+    "home_center_category_and_product_name_rows",
+    "tax_included_10_percent_summary",
+    "gift_payment_cash_received_change_rows",
+    "fictional_point_program_details",
+    "point_notice_footer"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "023_reference_style_home_center_point_receipt",
+  "generation_index": 23,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 23,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1356085564,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_home_center_point_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/023_reference_style_home_center_point_receipt_metadata.json",
+  "release_version": "v0.4.2",
+  "release_index": 26,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "reference_clean_audit_fixed_20260620_143526",
+    "document_id": "023_reference_style_home_center_point_receipt",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

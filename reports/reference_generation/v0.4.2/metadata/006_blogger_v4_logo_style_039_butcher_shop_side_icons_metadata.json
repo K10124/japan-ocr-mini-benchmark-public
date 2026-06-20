@@ -1,0 +1,104 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "blogger_v4_logo_style_039_butcher_shop_side_icons",
+  "batch_id": "learned_trial_blogger_v4_20260620_235110",
+  "index": 6,
+  "family": "butcher_shop",
+  "logo_style": "side_icons",
+  "store_identity": {
+    "name": "和牛 まつ峰",
+    "subtitle": "精肉店",
+    "branch": "駅前店",
+    "english": "SHOP",
+    "logo_style": "side_icons",
+    "logo_shift": "-3"
+  },
+  "items": [
+    {
+      "name": "豚バラしゃぶ用",
+      "qty": 1,
+      "unit_price": 150,
+      "amount": 150,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "鶏つくね串",
+      "qty": 1,
+      "unit_price": 1170,
+      "amount": 1170,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "味付けホルモン",
+      "qty": 2,
+      "unit_price": 1040,
+      "amount": 2080,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "和牛すき焼き用",
+      "qty": 1,
+      "unit_price": 560,
+      "amount": 560,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "精肉店メンチ",
+      "qty": 1,
+      "unit_price": 600,
+      "amount": 600,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 4560,
+    "positive_item_total": 4560,
+    "taxable_8": 0,
+    "taxable_10": 4560,
+    "tax_8": 0,
+    "tax_10": 414,
+    "total": 4560
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "side_icons",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1756572051,
+    "resolved_item_count": 5
+  },
+  "source_reference": {
+    "source_reference_no": 39,
+    "source_reference_industry": "精肉店",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 6,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_blogger_v4_20260620_235110",
+    "document_id": "006_blogger_v4_logo_style_039_butcher_shop_side_icons",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

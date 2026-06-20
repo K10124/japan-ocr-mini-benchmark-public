@@ -1,0 +1,96 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "blogger_v4_logo_style_015_butcher_shop_heavy_horizontal_brush",
+  "batch_id": "learned_trial_blogger_v4_20260620_235110",
+  "index": 2,
+  "family": "butcher_shop",
+  "logo_style": "heavy_horizontal_brush",
+  "store_identity": {
+    "name": "肉匠 たかね",
+    "subtitle": "精肉店",
+    "branch": "本店",
+    "english": "SHOP",
+    "logo_style": "heavy_horizontal_brush",
+    "logo_shift": "30"
+  },
+  "items": [
+    {
+      "name": "焼肉盛合せ小",
+      "qty": 2,
+      "unit_price": 1050,
+      "amount": 2100,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "黒毛和牛切落し",
+      "qty": 1,
+      "unit_price": 810,
+      "amount": 810,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "手ごねハンバーグ種",
+      "qty": 2,
+      "unit_price": 110,
+      "amount": 220,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "国産鶏もも角切り",
+      "qty": 1,
+      "unit_price": 1060,
+      "amount": 1060,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 4190,
+    "positive_item_total": 4190,
+    "taxable_8": 0,
+    "taxable_10": 4190,
+    "tax_8": 0,
+    "tax_10": 380,
+    "total": 4190
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "heavy_horizontal_brush",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 2029531049,
+    "resolved_item_count": 4
+  },
+  "source_reference": {
+    "source_reference_no": 15,
+    "source_reference_industry": "精肉店",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 2,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_blogger_v4_20260620_235110",
+    "document_id": "002_blogger_v4_logo_style_015_butcher_shop_heavy_horizontal_brush",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

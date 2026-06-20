@@ -1,0 +1,112 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_028_karaoke_english_jp",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 14,
+  "family": "karaoke",
+  "logo_style": "english_jp",
+  "store_identity": {
+    "name": "うた箱 こだま",
+    "subtitle": "ルーム利用",
+    "branch": "本町店",
+    "english": "SHOP",
+    "logo_style": "english_jp",
+    "logo_shift": "-11"
+  },
+  "items": [
+    {
+      "name": "会員割引",
+      "qty": 1,
+      "unit_price": 480,
+      "amount": 480,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ドリンクバー",
+      "qty": 1,
+      "unit_price": 700,
+      "amount": 700,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "夜間利用加算",
+      "qty": 1,
+      "unit_price": 1280,
+      "amount": 1280,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "フードセット",
+      "qty": 1,
+      "unit_price": 150,
+      "amount": 150,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "延長30分",
+      "qty": 1,
+      "unit_price": 150,
+      "amount": 150,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ルーム料金",
+      "qty": 1,
+      "unit_price": 180,
+      "amount": 180,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 2940,
+    "positive_item_total": 2940,
+    "taxable_8": 0,
+    "taxable_10": 2940,
+    "tax_8": 0,
+    "tax_10": 267,
+    "total": 2940
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "english_jp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1436907763,
+    "resolved_item_count": 6
+  },
+  "source_reference": {
+    "source_reference_no": 28,
+    "source_reference_industry": "カラオケ",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 47,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "014_store_unique_v5_logo_style_028_karaoke_english_jp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

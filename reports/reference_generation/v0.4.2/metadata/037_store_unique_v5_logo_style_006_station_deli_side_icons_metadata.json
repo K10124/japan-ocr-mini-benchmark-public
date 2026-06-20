@@ -1,0 +1,104 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_006_station_deli_side_icons",
+  "batch_id": "learned_trial_store_unique_v5_20260620_235110",
+  "index": 4,
+  "family": "station_deli",
+  "logo_style": "side_icons",
+  "store_identity": {
+    "name": "鶏めし 山音",
+    "subtitle": "焼鳥惣菜",
+    "branch": "駅南口店",
+    "english": "SHOP",
+    "logo_style": "side_icons",
+    "logo_shift": "-6"
+  },
+  "items": [
+    {
+      "name": "季節惣菜",
+      "qty": 1,
+      "unit_price": 920,
+      "amount": 920,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "つくね串",
+      "qty": 1,
+      "unit_price": 340,
+      "amount": 340,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "炊き込みご飯",
+      "qty": 1,
+      "unit_price": 580,
+      "amount": 580,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "焼鳥もも串",
+      "qty": 1,
+      "unit_price": 1130,
+      "amount": 1130,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "鶏そぼろ弁当",
+      "qty": 1,
+      "unit_price": 510,
+      "amount": 510,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 3480,
+    "positive_item_total": 3480,
+    "taxable_8": 0,
+    "taxable_10": 3480,
+    "tax_8": 0,
+    "tax_10": 316,
+    "total": 3480
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "side_icons",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1368498974,
+    "resolved_item_count": 5
+  },
+  "source_reference": {
+    "source_reference_no": 6,
+    "source_reference_industry": "惣菜・焼き鳥",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 37,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_store_unique_v5_20260620_235110",
+    "document_id": "004_store_unique_v5_logo_style_006_station_deli_side_icons",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "japanese-typography-receipt-prototype-v1",
+  "template_id": "jp_typography_kaisho_clinic_service",
+  "batch_id": "learned_trial_japanese_typography_20260620_235110",
+  "index": 3,
+  "family": "kaisho_service",
+  "items": [
+    {
+      "name": "会員値引 1",
+      "qty": 1,
+      "unit_price": 470,
+      "amount": 470,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "処方袋 2",
+      "qty": 1,
+      "unit_price": 910,
+      "amount": 910,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "マスク小箱 3",
+      "qty": 1,
+      "unit_price": 510,
+      "amount": 510,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "胃腸薬 4",
+      "qty": 1,
+      "unit_price": 1410,
+      "amount": 1410,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "保湿クリーム 5",
+      "qty": 1,
+      "unit_price": 980,
+      "amount": 980,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 4280,
+    "taxable_8": 0,
+    "taxable_10": 4280,
+    "tax_8": 0,
+    "tax_10": 389,
+    "total": 4280
+  },
+  "typography": {
+    "title_script": "Japanese",
+    "title_text": "山里薬房",
+    "title_style": "kyokasho",
+    "body_style": "mono",
+    "font_candidates": [
+      "C:\\Windows\\Fonts\\UDDigiKyokashoN-B.ttc",
+      "C:\\Windows\\Fonts\\UDDigiKyokashoN-R.ttc",
+      "C:\\Windows\\Fonts\\HGRKK.TTC"
+    ],
+    "purpose": "Kaisho-like education font title with narrow thermal body."
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "typography_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1212141164,
+    "resolved_item_count": 5
+  },
+  "release_version": "v0.4.2",
+  "release_index": 58,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_japanese_typography_20260620_235110",
+    "document_id": "003_jp_typography_kaisho_clinic_service",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

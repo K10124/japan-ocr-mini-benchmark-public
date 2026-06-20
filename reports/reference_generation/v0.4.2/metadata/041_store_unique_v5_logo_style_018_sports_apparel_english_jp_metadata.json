@@ -1,0 +1,112 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_018_sports_apparel_english_jp",
+  "batch_id": "learned_trial_store_unique_v5_20260620_235110",
+  "index": 8,
+  "family": "sports_apparel",
+  "logo_style": "english_jp",
+  "store_identity": {
+    "name": "MOVE BASE",
+    "subtitle": "スポーツ用品",
+    "branch": "駅前店",
+    "english": "SHOP",
+    "logo_style": "english_jp",
+    "logo_shift": "15"
+  },
+  "items": [
+    {
+      "name": "吸汗シャツ",
+      "qty": 1,
+      "unit_price": 850,
+      "amount": 850,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "会員値引",
+      "qty": 1,
+      "unit_price": 1030,
+      "amount": 1030,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ランニング靴下",
+      "qty": 1,
+      "unit_price": 480,
+      "amount": 480,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "シューズ袋",
+      "qty": 1,
+      "unit_price": 690,
+      "amount": 690,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "スポーツタオル",
+      "qty": 1,
+      "unit_price": 1460,
+      "amount": 1460,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "トレーニングT",
+      "qty": 1,
+      "unit_price": 1000,
+      "amount": 1000,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 5510,
+    "positive_item_total": 5510,
+    "taxable_8": 0,
+    "taxable_10": 5510,
+    "tax_8": 0,
+    "tax_10": 500,
+    "total": 5510
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "english_jp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1517243808,
+    "resolved_item_count": 6
+  },
+  "source_reference": {
+    "source_reference_no": 18,
+    "source_reference_industry": "スポーツ・ファッション",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 41,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_store_unique_v5_20260620_235110",
+    "document_id": "008_store_unique_v5_logo_style_018_sports_apparel_english_jp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_023_farm_market_circle_stamp",
+  "batch_id": "learned_trial_store_unique_v5_20260620_235110",
+  "index": 11,
+  "family": "farm_market",
+  "logo_style": "circle_stamp",
+  "store_identity": {
+    "name": "里山マルシェ",
+    "subtitle": "地元野菜",
+    "branch": "港町店",
+    "english": "SHOP",
+    "logo_style": "circle_stamp",
+    "logo_shift": "14"
+  },
+  "items": [
+    {
+      "name": "手作り味噌",
+      "qty": 1,
+      "unit_price": 400,
+      "amount": 400,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "きゅうり袋",
+      "qty": 1,
+      "unit_price": 170,
+      "amount": 170,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "季節果物小箱",
+      "qty": 1,
+      "unit_price": 700,
+      "amount": 700,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "朝採れトマト",
+      "qty": 1,
+      "unit_price": 530,
+      "amount": 530,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 1800,
+    "positive_item_total": 1800,
+    "taxable_8": 0,
+    "taxable_10": 1800,
+    "tax_8": 0,
+    "tax_10": 163,
+    "total": 1800
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "circle_stamp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 111836417,
+    "resolved_item_count": 4
+  },
+  "source_reference": {
+    "source_reference_no": 23,
+    "source_reference_industry": "産直・食品",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 44,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_store_unique_v5_20260620_235110",
+    "document_id": "011_store_unique_v5_logo_style_023_farm_market_circle_stamp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

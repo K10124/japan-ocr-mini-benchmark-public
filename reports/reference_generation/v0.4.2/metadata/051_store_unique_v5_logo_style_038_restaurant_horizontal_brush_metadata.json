@@ -1,0 +1,96 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_038_restaurant_horizontal_brush",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 18,
+  "family": "restaurant",
+  "logo_style": "horizontal_brush",
+  "store_identity": {
+    "name": "酒菜 ほの灯",
+    "subtitle": "酒菜",
+    "branch": "品川通り店",
+    "english": "RESTAURANT",
+    "logo_style": "horizontal_brush",
+    "logo_shift": "26"
+  },
+  "items": [
+    {
+      "name": "生ビール",
+      "qty": 1,
+      "unit_price": 1740,
+      "amount": 1740,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "季節サラダ",
+      "qty": 1,
+      "unit_price": 440,
+      "amount": 440,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "焼きおにぎり",
+      "qty": 1,
+      "unit_price": 1930,
+      "amount": 1930,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "鶏唐揚げ",
+      "qty": 1,
+      "unit_price": 810,
+      "amount": 810,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 4920,
+    "positive_item_total": 4920,
+    "taxable_8": 0,
+    "taxable_10": 4920,
+    "tax_8": 0,
+    "tax_10": 447,
+    "total": 4920
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "horizontal_brush",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 38624335,
+    "resolved_item_count": 4
+  },
+  "source_reference": {
+    "source_reference_no": 38,
+    "source_reference_industry": "居酒屋・飲食",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 51,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "018_store_unique_v5_logo_style_038_restaurant_horizontal_brush",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

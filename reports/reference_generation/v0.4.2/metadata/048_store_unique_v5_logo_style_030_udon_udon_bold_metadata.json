@@ -1,0 +1,120 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_030_udon_udon_bold",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 15,
+  "family": "udon",
+  "logo_style": "udon_bold",
+  "store_identity": {
+    "name": "花見川製麺",
+    "subtitle": "製麺所",
+    "branch": "西町店",
+    "english": "UDON KITCHEN",
+    "logo_style": "udon_bold",
+    "logo_shift": "28"
+  },
+  "items": [
+    {
+      "name": "来店札値引",
+      "qty": 1,
+      "unit_price": 490,
+      "amount": 490,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ごぼう天うどん",
+      "qty": 1,
+      "unit_price": 490,
+      "amount": 490,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "青のり竹輪天",
+      "qty": 1,
+      "unit_price": 410,
+      "amount": 410,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "月見うどん",
+      "qty": 1,
+      "unit_price": 100,
+      "amount": 100,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "俵いなり",
+      "qty": 1,
+      "unit_price": 100,
+      "amount": 100,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "かしわ天",
+      "qty": 1,
+      "unit_price": 260,
+      "amount": 260,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "アプリ値引",
+      "qty": 1,
+      "unit_price": -100,
+      "amount": -100,
+      "tax_rate": 10,
+      "row_type": "discount"
+    }
+  ],
+  "calculation": {
+    "subtotal": 1750,
+    "positive_item_total": 1850,
+    "taxable_8": 670,
+    "taxable_10": 1180,
+    "tax_8": 49,
+    "tax_10": 107,
+    "total": 1750
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "udon_bold",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 398189933,
+    "resolved_item_count": 7
+  },
+  "source_reference": {
+    "source_reference_no": 30,
+    "source_reference_industry": "うどん・飲食",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 48,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "015_store_unique_v5_logo_style_030_udon_udon_bold",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_restaurant_heavy_horizontal_brush",
+  "batch_id": "learned_trial_heavy_brush_20260620_235110",
+  "index": 6,
+  "family": "restaurant",
+  "logo_style": "heavy_horizontal_brush",
+  "store_identity": {
+    "name": "山辺食堂",
+    "subtitle": "洋食とワイン",
+    "branch": "湖畔店",
+    "english": "RESTAURANT",
+    "logo_style": "heavy_horizontal_brush",
+    "logo_shift": "-8"
+  },
+  "items": [
+    {
+      "name": "軽井沢ビール",
+      "qty": 2,
+      "unit_price": 1870,
+      "amount": 3740,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "黒酢炒め",
+      "qty": 1,
+      "unit_price": 1240,
+      "amount": 1240,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ブルーベリーフィズ",
+      "qty": 1,
+      "unit_price": 690,
+      "amount": 690,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ごはんセット",
+      "qty": 1,
+      "unit_price": 590,
+      "amount": 590,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ビール",
+      "qty": 1,
+      "unit_price": 330,
+      "amount": 330,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "りんご樽",
+      "qty": 2,
+      "unit_price": 710,
+      "amount": 1420,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 8010,
+    "positive_item_total": 8010,
+    "taxable_8": 0,
+    "taxable_10": 8010,
+    "tax_8": 0,
+    "tax_10": 728,
+    "total": 8010
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "heavy_horizontal_brush",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 72644659,
+    "resolved_item_count": 6
+  },
+  "release_version": "v0.4.2",
+  "release_index": 65,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_heavy_brush_20260620_235110",
+    "document_id": "006_logo_style_restaurant_heavy_horizontal_brush",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

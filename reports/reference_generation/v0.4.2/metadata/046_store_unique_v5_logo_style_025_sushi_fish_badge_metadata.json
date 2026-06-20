@@ -1,0 +1,104 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_025_sushi_fish_badge",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 13,
+  "family": "sushi",
+  "logo_style": "fish_badge",
+  "store_identity": {
+    "name": "鮨 月波",
+    "subtitle": "寿司処",
+    "branch": "森東店",
+    "english": "SUSHI BAR",
+    "logo_style": "fish_badge",
+    "logo_shift": "-32"
+  },
+  "items": [
+    {
+      "name": "えび天巻",
+      "qty": 1,
+      "unit_price": 350,
+      "amount": 350,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "あおさ汁",
+      "qty": 1,
+      "unit_price": 110,
+      "amount": 110,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "はまち握り",
+      "qty": 1,
+      "unit_price": 400,
+      "amount": 400,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "会員値引皿",
+      "qty": 1,
+      "unit_price": 150,
+      "amount": 150,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "サーモン皿",
+      "qty": 1,
+      "unit_price": 640,
+      "amount": 640,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 1650,
+    "positive_item_total": 1650,
+    "taxable_8": 0,
+    "taxable_10": 1650,
+    "tax_8": 0,
+    "tax_10": 150,
+    "total": 1650
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "fish_badge",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1059249166,
+    "resolved_item_count": 5
+  },
+  "source_reference": {
+    "source_reference_no": 25,
+    "source_reference_industry": "回転寿司",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 46,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "013_store_unique_v5_logo_style_025_sushi_fish_badge",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

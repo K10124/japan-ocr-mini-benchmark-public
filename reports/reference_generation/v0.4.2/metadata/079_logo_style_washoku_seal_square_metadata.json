@@ -1,0 +1,87 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_washoku_seal_square",
+  "batch_id": "logo_style_receipt_prototypes_20260620_223713",
+  "index": 2,
+  "family": "washoku",
+  "logo_style": "seal_square",
+  "store_identity": {
+    "name": "小料理 竹音",
+    "subtitle": "一膳料理",
+    "branch": "本町通り店",
+    "english": "JAPANESE TABLE",
+    "logo_style": "seal_square"
+  },
+  "items": [
+    {
+      "name": "銀鮭西京焼",
+      "qty": 1,
+      "unit_price": 120,
+      "amount": 120,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "焼きおにぎり",
+      "qty": 1,
+      "unit_price": 1040,
+      "amount": 1040,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "田舎揚げ",
+      "qty": 1,
+      "unit_price": 880,
+      "amount": 880,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "だし巻き玉子",
+      "qty": 1,
+      "unit_price": 130,
+      "amount": 130,
+      "tax_rate": 8,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 2170,
+    "positive_item_total": 2170,
+    "taxable_8": 2170,
+    "taxable_10": 0,
+    "tax_8": 160,
+    "tax_10": 0,
+    "total": 2170
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "seal_square",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 571896516,
+    "resolved_item_count": 4
+  },
+  "release_version": "v0.4.2",
+  "release_index": 79,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "logo_style_receipt_prototypes_20260620_223713",
+    "document_id": "002_logo_style_washoku_seal_square",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_udon_udon_bold",
+  "batch_id": "learned_trial_logo_style_20260620_235110",
+  "index": 1,
+  "family": "udon",
+  "logo_style": "udon_bold",
+  "store_identity": {
+    "name": "花見川製麺",
+    "subtitle": "製麺所",
+    "branch": "武石インター店",
+    "english": "UDON KITCHEN",
+    "logo_style": "udon_bold",
+    "logo_shift": "22"
+  },
+  "items": [
+    {
+      "name": "ちくわ天",
+      "qty": 1,
+      "unit_price": 120,
+      "amount": 120,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "牛とろ玉(並)",
+      "qty": 1,
+      "unit_price": 120,
+      "amount": 120,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "いか天",
+      "qty": 2,
+      "unit_price": 120,
+      "amount": 240,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "かしわ天",
+      "qty": 1,
+      "unit_price": 260,
+      "amount": 260,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "ざる(大)",
+      "qty": 1,
+      "unit_price": 490,
+      "amount": 490,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "うどん札値引",
+      "qty": 2,
+      "unit_price": 150,
+      "amount": 300,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "アプリ値引",
+      "qty": 1,
+      "unit_price": -200,
+      "amount": -200,
+      "tax_rate": 10,
+      "row_type": "discount"
+    }
+  ],
+  "calculation": {
+    "subtotal": 1330,
+    "positive_item_total": 1530,
+    "taxable_8": 620,
+    "taxable_10": 910,
+    "tax_8": 45,
+    "tax_10": 82,
+    "total": 1330
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "udon_bold",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 2033579945,
+    "resolved_item_count": 7
+  },
+  "release_version": "v0.4.2",
+  "release_index": 75,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_logo_style_20260620_235110",
+    "document_id": "001_logo_style_udon_udon_bold",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

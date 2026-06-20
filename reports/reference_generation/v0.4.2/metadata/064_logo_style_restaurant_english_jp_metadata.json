@@ -1,0 +1,88 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_restaurant_english_jp",
+  "batch_id": "learned_trial_logo_style_20260620_235110",
+  "index": 2,
+  "family": "restaurant",
+  "logo_style": "english_jp",
+  "store_identity": {
+    "name": "酔重正之",
+    "subtitle": "RESTAURANT",
+    "branch": "北町店",
+    "english": "RESTAURANT",
+    "logo_style": "english_jp",
+    "logo_shift": "-20"
+  },
+  "items": [
+    {
+      "name": "りんご樽",
+      "qty": 2,
+      "unit_price": 860,
+      "amount": 1720,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ビール",
+      "qty": 1,
+      "unit_price": 990,
+      "amount": 990,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "軽井沢ビール",
+      "qty": 1,
+      "unit_price": 1200,
+      "amount": 1200,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ごはんセット",
+      "qty": 1,
+      "unit_price": 1200,
+      "amount": 1200,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 5110,
+    "positive_item_total": 5110,
+    "taxable_8": 0,
+    "taxable_10": 5110,
+    "tax_8": 0,
+    "tax_10": 464,
+    "total": 5110
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "english_jp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 2146723464,
+    "resolved_item_count": 4
+  },
+  "release_version": "v0.4.2",
+  "release_index": 64,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_logo_style_20260620_235110",
+    "document_id": "002_logo_style_restaurant_english_jp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

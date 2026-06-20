@@ -1,0 +1,112 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "blogger_v4_logo_style_025_home_center_seal_square",
+  "batch_id": "learned_trial_blogger_v4_20260620_235110",
+  "index": 4,
+  "family": "home_center",
+  "logo_style": "seal_square",
+  "store_identity": {
+    "name": "ホームワークス",
+    "subtitle": "HOME WORKS",
+    "branch": "北町店",
+    "english": "SHOP",
+    "logo_style": "seal_square",
+    "logo_shift": "-22"
+  },
+  "items": [
+    {
+      "name": "木材カット",
+      "qty": 2,
+      "unit_price": 1360,
+      "amount": 2720,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "電池パック",
+      "qty": 1,
+      "unit_price": 1380,
+      "amount": 1380,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "園芸用土",
+      "qty": 1,
+      "unit_price": 330,
+      "amount": 330,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "収納ケース",
+      "qty": 1,
+      "unit_price": 1190,
+      "amount": 1190,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "掃除シート",
+      "qty": 1,
+      "unit_price": 260,
+      "amount": 260,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "万能ビス",
+      "qty": 1,
+      "unit_price": 780,
+      "amount": 780,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 6660,
+    "positive_item_total": 6660,
+    "taxable_8": 0,
+    "taxable_10": 6660,
+    "tax_8": 0,
+    "tax_10": 605,
+    "total": 6660
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "seal_square",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1645667497,
+    "resolved_item_count": 6
+  },
+  "source_reference": {
+    "source_reference_no": 25,
+    "source_reference_industry": "ホームセンター",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 4,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_blogger_v4_20260620_235110",
+    "document_id": "004_blogger_v4_logo_style_025_home_center_seal_square",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

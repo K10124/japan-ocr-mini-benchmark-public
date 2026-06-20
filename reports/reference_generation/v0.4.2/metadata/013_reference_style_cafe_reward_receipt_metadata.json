@@ -1,0 +1,73 @@
+{
+  "schema_version": "reference-style-clean-template-v1",
+  "template_id": "reference_style_cafe_reward_receipt",
+  "created_at": "2026-06-20T14:35:29.094651",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "reward_program": "fictional",
+    "payment_card": "fictional",
+    "invoice_registration_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity",
+    "real_reference_images_are_dataset_records": false
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/017_reference_style_cafe_reward_receipt_clean.png",
+  "items": [
+    {
+      "name": "本日のドリップ　ショート",
+      "line_amount": 900
+    }
+  ],
+  "total": 900,
+  "invoice_registration_number": "T0000000000000",
+  "randomized_fields": {
+    "renderer_variant_seed": 1172471966,
+    "payment_card": "MORNING CARD",
+    "reward_lines": [
+      "スタンプカード（R）リワード",
+      "登録カードでお買い物をいただくと、",
+      "ためると、お好みのビバレッジやフード",
+      "入りギフトがもらえることがあります。",
+      "詳しくはWebで。案内コード"
+    ],
+    "order_number": "047"
+  },
+  "layout_features": [
+    "centered_large_cafe_wordmark",
+    "bookstore_cafe_store_info_block",
+    "single_to_go_beverage_item",
+    "tax_and_subtotal_lines",
+    "prepaid_cafe_card_payment",
+    "reward_program_message",
+    "bottom_order_number"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "017_reference_style_cafe_reward_receipt",
+  "generation_index": 17,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 17,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 1172471966,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_cafe_reward_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/017_reference_style_cafe_reward_receipt_metadata.json",
+  "release_version": "v0.4.2",
+  "release_index": 13,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "reference_clean_audit_fixed_20260620_143526",
+    "document_id": "017_reference_style_cafe_reward_receipt",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

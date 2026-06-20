@@ -1,0 +1,104 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_047_cafe_bakery_english_jp",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 21,
+  "family": "cafe_bakery",
+  "logo_style": "english_jp",
+  "store_identity": {
+    "name": "麦庭カフェ",
+    "subtitle": "CAFE BAKERY",
+    "branch": "恵比野店",
+    "english": "SHOP",
+    "logo_style": "english_jp",
+    "logo_shift": "15"
+  },
+  "items": [
+    {
+      "name": "ブレンドコーヒー",
+      "qty": 1,
+      "unit_price": 320,
+      "amount": 320,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "季節サンド",
+      "qty": 1,
+      "unit_price": 290,
+      "amount": 290,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "食パンハーフ",
+      "qty": 1,
+      "unit_price": 140,
+      "amount": 140,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "カフェラテ",
+      "qty": 1,
+      "unit_price": 370,
+      "amount": 370,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "モーニング皿",
+      "qty": 2,
+      "unit_price": 690,
+      "amount": 1380,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 2500,
+    "positive_item_total": 2500,
+    "taxable_8": 0,
+    "taxable_10": 2500,
+    "tax_8": 0,
+    "tax_10": 227,
+    "total": 2500
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "english_jp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1729542566,
+    "resolved_item_count": 5
+  },
+  "source_reference": {
+    "source_reference_no": 47,
+    "source_reference_industry": "カフェ・ベーカリー",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 54,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "021_store_unique_v5_logo_style_047_cafe_bakery_english_jp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

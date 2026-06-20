@@ -1,0 +1,92 @@
+{
+  "schema_version": "japanese-typography-receipt-prototype-v1",
+  "template_id": "jp_typography_hiragana_rounded_grocery",
+  "batch_id": "learned_trial_japanese_typography_20260620_235110",
+  "index": 2,
+  "family": "hiragana_rounded",
+  "items": [
+    {
+      "name": "おつとめ値引 1",
+      "qty": 1,
+      "unit_price": 390,
+      "amount": 390,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "りんご二個 2",
+      "qty": 1,
+      "unit_price": 730,
+      "amount": 730,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "手づくり味噌 3",
+      "qty": 1,
+      "unit_price": 380,
+      "amount": 380,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "きゅうり袋 4",
+      "qty": 1,
+      "unit_price": 660,
+      "amount": 660,
+      "tax_rate": 8,
+      "row_type": "item"
+    },
+    {
+      "name": "小さな値引",
+      "qty": 1,
+      "unit_price": -120,
+      "amount": -120,
+      "tax_rate": 10,
+      "row_type": "discount"
+    }
+  ],
+  "calculation": {
+    "subtotal": 2040,
+    "taxable_8": 2160,
+    "taxable_10": 0,
+    "tax_8": 160,
+    "tax_10": 0,
+    "total": 2040
+  },
+  "typography": {
+    "title_script": "Japanese",
+    "title_text": "まちのやおや",
+    "title_style": "kyokasho",
+    "body_style": "kyokasho",
+    "font_candidates": [
+      "C:\\Windows\\Fonts\\UDDigiKyokashoN-B.ttc",
+      "C:\\Windows\\Fonts\\UDDigiKyokashoN-R.ttc",
+      "C:\\Windows\\Fonts\\HGRKK.TTC"
+    ],
+    "purpose": "Hiragana-heavy rounded/kyokasho feel for a neighborhood produce shop."
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "typography_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 371871268,
+    "resolved_item_count": 5
+  },
+  "release_version": "v0.4.2",
+  "release_index": 57,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_japanese_typography_20260620_235110",
+    "document_id": "002_jp_typography_hiragana_rounded_grocery",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

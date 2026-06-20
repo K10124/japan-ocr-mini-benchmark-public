@@ -1,0 +1,68 @@
+{
+  "schema_version": "reference-style-clean-template-v1",
+  "template_id": "reference_style_drugstore_id_receipt",
+  "created_at": "2026-06-20T14:35:29.311972",
+  "reference_source": {
+    "used_as": "high_level_layout_reference_only",
+    "stored_in_public_payload": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "company_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "payment_id_details": "fictional",
+    "campaign_notice": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "trademark_or_trade_dress_intent": "avoid_real_chain_identity",
+    "real_reference_images_are_dataset_records": false
+  },
+  "clean_png": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/images_clean/019_reference_style_drugstore_id_receipt_clean.png",
+  "items": [
+    {
+      "name": "108MKHケアミンC30",
+      "line_amount": 90
+    }
+  ],
+  "total": 90,
+  "randomized_fields": {
+    "renderer_variant_seed": 831702738,
+    "campaign_variant": [
+      "今月の会員特典",
+      "ビューティー応援Day",
+      "対象品　　　3倍"
+    ]
+  },
+  "layout_features": [
+    "large_drugstore_wordmark_header",
+    "company_and_store_address_block",
+    "receipt_title",
+    "single_item_purchase",
+    "id_payment_detail_customer_copy",
+    "star_separator_campaign_notice",
+    "storage_instruction_footer"
+  ],
+  "run_id": "reference_clean_audit_fixed_20260620_143526",
+  "document_id": "019_reference_style_drugstore_id_receipt",
+  "generation_index": 19,
+  "batch_id": "reference_clean_audit_fixed_20260620_143526",
+  "batch_index": 19,
+  "seed": 34620260620,
+  "random_generation_seed": 34620260620,
+  "renderer_variant_seed": 831702738,
+  "selection_policy": "shuffle_without_replacement",
+  "duplicate_template_ids_allowed": false,
+  "source_renderer": "05_generation/scripts/make_reference_style_drugstore_receipt_clean_template.py",
+  "batch_metadata_json": "05_generation/reference_receipt_batches/reference_clean_audit_fixed_20260620_143526/metadata/019_reference_style_drugstore_id_receipt_metadata.json",
+  "release_version": "v0.4.2",
+  "release_index": 20,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "reference_clean_audit_fixed_20260620_143526",
+    "document_id": "019_reference_style_drugstore_id_receipt",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

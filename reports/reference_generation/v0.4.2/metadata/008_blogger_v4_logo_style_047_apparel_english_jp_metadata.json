@@ -1,0 +1,96 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "blogger_v4_logo_style_047_apparel_english_jp",
+  "batch_id": "learned_trial_blogger_v4_20260620_235110",
+  "index": 8,
+  "family": "apparel",
+  "logo_style": "english_jp",
+  "store_identity": {
+    "name": "衣舎 ひより",
+    "subtitle": "衣料品店",
+    "branch": "南口店",
+    "english": "SHOP",
+    "logo_style": "english_jp",
+    "logo_shift": "-30"
+  },
+  "items": [
+    {
+      "name": "ワイドパンツ",
+      "qty": 1,
+      "unit_price": 510,
+      "amount": 510,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "値引セール",
+      "qty": 1,
+      "unit_price": 650,
+      "amount": 650,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "リネン帽子",
+      "qty": 2,
+      "unit_price": 1030,
+      "amount": 2060,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "半袖シャツ",
+      "qty": 1,
+      "unit_price": 160,
+      "amount": 160,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 3380,
+    "positive_item_total": 3380,
+    "taxable_8": 0,
+    "taxable_10": 3380,
+    "tax_8": 0,
+    "tax_10": 307,
+    "total": 3380
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "english_jp",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1335688531,
+    "resolved_item_count": 4
+  },
+  "source_reference": {
+    "source_reference_no": 47,
+    "source_reference_industry": "衣料品店",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 8,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "learned_trial_blogger_v4_20260620_235110",
+    "document_id": "008_blogger_v4_logo_style_047_apparel_english_jp",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

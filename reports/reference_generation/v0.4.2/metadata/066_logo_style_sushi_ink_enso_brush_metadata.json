@@ -1,0 +1,88 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "logo_style_sushi_ink_enso_brush",
+  "batch_id": "learned_trial_logo_style_20260620_235110",
+  "index": 6,
+  "family": "sushi",
+  "logo_style": "ink_enso_brush",
+  "store_identity": {
+    "name": "魚月",
+    "subtitle": "回転寿司",
+    "branch": "西池袋店",
+    "english": "SUSHI BAR",
+    "logo_style": "ink_enso_brush",
+    "logo_shift": "26"
+  },
+  "items": [
+    {
+      "name": "枝豆",
+      "qty": 2,
+      "unit_price": 150,
+      "amount": 300,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "真いか唐揚げ",
+      "qty": 2,
+      "unit_price": 250,
+      "amount": 500,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "びん長まぐろ",
+      "qty": 1,
+      "unit_price": 350,
+      "amount": 350,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "活け〆はまち",
+      "qty": 1,
+      "unit_price": 110,
+      "amount": 110,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 1260,
+    "positive_item_total": 1260,
+    "taxable_8": 0,
+    "taxable_10": 1260,
+    "tax_8": 0,
+    "tax_10": 114,
+    "total": 1260
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "ink_enso_brush",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": false
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "logo_style_and_layout_prototype_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1765425584,
+    "resolved_item_count": 4
+  },
+  "release_version": "v0.4.2",
+  "release_index": 66,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "B",
+    "source_batch": "learned_trial_logo_style_20260620_235110",
+    "document_id": "006_logo_style_sushi_ink_enso_brush",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}

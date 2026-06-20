@@ -1,0 +1,96 @@
+{
+  "schema_version": "logo-style-receipt-prototype-v1",
+  "template_id": "store_unique_v5_logo_style_036_bookstore_seal_square",
+  "batch_id": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+  "index": 17,
+  "family": "bookstore",
+  "logo_style": "seal_square",
+  "store_identity": {
+    "name": "文庫の森",
+    "subtitle": "BOOK STORE",
+    "branch": "木更野店",
+    "english": "SHOP",
+    "logo_style": "seal_square",
+    "logo_shift": "-14"
+  },
+  "items": [
+    {
+      "name": "ポイント値引",
+      "qty": 1,
+      "unit_price": 860,
+      "amount": 860,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ノートA5",
+      "qty": 1,
+      "unit_price": 130,
+      "amount": 130,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "ブックカバー",
+      "qty": 1,
+      "unit_price": 270,
+      "amount": 270,
+      "tax_rate": 10,
+      "row_type": "item"
+    },
+    {
+      "name": "雑誌月刊",
+      "qty": 1,
+      "unit_price": 510,
+      "amount": 510,
+      "tax_rate": 10,
+      "row_type": "item"
+    }
+  ],
+  "calculation": {
+    "subtotal": 1770,
+    "positive_item_total": 1770,
+    "taxable_8": 0,
+    "taxable_10": 1770,
+    "tax_8": 0,
+    "tax_10": 160,
+    "total": 1770
+  },
+  "typography": {
+    "purpose": "random natural logo-like store-name header prototype",
+    "logo_style": "seal_square",
+    "uses_japanese_logo_text": true,
+    "uses_generated_vector_marks": true
+  },
+  "copyright_safety": {
+    "store_name": "fictional",
+    "address": "fictional",
+    "phone_number": "fictional",
+    "logo_used": false,
+    "real_chain_name_used": false,
+    "reference_use": "layout_density_store_category_and_logo_style_only",
+    "real_reference_images_are_dataset_records": false
+  },
+  "randomization": {
+    "seed": 1622476640,
+    "resolved_item_count": 4
+  },
+  "source_reference": {
+    "source_reference_no": 36,
+    "source_reference_industry": "書店",
+    "source_reference_scope": "full_receipt",
+    "used_as": "layout_density_store_category_and_logo_style_reference_only",
+    "real_reference_images_are_dataset_records": false,
+    "copies_real_store_name_or_logo": false
+  },
+  "release_version": "v0.4.2",
+  "release_index": 50,
+  "accepted_structure_selection": {
+    "status": "採用",
+    "priority": "A",
+    "source_batch": "store_unique_v5_logo_style_clean_batch_20260620_233632",
+    "document_id": "017_store_unique_v5_logo_style_036_bookstore_seal_square",
+    "selection_report": "05_generation/generated_reports/receipt_structure_selection_review_20260621_001622",
+    "source_inventory": "05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439"
+  }
+}
