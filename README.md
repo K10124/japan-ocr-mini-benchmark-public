@@ -14,9 +14,10 @@ It is not just a text-reading demo. It checks whether a model can recover receip
 - **Current dataset payload:** `v0.2.0`
 - **Current model benchmark:** `v0.4.0` Clean/Noisy LM Studio leaderboard
 - **Current receipt-generation library:** `v0.4.2`
-- **Accepted receipt structures:** `83`
+- **Accepted receipt design candidates:** `83`
+- **Distinct semantic structures:** audit in progress
 - **Selection review:** internal curator review, summarized in `reports/reference_generation/v0.4.2/summary.json`
-- **Accepted structure report:** `reports/reference_generation/v0.4.2`
+- **Accepted design report:** `reports/reference_generation/v0.4.2`
 
 ## Why This Exists
 
@@ -32,9 +33,11 @@ This project gives you a small but inspectable target for fast local testing bef
 
 ## What Is New In v0.4.2
 
-`v0.4.2` turns the receipt-generation work into a curated structure library.
+`v0.4.2` turns the receipt-generation work into a curated design-candidate library.
 
-- `83` accepted synthetic clean receipt structures
+- `83` accepted synthetic clean receipt design candidates
+- the 83 candidates include semantic structures, layout variants, and branding/logo/typography variants
+- audited distinct semantic structure count is still in progress
 - Japanese logo-like store names, brush-style headers, seals, dense supermarket receipts, food service receipts, payment/point/coupon layouts, and specialty receipt formats
 - accepted / hold / rewrite review workflow for future expansion
 - public-safe fictional data policy retained
@@ -51,7 +54,17 @@ This project gives you a small but inspectable target for fast local testing bef
 | Operational snapshots | `v0.3.1`, `v0.3.2` | additional LM Studio runs and combined rankings |
 | Clean/Noisy leaderboard | `v0.4.0` | paired clean and noisy benchmark tables |
 | Generator QA | `v0.4.1` | audited 23-template clean receipt generator snapshot |
-| Structure library | `v0.4.2` | 83 accepted receipt structures for future 100-type generation |
+| Design-candidate library | `v0.4.2` | 83 accepted receipt designs for future taxonomy and 100-type generation |
+
+## Structure Selection Method
+
+The generator now separates three ideas that used to be easy to mix up:
+
+- **candidate:** a generated receipt design worth reviewing
+- **distinct structure:** a receipt with meaningfully different fields, tax/accounting logic, payment behavior, service flow, or document topology
+- **visual variant:** a layout, logo, store-name, brush-lettering, seal, font, or branding difference
+
+The 100-type target means 100 audited distinct structures. It does not mean 100 images or 100 logo variants.
 
 ## Leaderboards
 
@@ -125,4 +138,4 @@ The public benchmark data is synthetic. Development references may be used to st
 
 ## License
 
-See `LICENSE.md` in the public payload when mirrored. This working repository contains generation scripts, reports, and local development artifacts for the Japan OCR Mini Benchmark project.
+See `LICENSE.md` in the public payload when mirrored. This public repository contains release artifacts, evaluation scripts, leaderboards, and sanitized synthetic receipt-generation reports for the Japan OCR Mini Benchmark project.

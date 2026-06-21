@@ -1,15 +1,16 @@
-# v0.4.2 Accepted Receipt Structure Library
+# v0.4.2 Accepted Receipt Design-Candidate Library
 
-This report is a curated synthetic receipt-structure snapshot for Japan OCR Mini Benchmark.
+This report is a curated synthetic receipt design-candidate snapshot for Japan OCR Mini Benchmark.
 
-It promotes the selected `採用` rows from the receipt structure review into a versioned reference-generation report. The goal is to preserve the strongest clean receipt layouts before expanding toward a larger 100-structure synthetic benchmark.
+It promotes the selected `採用` rows from the receipt structure review into a versioned reference-generation report. The goal is to preserve the strongest clean receipt designs before expanding toward a larger 100-structure synthetic benchmark.
 
 ![v0.4.2 accepted receipt contact sheet](contact_sheet.png)
 
 ## Snapshot
 
 - Version: `v0.4.2`
-- Accepted structures: `83`
+- Accepted design candidates: `83`
+- Distinct semantic structures: audit in progress
 - Selection source: `05_generation/generated_reports/receipt_structure_selection_review_20260621_001622`
 - Source inventory: `05_generation/generated_reports/receipt_structure_inventory_canonical_20260621_000439`
 - Public data safety: fictional synthetic receipts only
@@ -25,7 +26,7 @@ It promotes the selected `採用` rows from the receipt structure review into a 
 ## Files
 
 - `index.html`: visual review gallery
-- `contact_sheet.png`: all accepted structures at a glance
+- `contact_sheet.png`: all accepted design candidates at a glance
 - `manifest.jsonl`: programmatic list of accepted images and metadata
 - `summary.json`: aggregate counts
 - `images_clean/`: clean synthetic receipt images
@@ -34,7 +35,7 @@ It promotes the selected `採用` rows from the receipt structure review into a 
 
 ## Audit Note
 
-This is a structure library rather than the final randomized benchmark dataset. Amount parsing and image readability checks are expected to pass, while a small number of cross-receipt item-name/quantity/amount overlaps can remain here because several accepted structures intentionally share a family before the next randomization pass. The next 100-type generation step should resolve those product-value overlaps.
+This is a design-candidate library rather than the final randomized benchmark dataset. The 83 accepted candidates include semantic structures, layout variants, and branding/logo/typography variants. Amount parsing and image readability checks are expected to pass, while a small number of cross-receipt item-name/quantity/amount overlaps can remain here because several accepted candidates intentionally share a family before the next taxonomy and randomization pass. The next 100-type generation step should resolve those product-value overlaps and count only audited distinct structures.
 
 ## Notes
 
