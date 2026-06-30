@@ -1,6 +1,6 @@
-# Japan OCR Mini Benchmark
+﻿# Japan OCR Mini Benchmark
 
-![Japan OCR Mini Benchmark v0.4.2 receipt wall](assets/jomb_v042_receipt_wall.png)
+![Japan OCR Mini Benchmark Alpha10 synthetic receipt hero](assets/jomb_alpha10_readme_hero.png)
 
 **Japan OCR Mini Benchmark** is a compact, local-first benchmark for testing whether OCR/VLM models can read Japanese receipts and return structured JSON.
 
@@ -50,7 +50,7 @@ This project gives you a small but inspectable target for fast local testing bef
 - public-safe fictional data policy retained
 - real reference images are **not** copied into the public report
 
-![v0.4.2 accepted receipt wall](assets/jomb_v042_receipt_wall.png)
+![Alpha10 synthetic receipt hero](assets/jomb_alpha10_readme_hero.png)
 
 ## Benchmark Releases
 
@@ -144,6 +144,7 @@ docs/releases/
   v0.4.2.md
 
 assets/
+  jomb_alpha10_readme_hero.png
   jomb_v042_receipt_wall.png
 ```
 
@@ -195,3 +196,4 @@ This license confirmation applies to the Alpha10 approved payload. See:
 - `alpha10/LICENSE_NOTICE.md`
 
 See `LICENSE.md` in the public payload when mirrored. This public repository contains release artifacts, evaluation scripts, leaderboards, and sanitized synthetic receipt-generation reports for the Japan OCR Mini Benchmark project.
+
