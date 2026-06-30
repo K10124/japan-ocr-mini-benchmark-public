@@ -1,9 +1,9 @@
 {
   "project": "Japan OCR Mini Benchmark",
-  "release_stage": "alpha10_publication_final_candidate",
+  "release_stage": "alpha10_publication_approved_payload",
   "created_at": "2026-06-29 08:32:08",
-  "note": "Local final candidate only. Not yet pushed to GitHub or Hugging Face.",
-  "source_pack": "public_alpha10_publication_payload_draft",
+  "note": "Alpha10 approved public payload.",
+  "source_pack": "public_alpha10_publication_approved_payload",
   "summary": {
     "records": 10,
     "images": 10,
@@ -13,11 +13,18 @@
     "ready_for_final_human_approval": true,
     "ready_for_github_push": false,
     "ready_for_hf_upload": false,
-    "human_final_approval_required": true,
+    "human_final_approval_required": false,
     "excluded_cases": [
       "CASE-000048"
     ],
-    "hf_readme_is_dataset_card": true
+    "hf_readme_is_dataset_card": true,
+    "final_approval_complete": true,
+    "license_final_confirmed": true,
+    "github_human_approved": true,
+    "hf_human_approved": true,
+    "ready_for_actual_github_publish": true,
+    "ready_for_actual_hf_publish": true,
+    "license": "CC BY 4.0"
   },
   "records": [
     {

@@ -11,13 +11,20 @@ It is not just a text-reading demo. It checks whether a model can recover receip
 
 ## Latest Status
 
-- **Current dataset payload:** `v0.2.0`
+- **Latest public alpha payload:** `alpha10`
+  - 10 approved synthetic Japanese receipt samples
+  - clean images + public source JSON + public metadata
+  - invoice_profile / phone_profile included
+  - public safety scan: pass
+  - license: CC BY 4.0
+  - CASE-000048 excluded
+- **Frozen core dataset payload:** `v0.2.0`
 - **Current model benchmark:** `v0.4.0` Clean/Noisy LM Studio leaderboard
 - **Current receipt-generation library:** `v0.4.2`
 - **Accepted receipt design candidates:** `83`
 - **Distinct semantic structures:** audit in progress
-- **Selection review:** internal curator review, summarized in `reports/reference_generation/v0.4.2/summary.json`
-- **Accepted design report:** `reports/reference_generation/v0.4.2`
+- **Selection review:** internal curator review, summarized in the v0.4.2 reference-generation summary file
+- **Accepted design report:** the v0.4.2 reference-generation report folder
 
 ## Why This Exists
 
@@ -43,18 +50,35 @@ This project gives you a small but inspectable target for fast local testing bef
 - public-safe fictional data policy retained
 - real reference images are **not** copied into the public report
 
-![v0.4.2 accepted contact sheet](reports/reference_generation/v0.4.2/contact_sheet.png)
+![v0.4.2 accepted receipt wall](assets/jomb_v042_receipt_wall.png)
 
 ## Benchmark Releases
 
 | Area | Version | What it contains |
 | --- | --- | --- |
+| Public alpha payload | `alpha10` | 10 human-approved synthetic Japanese receipt samples with clean images, public source JSON, metadata, invoice/phone profiles, and public safety scan pass |
 | Dataset payload | `v0.2.0` | 20 synthetic Japanese receipts with clean/noisy images and ground-truth JSON |
 | LM Studio baseline | `v0.3.0` | first local multi-model noisy-image benchmark |
 | Operational snapshots | `v0.3.1`, `v0.3.2` | additional LM Studio runs and combined rankings |
 | Clean/Noisy leaderboard | `v0.4.0` | paired clean and noisy benchmark tables |
 | Generator QA | `v0.4.1` | audited 23-template clean receipt generator snapshot |
 | Design-candidate library | `v0.4.2` | 83 accepted receipt designs for future taxonomy and 100-type generation |
+
+## Alpha10 Approved Payload
+
+`alpha10` is the first small public-approved payload produced from the receipt library workflow.
+
+- 10 clean synthetic Japanese receipt images
+- 10 public source JSON files
+- 10 public metadata JSON files
+- invoice_profile and phone_profile fields for structured evaluation
+- public safety scan: pass
+- CC BY 4.0 license confirmation for the Alpha10 approved payload
+- human approval record retained in the publication workflow
+- CASE-000048 excluded
+- intended for OCR/VLM evaluation, not large-scale model training
+
+The samples are synthetic. They do not include real receipt photos, real customer data, real transactions, or copied brand assets.
 
 ## Structure Selection Method
 
@@ -88,7 +112,18 @@ Read the full ranking in:
 ## Repository Map
 
 ```text
-reports/reference_generation/v0.4.2/
+alpha10/
+  README.md
+  LICENSE_NOTICE.md
+  ALPHA10_LICENSE_FINAL_CONFIRMATION.md
+  alpha10_manifest.json
+  alpha10_manifest.csv
+  alpha10_public_safety_scan.md
+  images/
+  source_json/
+  metadata/
+
+v0.4.2 reference-generation report folder/
   README.md
   index.html
   contact_sheet.png
@@ -114,6 +149,12 @@ assets/
 
 ## Quick Start
 
+Inspect the Alpha10 public payload manifest:
+
+```powershell
+python -m json.tool alpha10/alpha10_manifest.json
+```
+
 List records from the frozen dataset:
 
 ```powershell
@@ -129,13 +170,28 @@ python examples/evaluate_v020_baseline.py --data-root "release_v0.2.0\data\v0.2.
 Open the v0.4.2 receipt structure gallery:
 
 ```text
-reports/reference_generation/v0.4.2/index.html
+the v0.4.2 reference-generation gallery HTML
 ```
 
 ## Data Policy
 
 The public benchmark data is synthetic. Development references may be used to study receipt layout conventions, but public files must not include real customer receipt images, real personal information, copied brand logos, or local absolute paths.
 
+For Alpha10:
+
+- phone numbers and invoice registration numbers are synthetic or unverified OCR benchmark fields
+- no live lookup was performed for phone numbers or registration numbers
+- invoice_profile and phone_profile are included for structured evaluation
+- real reference images are not included
+- CASE-000048 is excluded
+
 ## License
+
+The Alpha10 approved payload is released under CC BY 4.0.
+
+This license confirmation applies to the Alpha10 approved payload. See:
+
+- `alpha10/ALPHA10_LICENSE_FINAL_CONFIRMATION.md`
+- `alpha10/LICENSE_NOTICE.md`
 
 See `LICENSE.md` in the public payload when mirrored. This public repository contains release artifacts, evaluation scripts, leaderboards, and sanitized synthetic receipt-generation reports for the Japan OCR Mini Benchmark project.

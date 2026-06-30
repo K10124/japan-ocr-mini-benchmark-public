@@ -1,40 +1,46 @@
-# Japan OCR Mini Benchmark Alpha10 Approved Payload
+# Japan OCR Mini Benchmark - Alpha10
 
-## Overview
+This Alpha10 approved payload is published as a small synthetic Japanese receipt OCR/VLM evaluation sample.
 
-Alpha10 is a small synthetic Japanese receipt OCR and VLM evaluation payload. It contains 10 clean receipt images with paired public JSON labels and metadata.
+## What Is Included
 
-## License
+- 10 approved synthetic Japanese receipt samples.
+- Clean receipt images for OCR/VLM evaluation.
+- Matching public source JSON files.
+- Matching public metadata JSON files.
+- Alpha10 manifest and public safety scan.
 
-License: CC BY 4.0.
+## Synthetic Data Notice
 
-License confirmed for Alpha10 approved payload. This license confirmation applies only to the Alpha10 approved payload.
+All records in this payload are synthetic. They are not copies of real store receipts, real transactions, real people, or real brands.
+
+No real reference images are included. Reference material was used only as private design guidance during dataset construction.
 
 ## Public Safety
 
-- CASE-000048 is excluded.
-- Public safety scan is pass.
-- Synthetic data notice is retained.
-- No real reference images are included.
-- The receipts are synthetic data and do not intentionally represent any real store, real person, real brand, or real transaction.
-- Phone numbers and registration numbers are synthetic or unverified OCR benchmark fields.
+Public safety scan: pass.
 
-## Intended Uses
+CASE-000048 is excluded from this Alpha10 payload.
 
-Use this payload for Japanese receipt OCR, document AI, visual question answering, and structured extraction evaluation.
+The payload includes invoice_profile and phone_profile fields so reviewers can understand how registration-number-like and phone-number-like text is handled. These fields are synthetic or unverified OCR benchmark fields and were not externally looked up.
 
-## Out-of-Scope Uses
+## License
 
-Do not use this payload as proof of a real transaction, identity evidence, accounting evidence, tax advice, or a large training corpus.
+The Alpha10 approved payload is released under CC BY 4.0.
 
-## Contents
+## Files
 
-- `images/`: clean synthetic receipt images
-- `source_json/`: public source labels
-- `metadata/`: public metadata
-- `alpha10_approved_manifest_latest.json`: approved payload manifest
-- `ALPHA10_LICENSE_FINAL_CONFIRMATION.md`: license confirmation
+- `images/`: synthetic receipt images.
+- `source_json/`: public source records for each receipt.
+- `metadata/`: public metadata for each receipt.
+- `alpha10_manifest.json`: machine-readable manifest.
+- `alpha10_manifest.csv`: table summary of the included records.
+- `alpha10_public_safety_scan.md`: public safety scan summary.
+- `LICENSE_NOTICE.md`: license and use notice.
+- `ALPHA10_LICENSE_FINAL_CONFIRMATION.md`: final license confirmation for this payload.
 
-## Publication Status
+## Limitations
 
-This approved payload is ready for actual GitHub and Hugging Face publication execution after the operator confirms the destination repositories. No GitHub push or Hugging Face upload is executed by this packaging step.
+This is a small alpha payload, not a large training dataset. It is intended for OCR/VLM evaluation and workflow checks.
+
+The samples are designed to be useful benchmark examples, but they do not represent every Japanese receipt format.
